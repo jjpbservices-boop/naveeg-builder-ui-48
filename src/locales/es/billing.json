@@ -1,0 +1,69 @@
+{
+  "title": "Tu información de facturación - simple y segura",
+  "subtitle": "Gestiona tus detalles de facturación y visualiza tus facturas fácilmente. Toda tu información se mantiene segura y encriptada.",
+  "form": {
+    "accountType": "Tipo de cuenta",
+    "individual": "Individual",
+    "company": "Empresa",
+    "legalName": "Nombre legal",
+    "legalNamePlaceholder": "Introduce tu nombre legal completo o nombre de la empresa",
+    "billingEmail": "Correo electrónico de facturación",
+    "billingEmailPlaceholder": "facturacion@ejemplo.com",
+    "address": {
+      "line1": "Dirección línea 1",
+      "line1Placeholder": "Dirección postal",
+      "line2": "Dirección línea 2",
+      "line2Placeholder": "Apartamento, suite, etc. (opcional)",
+      "city": "Ciudad",
+      "cityPlaceholder": "Ciudad",
+      "postalCode": "Código postal",
+      "postalCodePlaceholder": "Código postal",
+      "country": "País"
+    },
+    "vat": {
+      "hasVatNumber": "Tengo un número de IVA de la UE",
+      "vatNumber": "Número de IVA",
+      "vatNumberPlaceholder": "Introduce tu número de IVA",
+      "formatHint": "Formato: {format}"
+    },
+    "invoicing": {
+      "language": "Idioma de facturación",
+      "currency": "Moneda de visualización"
+    }
+  },
+  "taxSummary": {
+    "title": "Resumen de impuestos",
+    "reverseCharge": "Puede aplicarse inversión del sujeto pasivo para transacciones B2B",
+    "localVat": "Puede aplicarse IVA local",
+    "vatRate": "Tasa de IVA: {rate}%"
+  },
+  "actions": {
+    "save": "Guardar Información de Facturación",
+    "previewInvoice": "Previsualizar Factura"
+  },
+  "invoice": {
+    "title": "Previsualización de Factura",
+    "invoiceNumber": "factura n.º {number}",
+    "date": "fecha: {date}",
+    "dueDate": "fecha de vencimiento: {date}",
+    "billTo": "facturar a:",
+    "description": "descripción",
+    "amount": "importe",
+    "subtotal": "Subtotal",
+    "vat": "iva ({rate}%)",
+    "total": "total",
+    "paymentTerms": "Condiciones de Pago: Neto 30 días",
+    "thankYou": "¡Gracias por tu negocio!"
+  },
+  "validation": {
+    "legalNameRequired": "Se requiere el nombre legal",
+    "emailRequired": "Se requiere el correo electrónico de facturación",
+    "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida",
+    "addressRequired": "se requiere la dirección",
+    "cityRequired": "se requiere la ciudad",
+    "postalCodeRequired": "se requiere el código postal",
+    "countryRequired": "Por favor, selecciona un país",
+    "vatNumberRequired": "Se requiere el número de IVA cuando está seleccionado",
+    "invalidVatNumber": "Por favor, introduce un número de IVA válido"
+  }
+}

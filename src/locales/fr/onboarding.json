@@ -7,9 +7,34 @@
   "describeSubtitle": "Parlez-nous de votre entreprise et nous créerons le site web parfait pour vous.",
   "describeTextarea": "Tapez le nom de votre entreprise et décrivez brièvement votre entreprise, vos produits ou vos services. Soyez aussi détaillé que vous le souhaitez - plus vous fournissez d'informations, mieux nous pouvons adapter votre site web.",
   "generateWebsiteButton": "Générer votre site web",
-  "wizard": {
+  "wizard": { 
     "step1": "Brief du site",
     "step2": "Design",
     "completed": "Terminé"
+  },
+  "brief": {
+    "title": "Parlez-nous de votre entreprise",
+    "subtitle": "Aidez-nous à créer le site web parfait en fournissant quelques informations de base sur votre entreprise.",
+    "businessName": "Nom de l'entreprise",
+    "businessNamePlaceholder": "Entrez le nom de votre entreprise",
+    "businessType": "Type d'entreprise",
+    "businessTypeLabel": "Type",
+		"businessTypeOptions": {
+      "informational": "Informationnel",
+      "ecommerce": "E-commerce",
+      "restaurant": "Restaurant",
+      "services": "Services",
+      "portfolio": "Portefeuille",
+      "blog": "Blog"
+    },
+    "businessDescription": "Description de l'entreprise",
+    "businessDescriptionPlaceholder": "Décrivez votre entreprise, vos produits ou vos services...",
+    "websiteTitle": "Titre du site web (SEO)",
+    "websiteTitlePlaceholder": "Titre qui apparaît dans les résultats de recherche", 
+    "websiteDescription": "Description du site web (SEO)",
+    "websiteDescriptionPlaceholder": "Brève description pour les moteurs de recherche (160 caractères max)",
+    "websiteKeyphrase": "Mot-clé principal du site web (SEO)",
+    "websiteKeyphrasePlaceholder": "Mot-clé ou phrase principale pour le référencement",
+    "nextStep": "Étape suivante"
   }
 }

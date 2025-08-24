@@ -1,0 +1,42 @@
+{
+  "cache": {
+    "title": "rendi il tuo sito web più veloce con la cache",
+    "refresh": {
+      "title": "Svuota la cache del sito web",
+      "button": "Aggiorna il mio sito web",
+      "description": "Svuota la cache del tuo sito web per assicurarti che tutti vedano immediatamente l'ultima versione del tuo sito. Il tuo sito potrebbe essere un po' più lento per un momento mentre si ricostruisce, ma di solito è molto veloce.",
+      "lastCleared": "Ultimo svuotamento della cache: {date}",
+      "confirm": {
+        "title": "Svuotare la cache del sito web?",
+        "description": "Questo cancellerà tutti i file temporanei che aiutano il tuo sito web a caricare velocemente. Il tuo sito web potrebbe essere temporaneamente un po' più lento mentre ne crea di nuovi.",
+        "warning": "Attenzione: Il tuo sito web potrebbe caricare un po' più lentamente subito dopo aver svuotato la cache.",
+        "button": "Svuota cache ora"
+      }
+    },
+    "info": {
+      "title": "cos'è la cache del sito web e perché è importante?",
+      "description": "Pensa alla cache come a una scorciatoia per i visitatori del tuo sito web. Salva copie temporanee dei file del tuo sito web in modo che i visitatori di ritorno possano caricare il tuo sito molto più velocemente. Svuotare la cache è come premere un pulsante di aggiornamento, utile dopo aver apportato aggiornamenti in modo che i visitatori vedano le modifiche.",
+      "benefits": [
+        "Tempi di caricamento più rapidi per i tuoi visitatori",
+        "Il tuo sito web risulta più scattante e reattivo",
+        "Visitatori più felici che rimangono più a lungo sul tuo sito",
+        "Può anche aiutare un po' con il modo in cui i motori di ricerca vedono il tuo sito (amano i siti veloci!)"
+      ]
+    },
+    "status": {
+      "enabled": "La cache è attiva e aiuta il tuo sito a caricare velocemente",
+      "disabled": "La cache è attualmente disattivata",
+      "clearing": "Svuotamento cache in corso...",
+      "building": "Ricostruzione cache in corso..."
+    }
+  },
+  "issues": {
+    "title": "potenziali problemi dopo aver svuotato la cache",
+    "description": "A volte, dopo aver svuotato la cache, tu o i tuoi visitatori potreste notare alcune piccole cose. Non preoccuparti, di solito sono temporanee e si risolvono rapidamente mentre la cache si ricostruisce.",
+    "items": [
+      "Il tuo sito web potrebbe caricare leggermente più lentamente per i primi visitatori",
+      "Alcuni elementi potrebbero apparire leggermente diversi finché la cache non sarà completamente ricostruita",
+      "In rari casi, potrebbe essere necessario accedere di nuovo a determinate aree del tuo sito web"
+    ]
+  }
+}

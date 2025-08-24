@@ -18,6 +18,7 @@
     "businessName": "Business Name",
     "businessNamePlaceholder": "Enter your business name",
     "businessType": "Business Type",
+    "businessTypeLabel": "Type",
     "businessTypeOptions": {
       "informational": "Informational",
       "ecommerce": "E-commerce",

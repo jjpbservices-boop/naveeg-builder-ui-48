@@ -55,11 +55,11 @@
     "changeLanguage": "Changer de langue",
     "menu": "Menu",
     "preferences": "Préférences",
-    "lightMode": "Mode Clair",
-    "darkMode": "Mode Sombre",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre",
     "nav": {
       "features": "Fonctionnalités",
-      "pricing": "Tarifs",
+      "pricing": "tarifs",
       "gallery": "Galerie",
       "faq": "FAQ",
       "contact": "Contact"
@@ -68,7 +68,7 @@
   "footer": {
     "product": "Produit",
     "features": "Fonctionnalités",
-    "pricing": "Tarifs",
+    "pricing": "tarifs",
     "templates": "Modèles",
     "company": "Entreprise",
     "about": "À propos",
@@ -76,7 +76,7 @@
     "careers": "Carrières",
     "resources": "Ressources",
     "help": "Aide",
-    "documentation": "Documentation",
+    "documentation": "documentation",
     "support": "Support",
     "legal": "Légal",
     "privacy": "Confidentialité",

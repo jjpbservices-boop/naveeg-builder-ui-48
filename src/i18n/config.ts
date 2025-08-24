@@ -216,7 +216,7 @@ i18n
     },
 
     detection: {
-      order: ['querystring', 'path', 'localStorage', 'navigator', 'htmlTag', 'cookie'],
+      order: ['navigator', 'querystring', 'path', 'localStorage', 'htmlTag', 'cookie'],
       lookupQuerystring: 'lang',
       lookupLocalStorage: 'naveeg-language',
       lookupCookie: 'naveeg-language',

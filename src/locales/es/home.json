@@ -32,17 +32,17 @@
     ]
   },
   "features": {
-    "title": "Todo lo que necesitas para triunfar online",
+    "title": "Todo lo que necesitas para triunfar en línea",
     "subtitle": "Construido para empresas modernas que quieren estar en línea rápidamente",
     "cards": [
       {
-        "title": "Diseño mobile-first",
+        "title": "Diseño optimizado para móviles",
         "description": "Cada sitio web está optimizado para dispositivos móviles y se ve perfecto en todas partes",
         "icon": "smartphone"
       },
       {
         "title": "Optimización SEO incluida",
-        "description": "Características de SEO integradas para ayudar a que tu negocio sea encontrado en motores de búsqueda",
+        "description": "Características de SEO integradas para ayudar a que tu negocio sea encontrado en los motores de búsqueda",
         "icon": "search"
       },
       {
@@ -53,7 +53,7 @@
       {
         "title": "Hosting rápido y seguro",
         "description": "Seguridad de nivel empresarial con garantía de disponibilidad del 99.9%",
-        "icon": "shield"
+        "icon": "lock"
       },
       {
         "title": "Panel simple",
@@ -71,19 +71,19 @@
     "title": "¿Por qué elegir Naveeg?",
     "blocks": [
       {
-        "title": "Ahorra tiempo — lanza en minutos, no semanas",
-        "description": "No esperes semanas para tu sitio web. Ponte en línea en minutos con nuestro proceso de generación ultrarrápido."
+        "title": "Ahorra tiempo: lanza en minutos, no semanas",
+        "description": "No esperes semanas para tener tu sitio web listo. Ponte en línea en minutos con nuestro proceso de generación ultrarrápido."
       },
       {
-        "title": "No se requieren habilidades — construido para usuarios no técnicos",
+        "title": "No se requieren habilidades: construido para usuarios no técnicos",
         "description": "Construye sitios web profesionales sin escribir una sola línea de código. Nuestra IA maneja toda la complejidad técnica."
       },
       {
-        "title": "Crece online — optimizado para visibilidad y conversiones",
+        "title": "Crece en línea: optimizado para visibilidad y conversiones",
         "description": "Comienza simple y escala. Agrega características y funcionalidad conforme tu negocio crezca."
       }
     ]
-  },
+  },  
   "pricing": {
     "title": "Precios simples y transparentes",
     "subtitle": "Elige el plan que sea adecuado para tu negocio",
@@ -97,8 +97,8 @@
         "description": "Perfecto para pequeñas empresas que están comenzando",
         "features": ["1 Sitio Web", "Plantillas profesionales", "Optimización móvil", "Certificado SSL", "Herramientas SEO básicas", "Soporte por email", "5GB de almacenamiento", "Dominio personalizado"]
       },
-      {
-        "name": "Pro",
+      { 
+        "name": "pro",
         "price": "59",
         "currency": "€",
         "period": "/mes",
@@ -107,7 +107,7 @@
         "popular": true
       },
       {
-        "name": "Business",
+        "name": "business",
         "price": "99",
         "currency": "€",
         "period": "/mes",

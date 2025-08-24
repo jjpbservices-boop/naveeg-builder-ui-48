@@ -14,20 +14,88 @@
       "name": "Principiante",
       "description": "Perfecto para pequeñas empresas que están empezando",
       "price": { "monthly": 29, "annually": 24 },
-      "features": ["1 sitio web", "Hosting incluido", "Soporte por email", "SEO básico", "Certificado SSL", "Dominio personalizado", "Plantillas profesionales", "Optimización móvil"]
+      "features": [
+        "1 sitio web",
+        "Plantillas profesionales",
+        "Optimización móvil",
+        "Certificado SSL",
+        "Herramientas SEO básicas",
+        "Soporte por email",
+        "5GB de almacenamiento",
+        "Dominio personalizado"
+      ]
     },
     "pro": {
       "name": "Pro", 
       "description": "Ideal para empresas en crecimiento que necesitan más",
       "price": { "monthly": 59, "annually": 49 },
       "popular": true,
-      "features": ["3 sitios web", "Personalización avanzada", "Analíticas detalladas", "Soporte prioritario", "Funciones de e-commerce", "Eliminación de marca Naveeg", "Código personalizado", "Integraciones avanzadas", "Plantillas premium", "SEO avanzado"]
+      "features": [
+        "5 Sitios Web",
+        "Plantillas premium",
+        "Personalización avanzada",
+        "Soporte prioritario",
+        "Herramientas SEO avanzadas",
+        "Analíticas del sitio web",
+        "50GB de almacenamiento",
+        "Funcionalidades de e-commerce",
+        "Remover marca Naveeg",
+        "Inyección de código personalizado"
+      ]
     },
     "business": {
       "name": "Empresa",
-      "description": "Para agencias y empresas con necesidades avanzadas", 
+      "description": "Para agencias y empresas con necesidades avanzadas",
       "price": { "monthly": 99, "annually": 83 },
-      "features": ["Sitios web ilimitados", "Solución marca blanca", "Acceso API", "Soporte telefónico 24/7", "Analíticas avanzadas", "Almacenamiento ilimitado", "Colaboración multi-usuario", "Integraciones personalizadas", "Gestor de cuenta dedicado", "Garantía SLA"]
+      "features": [
+        "Sitios web ilimitados",
+        "Solución de marca blanca",
+        "Acceso a API",
+        "Soporte telefónico 24/7",
+        "Analíticas avanzadas",
+        "Almacenamiento ilimitado",
+        "Colaboración multi-usuario",
+        "Integraciones personalizadas",
+        "Gerente de cuenta dedicado",
+        "Garantía SLA"
+      ]
     }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes sobre precios",
+    "questions": [
+      {
+        "question": "¿puedo cambiar de plan en cualquier momento?",
+        "answer": "sí, puede actualizar o degradar su plan en cualquier momento. los cambios tienen efecto inmediatamente."
+      },
+      {
+        "question": "¿qué métodos de pago aceptan?",
+        "answer": "aceptamos las principales tarjetas de crédito, paypal y transferencias bancarias para los planes anuales."
+      },
+      {
+        "question": "¿hay una tarifa de configuración?",
+        "answer": "no, no hay tarifas de configuración ni costos ocultos. solo paga la suscripción mensual o anual."
+      },
+      {
+        "question": "¿ofrecen reembolsos?",
+        "answer": "ofrecemos una garantía de devolución de dinero de 30 días en todos los planes. sin hacer preguntas."
+      },
+      {
+        "question": "¿qué sucede si excedo mis límites?",
+        "answer": "le notificaremos antes de que alcance sus límites y le ayudaremos a actualizar a un plan adecuado."
+      }
+    ]
+  },
+  "enterprise": {
+    "title": "¿necesita algo personalizado?",
+    "subtitle": "contacte a nuestro equipo de ventas para soluciones empresariales",
+    "features": [
+      "precios personalizados",
+      "infraestructura dedicada",
+      "seguridad avanzada",
+      "soporte prioritario",
+      "integraciones personalizadas"
+    ],
+    "contact": "Contactar ventas"
   }
 }

@@ -1,0 +1,41 @@
+{
+  "title": "Haz que tu sitio web cargue más rápido con la caché",
+  "subtitle": "Mejora la velocidad de tu sitio web y la experiencia del visitante gestionando la caché. Es sencillo y no se necesitan conocimientos técnicos.",
+  "refresh": {
+    "title": "Borrar la caché del sitio web",
+    "button": "Actualizar mi sitio web",
+    "description": "Borra la caché de tu sitio web para asegurarte de que todo el mundo vea la última versión de tu sitio de inmediato. Tu sitio podría ser un poco más lento por un momento mientras se reconstruye, pero suele ser muy rápido.",
+    "lastCleared": "Última vez que se borró la caché: {date}",
+    "confirm": {
+      "title": "¿Borrar la caché del sitio web?",
+      "description": "Esto borrará todos los archivos temporales que ayudan a que tu sitio web cargue rápidamente. Tu sitio web podría ser un poco más lento temporalmente mientras crea nuevos.",
+      "warning": "Atención: Tu sitio web podría cargar un poco más lento justo después de borrar la caché.",
+      "button": "Borrar caché ahora"
+    }
+  },
+  "info": {
+    "title": "¿Qué es la caché del sitio web y por qué es importante?",
+    "description": "Piensa en la caché como un atajo para los visitantes de tu sitio web. Guarda copias temporales de los archivos de tu sitio web para que los visitantes que regresan puedan cargar tu sitio mucho más rápido. Borrar la caché es como pulsar un botón de actualización, útil después de hacer actualizaciones para que los visitantes vean los cambios.",
+    "benefits": [
+      "Tiempos de carga más rápidos para tus visitantes",
+      "Tu sitio web se siente más ágil y responsivo",
+      "Visitantes más felices que permanecen más tiempo en tu sitio",
+      "Incluso puede ayudar un poco con cómo los motores de búsqueda ven tu sitio (¡les gustan los sitios rápidos!)"
+    ]
+  },
+  "status": {
+    "enabled": "La caché está activa y funcionando",
+    "disabled": "La caché está desactivada",
+    "clearing": "Borrando caché...",
+    "building": "Reconstruyendo caché..."
+  }
+,
+"issues": {
+        "title": "posibles problemas al borrar la caché",
+        "description": "Al borrar la caché, hay algunas cosas que podrías notar temporalmente:",
+        "items": [
+          "Tu sitio web podría cargar un poco más lento al principio para los visitantes.",
+          "Es posible que los visitantes que hayan iniciado sesión en tu sitio necesiten volver a iniciar sesión."
+        ]
+}
+}

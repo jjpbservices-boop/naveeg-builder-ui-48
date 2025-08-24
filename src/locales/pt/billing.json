@@ -1,0 +1,69 @@
+{
+  "title": "Suas Informações de Faturamento - Simples e Seguras",
+  "subtitle": "Gerencie seus detalhes de faturamento e visualize suas faturas com facilidade. Todas as suas informações são mantidas seguras e criptografadas.",
+  "form": {
+    "accountType": "Tipo de Conta",
+    "individual": "Individual",
+    "company": "Empresa",
+    "legalName": "Nome Legal",
+    "legalNamePlaceholder": "Insira o nome legal completo ou nome da empresa",
+    "billingEmail": "E-mail de Faturamento",
+    "billingEmailPlaceholder": "faturamento@example.com",
+    "address": {
+      "line1": "Endereço Linha 1",
+      "line1Placeholder": "Nome da rua",
+      "line2": "Endereço Linha 2",
+      "line2Placeholder": "Apartamento, suíte, etc. (opcional)",
+      "city": "Cidade",
+      "cityPlaceholder": "Cidade",
+      "postalCode": "Código Postal",
+      "postalCodePlaceholder": "Código postal",
+      "country": "País"
+    },
+    "vat": {
+      "hasVatNumber": "Tenho um número de IVA da UE",
+      "vatNumber": "Número de IVA",
+      "vatNumberPlaceholder": "Insira o seu número de IVA",
+      "formatHint": "Formato: {format}"
+    },
+    "invoicing": {
+      "language": "Idioma da Faturação",
+      "currency": "Moeda de Exibição"
+    }
+  },
+  "taxSummary": {
+    "title": "Resumo de Impostos",
+    "reverseCharge": "A autoliquidação pode aplicar-se a transações B2B",
+    "localVat": "IVA local pode aplicar-se",
+    "vatRate": "Taxa de IVA: {rate}%"
+  },
+  "actions": {
+    "save": "Guardar Informações de Faturamento",
+    "previewInvoice": "Pré-visualizar Fatura"
+  },
+  "invoice": {
+    "title": "Pré-visualização da Fatura",
+    "invoiceNumber": "Fatura n.º {number}",
+    "date": "Data: {date}",
+    "dueDate": "Data de Vencimento: {date}",
+    "billTo": "Faturar para:",
+    "description": "Descrição",
+    "amount": "Valor",
+    "subtotal": "Subtotal",
+    "vat": "IVA ({rate}%)",
+    "total": "Total",
+    "paymentTerms": "Termos de Pagamento: Líquido 30 dias",
+    "thankYou": "Obrigado pelo seu negócio!"
+  },
+  "validation": {
+    "legalNameRequired": "O nome legal é obrigatório",
+    "emailRequired": "O e-mail de faturamento é obrigatório",
+    "invalidEmail": "Por favor, insira um endereço de e-mail válido",
+    "addressRequired": "O endereço é obrigatório",
+    "cityRequired": "A cidade é obrigatória",
+    "postalCodeRequired": "O código postal é obrigatório",
+    "countryRequired": "Por favor, selecione um país",
+    "vatNumberRequired": "O número de IVA é obrigatório quando selecionado",
+    "invalidVatNumber": "Por favor, insira um número de IVA válido"
+  }
+}

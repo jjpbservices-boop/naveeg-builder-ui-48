@@ -1,0 +1,46 @@
+{
+  "title": "La rete di sicurezza del tuo sito: backup facili",
+  "subtitle": "Proteggi la tua attività online con backup automatici. Ripristina il tuo sito in pochi clic, senza bisogno di competenze tecniche.",
+  "create": {
+    "title": "Crea un nuovo backup ora",
+    "button": "Crea Backup",
+    "description": "Crea facilmente un'istantanea completa del tuo sito web. Questo include tutti i tuoi contenuti, immagini, impostazioni e persino i tocchi personalizzati."
+  },
+  "list": {
+    "title": "La tua cronologia dei backup",
+    "empty": "Nessun backup creato ancora",
+    "emptyDescription": "Crea il tuo primo backup oggi stesso per garantire il futuro del tuo sito web.",
+    "columns": {
+      "date": "Data",
+      "size": "Dimensione",
+      "status": "Stato",
+      "actions": "Cosa puoi fare"
+    },
+    "status": {
+      "completed": "Completato",
+      "inProgress": "In corso",
+      "failed": "Fallito"
+    },
+    "actions": {
+      "restore": "Ripristina sito web",
+      "download": "Scarica backup",
+      "delete": "Elimina backup"
+    }
+  },
+  "restore": {
+    "title": "Ripristina il tuo sito web da un backup",
+    "description": "Seleziona un punto di backup e ripristina il tuo sito web a quella versione. È un modo semplice per tornare indietro se necessario. Questa azione non può essere annullata, quindi scegli con attenzione!",
+    "warning": "Importante: Questo sostituirà il contenuto attuale del tuo sito web con la versione del backup.",
+    "confirm": "Capisco che questo sostituirà il mio sito web attuale",
+    "button": "Ripristina Sito Web Ora"
+  },
+  "info": {
+    "title": "Cosa è Incluso nei Tuoi Backup?",
+    "items": [
+      "Tutti i contenuti e le pagine del tuo sito web",
+      "Le tue immagini e i file multimediali caricati",
+      "Tutte le impostazioni del tuo sito web e la sua configurazione",
+      "Qualsiasi codice o stile personalizzato che hai aggiunto"
+    ]
+  }
+}

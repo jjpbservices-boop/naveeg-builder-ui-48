@@ -1,4 +1,48 @@
 {
   "title": "Paramètres de sécurité",
-  "subtitle": "Gardez votre site web sécurisé avec des fonctionnalités de sécurité avancées."
+  "subtitle": "Gardez votre site web sécurisé grâce à des fonctionnalités de sécurité avancées.",
+  "ssl": {
+    "title": "Certificat SSL",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "description": "Les certificats SSL cryptent les données entre votre site web et les visiteurs.",
+    "expires": "Expire le : {date}",
+    "autoRenewal": "Renouvellement automatique activé"
+  },
+  "credentials": {
+    "title": "Identifiants WordPress",
+    "description": "Vos identifiants de connexion administrateur WordPress pour un accès direct.",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "copyUsername": "Copier le nom d'utilisateur",
+    "copyPassword": "Copier le mot de passe"
+  },
+  "features": {
+    "title": "Fonctionnalités de sécurité",
+    "firewall": {
+      "title": "Pare-feu d'application web",
+      "description": "Protège contre les attaques malveillantes et le trafic suspect"
+    },
+    "malwareScan": {
+      "title": "Analyse des logiciels malveillants",
+      "description": "Analyses régulières pour détecter et supprimer les codes malveillants"
+    },
+    "autoUpdates": {
+      "title": "Mises à jour automatiques",
+      "description": "Maintien automatique de WordPress et des plugins à jour"
+    }
+  },
+  "status": {
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "scanning": "Analyse en cours...",
+    "updating": "Mise à jour en cours..."
+  },
+  "lastScan": "Dernière analyse : {date}",
+  "threats": {
+    "none": "Aucune menace détectée",
+    "found": "{count, plural, =1 {1 menace trouvée} other {{count} menaces trouvées}}"
+  }
 }

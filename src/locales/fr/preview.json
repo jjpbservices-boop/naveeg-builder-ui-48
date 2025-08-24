@@ -5,5 +5,32 @@
     "mobile": "Mobile",
     "openSite": "Ouvrir le site",
     "openAdmin": "Ouvrir l'admin"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "menu": "Menu",
+    "events": "Événements",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+  "cta": {
+    "restaurant": {
+      "orderNow": "Commander maintenant",
+      "viewMenu": "Voir le menu"
+    },
+    "general": {
+      "contactUs": "Nous contacter",
+      "getQuote": "Demander un devis"
+    }
+  },
+  "placeholder": {
+    "hero": "Bienvenue chez {businessName}",
+    "subtitle": "Votre partenaire de confiance pour tous vos besoins en {businessType}",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "features": "Nos services",
+    "about": "À propos de nous",
+    "contact": "Prendre contact"
   }
 }

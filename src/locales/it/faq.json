@@ -1,14 +1,39 @@
 {
-  "title": "Domande Frequenti",
-  "subtitle": "Trova le risposte alle domande più comuni su Naveeg",
-  "items": [
+ "title": "domande frequenti",
+  "subtitle": "tutto quello che devi sapere su Naveeg",
+  "viewAll": "vedi tutte le FAQ",
+  "questions": [
     {
-      "question": "Quanto velocemente posso creare un sito web?",
-      "answer": "Puoi avere un sito web completamente funzionale in meno di 30 secondi. Descrivi semplicemente la tua attività e la nostra AI creerà un sito professionale per te."
+ "question": "quanto tempo ci vuole per generare un sito web?",
+ "answer": "la maggior parte dei siti web vengono generati in meno di 30 secondi. I siti complessi potrebbero richiedere fino a 2 minuti."
     },
     {
-      "question": "Ho bisogno di conoscenze tecniche?",
-      "answer": "Assolutamente no. Naveeg è progettato per tutti, indipendentemente dall'esperienza tecnica. La nostra AI gestisce tutta la programmazione e il design."
+ "question": "posso usare il mio nome di dominio?",
+ "answer": "sì! Puoi collegare il tuo dominio esistente o registrarne uno nuovo tramite la nostra piattaforma."
+    },
+    {
+ "question": "c'è una prova gratuita?",
+ "answer": "offriamo una prova gratuita di 14 giorni su tutti i piani. Nessuna carta di credito richiesta per iniziare."
+    },
+    {
+ "question": "ho bisogno di conoscenze tecniche?",
+ "answer": "assolutamente no! Naveeg è progettato per tutti, indipendentemente dal background tecnico. La nostra intelligenza artificiale gestisce tutti gli aspetti tecnici complessi mentre tu ti concentri sul contenuto della tua attività."
+    },
+    {
+ "question": "posso personalizzare il mio sito web dopo che è stato generato?",
+ "answer": "sì! Puoi personalizzare facilmente colori, font, layout, immagini e contenuti. Il nostro editor visivo semplifica le modifiche senza alcuna conoscenza di codifica."
+    },
+    {
+ "question": "il mio sito web è ottimizzato per i dispositivi mobili?",
+ "answer": "ogni sito web generato da Naveeg è automaticamente ottimizzato per i dispositivi mobili. Seguiamo i principi di progettazione mobile-first per garantire che il tuo sito appaia fantastico su tutte le dimensioni dello schermo."
+    },
+    {
+ "question": "che tipo di supporto offrite?",
+ "answer": "forniamo supporto via email 24 ore su 24, 7 giorni su 7 su tutti i piani, con supporto prioritario per gli utenti Pro e supporto telefonico per i clienti Business. Il nostro team è sempre pronto ad aiutarti ad avere successo."
+    },
+    {
+ "question": "posso vendere prodotti sul mio sito web?",
+ "answer": "sì! I nostri piani Pro e Business includono funzionalità di e-commerce. Puoi aggiungere prodotti, impostare l'elaborazione dei pagamenti e iniziare a vendere online immediatamente."
     },
     {
       "question": "Posso usare il mio dominio?",

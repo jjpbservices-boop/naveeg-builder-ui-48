@@ -9,11 +9,11 @@
     "colorPlaceholder": "#000000"
   },
   "fonts": {
-    "heading": "Police des titres",
+    "heading": "Police des titres", 
     "body": "Police du texte",
     "syne": "Syne",
     "playfair": "Playfair Display",
-    "montserrat": "Montserrat",
+    "montserrat": "montserrat",
     "inter": "Inter",
     "lato": "Lato",
     "roboto": "Roboto"
@@ -24,5 +24,19 @@
     "sampleHeading": "Bienvenue dans votre entreprise",
     "sampleText": "Voici comment votre contenu apparaîtra sur votre site web. Les couleurs et polices que vous choisissez seront appliquées sur tout votre site.",
     "sampleButton": "Commencer"
+  },
+  "sitemap": {
+    "title": "Structure de votre site web",
+    "addPage": "ajouter une page",
+    "maxPages": "max {count} pages",
+    "pageOptions": {
+      "edit": "modifier la page",
+      "delete": "supprimer la page"
+    },
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "gallery": "Galerie",
+    "contact": "Contact"
   }
 }

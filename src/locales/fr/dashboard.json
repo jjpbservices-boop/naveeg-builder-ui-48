@@ -1,4 +1,26 @@
 {
   "title": "Gestion du site web",
-  "subtitle": "Gérez les paramètres, les performances et la sécurité de votre site web depuis un seul endroit."
+  "subtitle": "Gérez les paramètres, les performances et la sécurité de votre site web depuis un seul endroit.",
+  "actions": {
+    "regenerateWebsite": "Regénérer le site web",
+    "visitSite": "Visiter le site",
+    "editSite": "Modifier le site (éditeur)",
+    "wpDashboard": "Tableau de bord WP"
+  },
+  "overview": {
+    "title": "Aperçu",
+    "url": "URL du site web",
+    "created": "Créé",
+    "lastModified": "Dernière modification",
+    "storage": "Utilisation du stockage",
+    "visitors": "Visiteurs",
+    "websiteInfo": "Informations sur le site web",
+    "siteTitle": "Titre du site",
+    "siteDescription": "Description du site",
+    "subdomain": "Sous-domaine",
+    "status": "Statut",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "maintenance": "Maintenance"
+  }
 }

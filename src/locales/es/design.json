@@ -1,0 +1,39 @@
+{
+  "title": "elige tu diseño",
+  "subtitle": "personaliza los colores, fuentes y páginas para que coincidan con tu marca",
+  "colors": {
+    "primary": "color principal",
+    "secondary": "color secundario",
+    "accent": "color de acento",
+    "darkBackground": "fondo oscuro",
+    "colorPlaceholder": "#000000"
+  },
+  "fonts": {
+    "heading": "fuente del título",
+    "body": "fuente del cuerpo",
+    "syne": "Syne",
+    "playfair": "Playfair Display",
+    "montserrat": "Montserrat",
+    "inter": "Inter",
+    "lato": "Lato",
+    "roboto": "Roboto"
+  },
+  "preview": {
+    "title": "vista previa en vivo",
+    "subtitle": "mira cómo se verá tu sitio web",
+    "sampleHeading": "bienvenido a tu negocio",
+    "sampleText": "así es como aparecerá tu contenido en tu sitio web. los colores y fuentes que elijas se aplicarán en todo tu sitio.",
+    "sampleButton": "empezar"
+  },
+  "sitemap": {
+    "title": "estructura de tu sitio web",
+    "home": "inicio",
+    "about": "acerca de",
+    "services": "servicios",
+    "gallery": "galería",
+    "contact": "contacto"
+  },
+  "actions": {
+    "saveAndPreview": "guardar y previsualizar"
+  }
+}

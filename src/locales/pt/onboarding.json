@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Crie o seu website em 30 segundos",
+  "heroSubtitle": "Não é necessário codificação. Basta descrever o seu negócio e ver o seu website profissional ganhar vida.",
+  "businessPlaceholder": "por exemplo, Escritório de Advocacia Smith & Associados",
+  "generateButton": "Gerar",
+  "describeTitle": "Descreva o seu negócio",
+  "describeSubtitle": "Conte-nos sobre o seu negócio e criaremos o website perfeito para si.",
+  "describeTextarea": "Digite o nome da sua empresa e descreva brevemente o seu negócio, produtos ou serviços. Seja o mais detalhado possível - quanto mais informações fornecer, melhor poderemos adaptar o seu website.",
+  "generateWebsiteButton": "Gerar o seu website",
+  "wizard": {
+    "step1": "Resumo do Site",
+    "step2": "Design",
+    "completed": "Concluído"
+  },
+  "brief": {
+    "title": "Fale-nos sobre o seu negócio",
+    "subtitle": "Ajude-nos a criar o website perfeito fornecendo algumas informações básicas sobre o seu negócio.",
+    "businessName": "Nome do negócio",
+    "businessNamePlaceholder": "Digite o nome do seu negócio",
+    "businessType": "Tipo de negócio",
+    "businessTypeLabel": "Tipo",
+    "businessTypeOptions": {      
+      "informational": "Informacional",
+      "ecommerce": "Comércio eletrónico",
+      "restaurant": "Restaurante",
+      "services": "Serviços",
+      "portfolio": "Portfólio",
+      "blog": "Blogue"
+    },
+    "businessDescription": "Descrição do negócio",
+    "businessDescriptionPlaceholder": "Descreva o seu negócio, produtos ou serviços...",
+    "websiteTitle": "Título do website (SEO)",
+    "websiteTitlePlaceholder": "Título que aparece nos resultados de pesquisa",
+    "websiteDescription": "Descrição do website (SEO)",
+    "websiteDescriptionPlaceholder": "Breve descrição para motores de pesquisa (máx. 160 caracteres)",
+    "websiteKeyphrase": "Palavra-chave do website (SEO)",
+    "websiteKeyphrasePlaceholder": "Palavra-chave ou frase principal para SEO",
+    "nextStep": "Próximo passo"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Tu red de seguridad web: copias de seguridad fáciles",
+  "subtitle": "Protege tu negocio online con copias de seguridad automáticas. Restaura tu sitio en pocos clics, sin necesidad de conocimientos técnicos.",
+  "create": {
+    "title": "Crear una nueva copia de seguridad ahora",
+    "button": "crear copia de seguridad",
+    "description": "crea fácilmente una instantánea completa de tu sitio web. esto incluye todo tu contenido, imágenes, configuraciones e incluso toques personalizados."
+  },
+  "list": {
+    "title": "Tu Historial de Copias de Seguridad",
+    "empty": "Aún no se han creado copias de seguridad",
+    "emptyDescription": "Crea hoy tu primera copia de seguridad para asegurar el futuro de tu sitio web.",
+    "columns": {
+      "date": "Fecha",
+      "size": "Tamaño",
+      "status": "Estado",
+      "actions": "Lo que puedes hacer"
+    },
+    "status": {
+      "completed": "Completada",
+      "inProgress": "En curso",
+      "failed": "Fallida"
+    },
+    "actions": {
+      "restore": "Restaurar Sitio Web",
+      "download": "Descargar Copia de Seguridad",
+      "delete": "Eliminar Copia de Seguridad"
+    }
+  },
+  "restore": {
+    "title": "Restaurar tu sitio web desde una copia de seguridad",
+    "description": "Selecciona un punto de copia de seguridad y restaura tu sitio web a esa versión. Es una forma sencilla de retroceder si lo necesitas. ¡Esto no se puede deshacer, así que elige con cuidado!",
+    "warning": "importante: esto reemplazará el contenido actual de tu sitio web con la versión de la copia de seguridad.",
+    "confirm": "Entiendo que esto reemplazará mi sitio web actual",
+    "button": "restaurar sitio web ahora"
+  },
+  "info": {
+    "title": "¿Qué Incluyen Tus Copias de Seguridad?",
+    "items": [
+      "Tus imágenes y archivos multimedia subidos",
+      "Todas las configuraciones de tu sitio web y cómo está configurado",
+      "Cualquier código o estilo personalizado que hayas añadido",
+      "El contenido de la base de datos de tu sitio web (cosas importantes como publicaciones y configuraciones)"
+    ]
+  }
+}

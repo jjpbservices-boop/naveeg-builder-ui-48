@@ -15,12 +15,12 @@ export interface OnboardingState {
   business_name: string;
   business_description: string;
   business_type: string;
-  
+
   // SEO fields (auto-generated)
   seo_title: string;
   seo_description: string;
   seo_keyphrase: string;
-  
+
   // Design preferences
   colors: {
     primary_color: string;
@@ -28,48 +28,79 @@ export interface OnboardingState {
     background_dark: string;
   };
   fonts: {
-    heading: 'Syne' | 'Playfair Display' | 'Montserrat' | 'Poppins' | 'Merriweather' | 'DM Sans' | 'Karla';
-    body: 'Inter' | 'Roboto' | 'Lato' | 'Open Sans' | 'Source Sans 3' | 'Noto Sans';
+    primary_font:
+      | 'Syne'
+      | 'Playfair Display'
+      | 'Montserrat'
+      | 'Poppins'
+      | 'Merriweather'
+      | 'DM Sans'
+      | 'Karla'
+      | 'Inter'
+      | 'Roboto'
+      | 'Lato'
+      | 'Open Sans'
+      | 'Source Sans 3'
+      | 'Noto Sans';
   };
-  
+
   // Site structure
   pages_meta: Page[];
   website_type: 'basic' | 'ecommerce';
-  
+
   // API response data
   website_id?: number;
   unique_id?: string;
   preview_url?: string;
   admin_url?: string;
-  
+
   // UI state
   currentStep: number;
   isLoading: boolean;
   error?: string;
 }
 
+// 🔑 Export reusable union type for website_type
+export type WebsiteType = OnboardingState['website_type'];
+
 export interface OnboardingActions {
-  // Update methods
-  updateBasicInfo: (info: Partial<Pick<OnboardingState, 'business_type' | 'business_name' | 'business_description'>>) => void;
-  updateSEO: (seo: Partial<Pick<OnboardingState, 'seo_title' | 'seo_description' | 'seo_keyphrase'>>) => void;
-  updateDesign: (design: Partial<Pick<OnboardingState, 'colors' | 'fonts'>>) => void;
+  updateBasicInfo: (
+    info: Partial<
+      Pick<
+        OnboardingState,
+        'business_type' | 'business_name' | 'business_description'
+      >
+    >
+  ) => void;
+  updateSEO: (
+    seo: Partial<
+      Pick<OnboardingState, 'seo_title' | 'seo_description' | 'seo_keyphrase'>
+    >
+  ) => void;
+  updateDesign: (
+    design: Partial<Pick<OnboardingState, 'colors' | 'fonts'>>
+  ) => void;
   updatePages: (pages: Page[]) => void;
-  updateWebsiteType: (type: 'basic' | 'ecommerce') => void;
-  updateApiData: (data: Partial<Pick<OnboardingState, 'website_id' | 'unique_id' | 'preview_url' | 'admin_url'>>) => void;
-  
-  // Page management
+  updateWebsiteType: (type: WebsiteType) => void;
+  updateApiData: (
+    data: Partial<
+      Pick<
+        OnboardingState,
+        'website_id' | 'unique_id' | 'preview_url' | 'admin_url'
+      >
+    >
+  ) => void;
+
   addPage: (page: Page) => void;
   removePage: (pageId: string) => void;
   updatePage: (pageId: string, updates: Partial<Page>) => void;
-  
-  // Flow control
+
   setCurrentStep: (step: number) => void;
   nextStep: () => void;
   prevStep: () => void;
   setLoading: (loading: boolean) => void;
   setError: (error?: string) => void;
-  
-  // Reset
+
   reset: () => void;
 }
 
@@ -84,12 +115,11 @@ const initialState: OnboardingState = {
   seo_keyphrase: '',
   colors: {
     primary_color: '#FF4A1C',
-    secondary_color: '#6B7280', 
+    secondary_color: '#6B7280',
     background_dark: '#000000',
   },
   fonts: {
-    heading: 'Poppins',
-    body: 'Inter',
+    primary_font: 'Inter',
   },
   pages_meta: [
     { id: '1', title: 'Home', type: 'home', isRequired: true, sections: [] },
@@ -106,63 +136,50 @@ export const useOnboardingStore = create<OnboardingStore>()(
   persist(
     (set, get) => ({
       ...initialState,
-      
-      updateBasicInfo: (info) => 
-        set((state) => ({ ...state, ...info })),
-      
-      updateSEO: (seo) => 
-        set((state) => ({ ...state, ...seo })),
-      
-      updateDesign: (design) => 
-        set((state) => ({ 
-          ...state, 
+
+      updateBasicInfo: (info) => set((state) => ({ ...state, ...info })),
+
+      updateSEO: (seo) => set((state) => ({ ...state, ...seo })),
+
+      updateDesign: (design) =>
+        set((state) => ({
+          ...state,
           colors: design.colors ? { ...state.colors, ...design.colors } : state.colors,
           fonts: design.fonts ? { ...state.fonts, ...design.fonts } : state.fonts,
         })),
-      
-      updatePages: (pages) => 
-        set({ pages_meta: pages }),
-      
-      updateWebsiteType: (website_type) => 
-        set({ website_type }),
-      
-      updateApiData: (data) => 
-        set((state) => ({ ...state, ...data })),
-      
-      addPage: (page) => 
-        set((state) => ({ 
-          pages_meta: [...state.pages_meta, page] 
+
+      updatePages: (pages) => set({ pages_meta: pages }),
+
+      updateWebsiteType: (website_type) => set({ website_type }),
+
+      updateApiData: (data) => set((state) => ({ ...state, ...data })),
+
+      addPage: (page) =>
+        set((state) => ({
+          pages_meta: [...state.pages_meta, page],
         })),
-      
-      removePage: (pageId) => 
-        set((state) => ({ 
-          pages_meta: state.pages_meta.filter(p => p.id !== pageId && !p.isRequired) 
+
+      removePage: (pageId) =>
+        set((state) => ({
+          pages_meta: state.pages_meta.filter(
+            (p) => !(p.id === pageId && !p.isRequired)
+          ),
         })),
-      
-      updatePage: (pageId, updates) => 
-        set((state) => ({ 
-          pages_meta: state.pages_meta.map(p => 
+
+      updatePage: (pageId, updates) =>
+        set((state) => ({
+          pages_meta: state.pages_meta.map((p) =>
             p.id === pageId ? { ...p, ...updates } : p
-          ) 
+          ),
         })),
-      
-      setCurrentStep: (currentStep) => 
-        set({ currentStep }),
-      
-      nextStep: () => 
-        set((state) => ({ currentStep: state.currentStep + 1 })),
-      
-      prevStep: () => 
+
+      setCurrentStep: (currentStep) => set({ currentStep }),
+      nextStep: () => set((state) => ({ currentStep: state.currentStep + 1 })),
+      prevStep: () =>
         set((state) => ({ currentStep: Math.max(0, state.currentStep - 1) })),
-      
-      setLoading: (isLoading) => 
-        set({ isLoading }),
-      
-      setError: (error) => 
-        set({ error }),
-      
-      reset: () => 
-        set(initialState),
+      setLoading: (isLoading) => set({ isLoading }),
+      setError: (error) => set({ error }),
+      reset: () => set(initialState),
     }),
     {
       name: 'onboarding-store',

@@ -1,0 +1,30 @@
+{
+  "title": "Análisis web simplificado",
+  "subtitle": "Entiende a tus visitantes y mejora el rendimiento de tu sitio web, incluso si no eres un experto en tecnología.",
+  "kpis": {
+    "visitors": "Visitantes del sitio web",
+    "pageViews": "Páginas vistas",
+    "bounceRate": "Tasa de rebote",
+    "timeOnSite": "Promedio de tiempo en el sitio",
+    "totalVisitors": "{count, plural, =0 {Aún no hay visitantes} =1 {1 visitante} other {{count} visitantes}}",
+    "totalPageViews": "{count, plural, =0 {Aún no hay páginas vistas} =1 {1 página vista} other {{count} páginas vistas}}"
+  },
+  "charts": {
+    "visitorsOverTime": "Visitantes a lo largo del tiempo",
+    "pageViewsOverTime": "Páginas Vistas a lo Largo del Tiempo",
+    "topPages": "Páginas Más Populares",
+    "trafficSources": "De Dónde Vienen los Visitantes",
+    "deviceTypes": "Dispositivos Usados por los Visitantes"
+  },
+  "periods": {
+    "7days": "Últimos 7 días",
+    "30days": "Últimos 30 días",
+    "90days": "Últimos 90 días",
+    "1year": "Último año"
+  },
+  "empty": {
+    "title": "Aún no hay datos de análisis",
+    "description": "¡No te preocupes! Los datos de análisis aparecerán aquí una vez que la gente empiece a visitar tu sitio web.",
+    "tip": "¡Comparte el enlace de tu sitio web para empezar a ver visitantes y datos!"
+  }
+}

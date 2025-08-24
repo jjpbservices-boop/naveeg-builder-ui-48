@@ -1,4 +1,34 @@
 {
   "title": "Paramètres de domaine",
-  "subtitle": "Gérez le domaine de votre site web et le certificat SSL."
+  "subtitle": "Gérez le domaine de votre site web et le certificat SSL.",
+  "current": {
+    "title": "Domaine actuel",
+    "copyUrl": "Copier l'URL",
+    "visitSite": "Visiter le site"
+  },
+  "custom": {
+    "title": "domaine personnalisé",
+    "subtitle": "Connectez votre propre domaine à votre site web",
+    "placeholder": "votredomaine.com",
+    "addButton": "Ajouter un domaine personnalisé",
+    "instructions": "Saisissez votre nom de domaine sans http:// ou https://",
+    "verification": {
+      "title": "vérification du domaine",
+      "description": "Pour vérifier la propriété de votre domaine, ajoutez cet enregistrement DNS :",
+      "type": "Type",
+      "name": "Nom",
+      "value": "Valeur",
+      "pending": "Vérification en cours...",
+      "verified": "Domaine vérifié",
+      "failed": "Échec de la vérification"
+    }
+  },
+  "ssl": {
+    "title": "certificat SSL",
+    "active": "Certificat SSL actif",
+    "inactive": "Certificat SSL inactif",
+    "description": "Les certificats SSL chiffrent la connexion entre votre site web et vos visiteurs, garantissant la sécurité de leurs données. C'est essentiel pour instaurer la confiance et améliorer votre classement dans les moteurs de recherche.",
+    "autoRenewal": "Renouvellement automatique activé"
+  }
 }
+

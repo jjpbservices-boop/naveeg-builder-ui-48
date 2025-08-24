@@ -1,49 +1,52 @@
 {
   "title": "Questions fréquemment posées",
-  "subtitle": "Tout ce que vous devez savoir sur Naveeg",
+  "subtitle": "Tout ce que vous devez savoir sur naveeg",
   "questions": [
     {
-      "question": "À quelle vitesse puis-je obtenir mon site web ?",
-      "answer": "En quelques minutes ! Notre générateur alimenté par l'IA peut créer votre site web professionnel en moins de 30 secondes pour les sites simples, et jusqu'à 2 minutes pour les sites plus complexes."
+      "question": "Combien de temps faut-il pour générer un site web ?",
+      "answer": "La plupart des sites web sont générés en moins de 30 secondes. Les sites plus complexes avec une personnalisation poussée peuvent prendre jusqu'à 2 minutes. Notre IA travaille incroyablement vite pour vous mettre en ligne le plus rapidement possible."
     },
     {
-      "question": "Ai-je besoin de compétences techniques ?",
-      "answer": "Pas du tout ! Naveeg est conçu pour les utilisateurs non techniques. Décrivez simplement votre entreprise et nous nous occupons de tout le reste. Aucun codage ou connaissance technique requise."
+      "question": "Puis-je utiliser mon propre nom de domaine ?",
+      "answer": "Absolument ! Vous pouvez connecter votre domaine existant ou en enregistrer un nouveau directement via notre plateforme. Nous vous fournissons des conseils étape par étape pour vous aider à tout configurer."
     },
     {
-      "question": "Puis-je utiliser mon propre domaine ?",
-      "answer": "Oui, c'est facile ! Vous pouvez connecter votre domaine existant ou en enregistrer un nouveau directement via notre plateforme. Nous gérons toute la configuration technique pour vous."
+      "question": "Existe-t-il un essai gratuit ?",
+      "answer": "Oui, nous offrons un essai gratuit de 14 jours sur tous les plans. Vous pouvez explorer toutes les fonctionnalités sans fournir de carte de crédit. Aucun engagement, aucun frais caché."
     },
     {
-      "question": "L'hébergement est-il inclus ?",
-      "answer": "Oui, entièrement géré ! Tous nos plans incluent un hébergement rapide et sécurisé avec une garantie de disponibilité de 99,9%. Pas besoin de s'inquiéter des serveurs ou de la maintenance."
+      "question": "Ai-je besoin de connaissances techniques ?",
+      "answer": "Pas du tout ! Naveeg est conçu pour tout le monde, quel que soit le niveau technique. Notre IA gère tous les aspects techniques complexes pendant que vous vous concentrez sur le contenu de votre entreprise."
     },
     {
-      "question": "Ai-je droit à un support ?",
-      "answer": "Support par email et chat inclus ! Notre équipe dédiée est là pour vous aider avec toute question. Les plans Pro et Business bénéficient d'un support prioritaire avec des temps de réponse plus rapides."
+      "question": "Puis-je personnaliser mon site web après sa génération ?",
+      "answer": "Oui ! Vous pouvez facilement personnaliser les couleurs, les polices, les mises en page, les images et le contenu. Notre éditeur visuel simplifie les modifications sans aucune connaissance en codage."
     },
     {
-      "question": "Puis-je mettre à niveau plus tard ?",
-      "answer": "Oui, à tout moment ! Vous pouvez facilement passer à un plan supérieur quand votre entreprise grandit. Les changements prennent effet immédiatement et vous n'êtes facturé que pour la différence."
+      "question": "Mon site web est-il adapté aux mobiles ?",
+      "answer": "Chaque site web généré par Naveeg est automatiquement optimisé pour les appareils mobiles. Nous suivons les principes de conception axée sur les mobiles pour garantir que votre site soit magnifique sur toutes les tailles d'écran."
     },
     {
-      "question": "Mon site est-il adapté aux mobiles ?",
-      "answer": "Toujours responsive ! Tous les sites créés avec Naveeg sont automatiquement optimisés pour les appareils mobiles et tablettes. Votre site sera parfait sur tous les écrans."
+      "question": "Quel type de support offrez-vous ?",
+      "answer": "Nous fournissons un support par email 24/7 sur tous les plans, avec un support prioritaire pour les utilisateurs Pro et un support téléphonique pour les clients Business. Notre équipe est toujours prête à vous aider à réussir."
     },
     {
-      "question": "Puis-je annuler ?",
-      "answer": "Oui, annulez à tout moment ! Il n'y a pas de contrat à long terme. Vous pouvez annuler votre abonnement à tout moment depuis votre tableau de bord."
+      "question": "Puis-je vendre des produits sur mon site web ?",
+      "answer": "Oui ! Nos plans Pro et Business incluent des fonctionnalités e-commerce. Vous pouvez ajouter des produits, configurer le traitement des paiements et commencer à vendre en ligne immédiatement."
     },
     {
-      "question": "Qu'en est-il du SEO ?",
-      "answer": "Optimisation SEO intégrée ! Tous les sites incluent des fonctionnalités SEO essentielles comme les méta-tags, les sitemaps et les structures URL optimisées pour aider votre site à être trouvé sur Google."
+      "question": "Dans quelle mesure les sites web sont-ils sécurisés ?",
+      "answer": "La sécurité est notre priorité absolue. Tous les sites web incluent des certificats SSL, des mises à jour de sécurité régulières et une protection contre les menaces courantes. Nous maintenons une disponibilité de 99,9 % avec une infrastructure de niveau entreprise."
     },
     {
-      "question": "Y a-t-il un essai gratuit ?",
-      "answer": "Oui, essai gratuit de 14 jours sur un sous-domaine Naveeg, aucune carte bancaire requise ! Testez toutes les fonctionnalités et voyez si Naveeg convient à votre entreprise avant de vous engager."
+      "question": "Puis-je exporter mon site web ?",
+      "answer": "Les clients du plan Business peuvent exporter le code de leur site web et l'héberger où ils le souhaitent. Cela vous donne une liberté et un contrôle total sur votre présence en ligne."
     }
   ],
-  "stillHaveQuestions": "Vous avez encore des questions ?",
-  "contactSupport": "Contacter le support",
-  "browseHelpCenter": "Parcourir le centre d'aide"
+  "stillHaveQuestions": {
+    "title": "Toujours des questions ?",
+    "subtitle": "Vous ne trouvez pas la réponse que vous cherchez ? notre équipe amicale est là pour vous aider.",
+    "contactSupport": "Contacter le support",
+    "browseHelp": "Parcourir le centre d'aide"
+  }
 }

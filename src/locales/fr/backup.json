@@ -1,4 +1,41 @@
 {
-  "title": "Sauvegardes du site web",
-  "subtitle": "Protégez votre site web avec des sauvegardes régulières."
+  "title": "Le filet de sécurité de votre site web : sauvegardes faciles",
+  "subtitle": "Protégez votre entreprise en ligne avec des sauvegardes automatiques. restaurez votre site en quelques clics, aucune compétence technique requise.",
+  "create": {
+    "title": "Créer une nouvelle sauvegarde maintenant",
+    "button": "Créer une sauvegarde",
+    "description": "Créez facilement un instantané complet de votre site web. Cela inclut tout votre contenu, vos images, vos paramètres et même les touches personnalisées."
+  },
+  "list": {
+    "title": "Votre historique de sauvegardes",
+    "empty": "Aucune sauvegarde créée pour l'instant",
+    "emptyDescription": "Créez votre première sauvegarde aujourd'hui pour sécuriser l'avenir de votre site web.",
+    "columns": {
+      "date": "Date",
+      "size": "Taille",
+      "status": "Statut",
+      "actions": "Ce que vous pouvez faire"
+    }, 
+    "status": {
+      "completed": "Terminé",
+      "inProgress": "en cours",
+      "failed": "Échoué"
+    },
+    "actions": {
+      "restore": "Restaurer le site web",
+      "download": "Télécharger la sauvegarde",
+      "delete": "Supprimer la sauvegarde"
+    }
+  },
+  "restore": {
+    "title": "Restaurer votre site web à partir d'une sauvegarde",
+    "description": "Sélectionnez un point de sauvegarde et restaurez votre site web à cette version. c'est un moyen simple de revenir en arrière si vous en avez besoin. cela ne peut pas être annulé, alors choisissez avec soin !",
+    "warning": "Important : Cela remplacera le contenu actuel de votre site web par la version de sauvegarde.",
+    "confirm": "Je comprends que cela remplacera mon site web actuel",
+    "button": "Restaurer le site web maintenant"
+  },
+  "info": {
+    "title": "Qu'est-ce qui est inclus dans vos sauvegardes ?",
+    "items": ["Tout le contenu et les pages de votre site web", "Vos images et fichiers multimédias téléchargés", "Tous les paramètres de votre site web et sa configuration", "Tout code personnalisé ou style que vous avez ajouté", "Le contenu de la base de données de votre site web (éléments importants comme les publications et les paramètres)"]
+  }
 }

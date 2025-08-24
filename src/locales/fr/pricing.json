@@ -1,14 +1,14 @@
 {
-  "title": "Tarification",
-  "subtitle": "Choisissez le plan parfait pour votre entreprise",
+  "title": "Tarification simple et transparente",
+  "subtitle": "Choisissez le plan adapté à votre entreprise",
   "monthly": "Mensuel",
   "annually": "Annuel",
   "save": "2 mois gratuits",
   "mostPopular": "Le plus populaire",
   "getStarted": "Commencer",
-  "contactSales": "Contacter les ventes",
+  "contactSales": "Contacter le service commercial",
   "freeTrial": "Essai gratuit de 14 jours",
-  "noCredit": "Aucune carte bancaire requise",
+  "noCredit": "Aucune carte de crédit requise",
   "plans": {
     "starter": {
       "name": "Starter",
@@ -19,39 +19,39 @@
       },
       "features": [
         "1 site web",
-        "Hébergement inclus",
-        "Support par email",
-        "SEO de base",
-        "Certificat SSL",
-        "Domaine personnalisé",
         "Modèles professionnels",
-        "Optimisation mobile"
+        "Optimisation mobile",
+        "Certificat SSL",
+        "Outils SEO de base",
+        "Support par email",
+        "5 Go de stockage",
+        "Nom de domaine personnalisé"
       ]
     },
     "pro": {
       "name": "Pro",
-      "description": "Idéal pour les entreprises en croissance qui ont besoin de plus",
+      "description": "Idéal pour les entreprises en croissance qui ont besoin de plus de fonctionnalités",
       "price": {
         "monthly": 59,
         "annually": 49
       },
       "popular": true,
       "features": [
-        "3 sites web",
+        "5 sites web",
+        "Modèles premium",
         "Personnalisation avancée",
-        "Analytiques détaillées",
         "Support prioritaire",
+        "Outils SEO avancés",
+        "Analyse du site web",
+        "50 Go de stockage",
         "Fonctionnalités e-commerce",
         "Suppression du branding Naveeg",
-        "Injection de code personnalisé",
-        "Intégrations avancées",
-        "Modèles premium",
-        "Optimisation SEO avancée"
+        "Injection de code personnalisé"
       ]
     },
     "business": {
       "name": "Business",
-      "description": "Pour les agences et entreprises avec des besoins avancés",
+      "description": "Pour les agences et entreprises ayant des besoins avancés",
       "price": {
         "monthly": 99,
         "annually": 83
@@ -59,7 +59,7 @@
       "features": [
         "Sites web illimités",
         "Solution marque blanche",
-        "Accès API",
+        "Accès à l'API",
         "Support téléphonique 24/7",
         "Analytiques avancées",
         "Stockage illimité",
@@ -69,6 +69,10 @@
         "Garantie SLA"
       ]
     }
+  },
+  "comparePlans": {
+    "title": "Comparer les plans",
+    "button": "Voir toutes les fonctionnalités"
   },
   "faq": {
     "title": "FAQ Tarification",
@@ -100,7 +104,7 @@
     "subtitle": "Contactez notre équipe commerciale pour des solutions entreprise",
     "features": [
       "Tarification personnalisée",
-      "Infrastructure dédiée",
+      "Infrastructure dédiée", 
       "Sécurité avancée",
       "Support prioritaire",
       "Intégrations personnalisées"

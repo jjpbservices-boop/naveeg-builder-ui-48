@@ -1,0 +1,41 @@
+{
+  "title": "Espaço de trabalho",
+  "subtitle": "Gere todos os seus websites e colabore com a sua equipa.",
+  "header": {
+    "workspaceName": "Meu espaço de trabalho",
+    "addCollaborator": "Adicionar colaborador"
+  },
+  "websites": {
+    "title": "Os seus websites",
+    "empty": "Ainda não tem websites",
+    "emptyDescription": "Crie o seu primeiro website para começar.",
+    "addWebsite": "Adicionar website",
+    "manage": "Gerir",
+    "created": "Criado {date}",
+    "lastUpdated": "Atualizado {date}",
+    "status": {
+      "live": "Ao vivo",
+      "draft": "Rascunho",
+      "maintenance": "Manutenção"
+    }
+  },
+  "collaborators": {
+    "title": "Membros da equipa",
+    "invite": "Convidar membro da equipa",
+    "email": "Endereço de email",
+    "role": "Função",
+    "roles": {
+      "owner": "Proprietário",
+      "admin": "Administrador",
+      "editor": "Editor",
+      "viewer": "Espectador"
+    },
+    "pending": "Convite pendente",
+    "remove": "Remover acesso"
+  },
+  "stats": {
+    "totalWebsites": "{count, plural, =0 {Nenhum website} =1 {1 website} other {{count} websites}}",
+    "totalVisitors": "{count, plural, =0 {Nenhum visitante} =1 {1 visitante} other {{count} visitantes}}",
+    "thisMonth": "este mês"
+  }
+}

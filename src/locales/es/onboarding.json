@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Crea tu sitio web en 30 segundos",
+  "heroSubtitle": "No se requiere codificación. Simplemente describe tu negocio y observa cómo tu sitio web profesional cobra vida.",
+  "businessPlaceholder": "por ejemplo, bufete de abogados Smith & Asociados",
+  "generateButton": "Generar",
+  "describeTitle": "Describe tu negocio",
+  "describeSubtitle": "Cuéntanos sobre tu negocio y crearemos el sitio web perfecto para ti.",
+  "describeTextarea": "Escribe el nombre de tu negocio y describe brevemente tus productos, servicios o negocio. Sé tan detallado como desees: cuanta más información proporciones, mejor podremos adaptar tu sitio web.",
+  "generateWebsiteButton": "Genera tu sitio web",
+  "wizard": {
+    "step1": "Resumen del sitio",
+    "step2": "Diseño",
+    "completed": "Completado"
+  },
+  "brief": {
+    "title": "Cuéntanos sobre tu negocio",
+    "subtitle": "Ayúdanos a crear el sitio web perfecto proporcionando información básica sobre tu negocio.",
+    "businessName": "Nombre del negocio",    
+    "businessTypeLabel": "Tipo",
+    "businessNamePlaceholder": "Introduce el nombre de tu negocio",
+    "businessType": "Tipo de negocio",
+    "businessTypeOptions": {
+      "informational": "Informativo",
+      "ecommerce": "Comercio electrónico",
+      "restaurant": "Restaurante",
+      "services": "Servicios",
+      "portfolio": "Portafolio", 
+      "blog": "Blog"
+    },
+    "businessDescription": "descripción del negocio",
+    "businessDescriptionPlaceholder": "Describe tu negocio, productos o servicios...",
+    "websiteTitle": "título del sitio web (seo)",
+    "websiteTitlePlaceholder": "Título que aparece en los resultados de búsqueda",
+    "websiteDescription": "descripción del sitio web (seo)",
+    "websiteDescriptionPlaceholder": "Breve descripción para motores de búsqueda (máx. 160 caracteres)",
+    "websiteKeyphrase": "frase clave del sitio web (seo)",
+    "websiteKeyphrasePlaceholder": "Palabra clave o frase principal para SEO",
+    "nextStep": "Siguiente paso"
+  }
+}

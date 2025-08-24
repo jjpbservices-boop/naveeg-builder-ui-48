@@ -1,8 +1,8 @@
 {
-  "title": "Analytics",
-  "subtitle": "Track your website's performance and visitor behavior.",
+  "title": "Website Analytics Made Simple",
+  "subtitle": "Understand your visitors and improve your website's performance, even if you're not a tech expert.",
   "kpis": {
-    "visitors": "Visitors",
+    "visitors": "Website Visitors",
     "pageViews": "Page Views",
     "bounceRate": "Bounce Rate",
     "timeOnSite": "Avg. Time on Site",
@@ -13,8 +13,8 @@
     "visitorsOverTime": "Visitors Over Time",
     "pageViewsOverTime": "Page Views Over Time",
     "topPages": "Top Pages",
-    "trafficSources": "Traffic Sources",
-    "deviceTypes": "Device Types"
+    "trafficSources": "Where Visitors Come From",
+    "deviceTypes": "Devices Used by Visitors"
   },
   "periods": {
     "7days": "Last 7 days",
@@ -24,7 +24,7 @@
   },
   "empty": {
     "title": "No data available",
-    "description": "Analytics data will appear here once your website starts receiving visitors.",
-    "tip": "Share your website to start collecting data!"
+    "description": "Don't worry! Analytics data will show up here once people start visiting your website.",
+    "tip": "Share your website link to start seeing visitors and data!"
   }
 }

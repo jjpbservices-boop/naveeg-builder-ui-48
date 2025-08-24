@@ -45,8 +45,8 @@
     "menu": "Menu",
     "gallery": "Galleria",
     "events": "Eventi",
-    "contact": "Contatti",
-    "blog": "Blog",
+    "contact": "contatti",
+    "blog": "blog",
     "portfolio": "Portfolio"
   },
   "header": {
@@ -58,8 +58,8 @@
     "lightMode": "Modalità Chiara",
     "darkMode": "Modalità Scura",
     "nav": {
-      "features": "Funzionalità",
-      "pricing": "Prezzi",
+      "features": "funzionalità",
+      "pricing": "prezzi",
       "gallery": "Galleria",
       "faq": "FAQ",
       "contact": "Contatti"
@@ -67,14 +67,14 @@
   },
   "footer": {
     "product": "Prodotto",
-    "features": "Funzionalità",
-    "pricing": "Prezzi",
-    "templates": "Template",
+    "features": "funzionalità",
+    "pricing": "prezzi",
+    "templates": "template",
     "company": "Azienda",
-    "about": "Chi siamo",
-    "blog": "Blog",
+    "about": "chi siamo",
+    "blog": "blog",
     "careers": "Carriere",
-    "resources": "Risorse",
+    "resources": "risorse",
     "help": "Aiuto",
     "documentation": "Documentazione",
     "support": "Supporto",

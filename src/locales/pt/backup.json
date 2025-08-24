@@ -1,0 +1,47 @@
+{
+  "title": "sua rede de segurança do site: backups fáceis",
+  "subtitle": "Proteja seu negócio online com backups automáticos. Restaure seu site com poucos cliques, sem precisar de habilidades técnicas.",
+  "create": {
+    "title": "criar novo backup agora",
+    "button": "Criar Backup",
+    "description": "Crie facilmente um instantâneo completo do seu site. Isso inclui todo o seu conteúdo, imagens, configurações e até mesmo toques personalizados."
+  },
+  "list": {
+    "title": "Seu Histórico de Backups",
+    "empty": "Nenhum backup criado ainda",
+    "emptyDescription": "Crie seu primeiro backup hoje para garantir o futuro do seu site.",
+    "columns": {
+      "date": "Data",
+      "size": "Tamanho",
+      "status": "status",
+      "actions": "O que você pode fazer"
+    },
+    "status": {
+      "completed": "Concluído",
+      "inProgress": "Em Progresso",
+      "failed": "Falhou"
+    },
+    "actions": {
+      "restore": "Restaurar Site",
+      "download": "Baixar Backup",
+      "delete": "Excluir Backup"
+    }
+  },
+  "restore": {
+    "title": "restaurar seu site a partir de um backup",
+    "description": "Selecione um ponto de backup e restaure seu site para essa versão. É uma maneira simples de voltar se precisar. Isso não pode ser desfeito, então escolha com cuidado!",
+    "warning": "Importante: Isso substituirá o conteúdo atual do seu site pela versão do backup.",
+    "confirm": "Entendo que isso substituirá meu site atual",
+    "button": "Restaurar Site Agora"
+  },
+  "info": {
+    "title": "o que está incluído em seus backups?",
+    "items": [
+      "Todo o conteúdo e páginas do seu site",
+      "Suas imagens e arquivos de mídia enviados",
+      "Todas as configurações do seu site e como ele está configurado",
+      "Qualquer código ou estilo personalizado que você adicionou",
+      "Conteúdo do banco de dados do seu site (coisas importantes como postagens e configurações)"
+    ]
+  }
+}

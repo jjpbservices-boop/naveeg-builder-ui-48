@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Crea il tuo sito web in 30 secondi",
+  "heroSubtitle": "Nessun codice richiesto. Descrivi semplicemente la tua attività e guarda il tuo sito web professionale prendere vita.",
+  "businessPlaceholder": "es: Studio Legale Rossi & Associati",
+  "generateButton": "Genera",
+  "describeTitle": "Descrivi la tua attività",
+  "describeSubtitle": "Parlaci della tua attività e creeremo il sito web perfetto per te.",
+  "describeTextarea": "Digita il nome della tua attività e descrivi brevemente la tua attività, i prodotti o i servizi. Sii dettagliato quanto vuoi: maggiori informazioni fornisci, meglio possiamo personalizzare il tuo sito web.",
+  "generateWebsiteButton": "Genera il tuo sito web",
+  "wizard": {
+    "step1": "Brief del sito",
+    "step2": "Design",
+    "completed": "Completato"
+  },
+  "brief": {
+    "title": "Parlaci della tua attività",
+    "subtitle": "Aiutaci a creare il sito web perfetto fornendo alcune informazioni di base sulla tua attività.",
+    "businessName": "Nome attività",
+    "businessNamePlaceholder": "Inserisci il nome della tua attività",
+    "businessType": "Tipo di attività",
+    "businessTypeLabel": "Tipo",
+    "businessTypeOptions": {
+      "informational": "Informativo",
+      "ecommerce": "E-commerce",
+      "restaurant": "Ristorante",
+      "services": "Servizi",
+      "portfolio": "Portfolio",
+      "blog": "Blog"
+    },
+    "businessDescription": "Descrizione attività",
+    "businessDescriptionPlaceholder": "Descrivi la tua attività, i prodotti o i servizi...", 
+    "websiteTitle": "titolo del sito web (SEO)",
+    "websiteTitlePlaceholder": "Titolo che appare nei risultati di ricerca",
+    "websiteDescription": "descrizione del sito web (SEO)",
+    "websiteDescriptionPlaceholder": "Breve descrizione per i motori di ricerca (max 160 caratteri)",
+    "websiteKeyphrase": "parola chiave del sito web (SEO)",
+    "websiteKeyphrasePlaceholder": "Parola chiave o frase principale per il SEO",
+    "nextStep": "Passaggio successivo"
+  }
+}

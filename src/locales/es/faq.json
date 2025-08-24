@@ -1,6 +1,6 @@
 {
-  "title": "Preguntas Frecuentes",
-  "subtitle": "Encuentra respuestas a las preguntas más comunes sobre Naveeg",
+  "title": "Preguntas frecuentes",
+  "subtitle": "Todo lo que necesitas saber sobre Naveeg",
   "items": [
     {
       "question": "¿Qué tan rápido puedo crear un sitio web?",
@@ -44,8 +44,9 @@
     }
   ],
   "stillHaveQuestions": {
-    "title": "¿Aún tienes preguntas?",
-    "description": "No pudimos responder tu pregunta? Nuestro equipo de soporte está aquí para ayudarte.",
-    "contactButton": "Contactar soporte"
+    "title": "Aún tienes preguntas?",
+    "subtitle": "No pudimos encontrar la respuesta que buscas? Nuestro equipo amigable está aquí para ayudar.",
+    "contactSupport": "Contactar soporte",
+    "browseHelp": "Explorar centro de ayuda"
   }
 }

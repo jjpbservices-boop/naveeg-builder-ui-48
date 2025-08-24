@@ -1,15 +1,15 @@
 {
-  "title": "Website Backups",
-  "subtitle": "Keep your website safe with regular backups. Restore your site anytime.",
+ "title": "Your Website Safety Net: Easy Backups",
+ "subtitle": "Protect your online business with automatic backups. Restore your site in a few clicks, no technical skills needed.",
   "create": {
-    "title": "Create New Backup",
+    "title": "Create a New Backup Now",
     "button": "Create Backup",
-    "description": "Create a complete backup of your website including all content, images, and settings."
+    "description": "Easily create a complete snapshot of your website. This includes all your content, images, settings, and even custom touches."
   },
   "list": {
-    "title": "Backup History",
-    "empty": "No backups found",
-    "emptyDescription": "Create your first backup to protect your website data.",
+    "title": "Your Backup History",
+    "empty": "No backups created yet",
+    "emptyDescription": "Create your first backup today to secure your website's future.",
     "columns": {
       "date": "Date",
       "size": "Size",
@@ -22,20 +22,20 @@
       "failed": "Failed"
     },
     "actions": {
-      "restore": "Restore",
-      "download": "Download",
-      "delete": "Delete"
+      "restore": "Restore Website",
+      "download": "Download Backup",
+      "delete": "Delete Backup"
     }
   },
   "restore": {
-    "title": "Restore Website",
-    "description": "This will restore your website to the selected backup point. This action cannot be undone.",
-    "warning": "Warning: This will overwrite your current website content.",
+    "title": "Restore Your Website from a Backup",
+    "description": "Select a backup point and restore your website to that version. It's a simple way to go back if you need to. This can't be undone, so choose carefully!",
+    "warning": "Important: This will replace your current website content with the backup version.",
     "confirm": "I understand this will replace my current website",
-    "button": "Restore Website"
+    "button": "Restore Website Now"
   },
   "info": {
-    "title": "What's included in backups?",
+    "title": "What's Included in Your Backups?",
     "items": [
       "All website content and pages",
       "Images and media files",

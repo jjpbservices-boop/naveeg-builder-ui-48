@@ -1,0 +1,15 @@
+{
+  "title": "A construir o seu website",
+  "subtitle": "Aguarde enquanto criamos o seu website profissional...",
+  "steps": {
+    "creating": "A criar a estrutura do website",
+    "sitemap": "A gerar mapa do site e navegação",
+    "designing": "A desenhar páginas com as suas preferências",
+    "navigation": "A configurar navegação e menus",
+    "optimizing": "A otimizar para todos os dispositivos",
+    "speed": "A melhorar a velocidade e desempenho do website",
+    "finalizing": "A finalizar layout e conteúdo"
+  },
+  "estimatedTime": "Tempo estimado: {seconds} segundos restantes",
+  "almostDone": "Quase a terminar! Apenas mais alguns segundos..."
+}

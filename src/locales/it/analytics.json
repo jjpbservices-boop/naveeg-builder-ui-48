@@ -1,0 +1,30 @@
+{
+  "title": "statistiche del sito web semplificate",
+  "subtitle": "Comprendi i tuoi visitatori e migliora le prestazioni del tuo sito web, anche se non sei un esperto di tecnologia.",
+  "kpis": {
+    "visitors": "Visitatori del sito",
+    "pageViews": "pagine viste",
+    "bounceRate": "frequenza di rimbalzo",
+    "timeOnSite": "tempo medio sul sito",
+    "totalVisitors": "{count, plural, =0 {Ancora nessun visitatore} =1 {1 visitatore} other {{count} visitatori}}",
+    "totalPageViews": "{count, plural, =0 {Ancora nessuna pagina vista} =1 {1 pagina vista} other {{count} pagine viste}}"
+  },
+  "charts": {
+    "visitorsOverTime": "visitatori nel tempo",
+    "pageViewsOverTime": "pagine viste nel tempo",
+    "topPages": "pagine più popolari",
+    "trafficSources": "da dove provengono i visitatori",
+    "deviceTypes": "dispositivi utilizzati dai visitatori"
+  },
+  "periods": {
+    "7days": "Ultimi 7 giorni",
+    "30days": "Ultimi 30 giorni",
+    "90days": "Ultimi 90 giorni",
+    "1year": "Ultimo anno"
+  },
+  "empty": {
+    "title": "ancora nessun dato analitico",
+    "description": "Non preoccuparti! I dati analitici appariranno qui una volta che le persone inizieranno a visitare il tuo sito web.",
+    "tip": "Condividi il link del tuo sito web per iniziare a vedere visitatori e dati!"
+  }
+}

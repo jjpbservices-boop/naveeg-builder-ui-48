@@ -1,0 +1,69 @@
+{
+  "title": "Le tue informazioni di fatturazione - semplici e sicure",
+  "subtitle": "Gestisci i dettagli di fatturazione e visualizza le tue fatture con facilità. Tutte le tue informazioni sono mantenute al sicuro e crittografate.", 
+  "form": {
+    "accountType": "Tipo di account",
+    "individual": "Individuale",
+    "company": "Azienda",
+    "legalName": "Nome legale",
+    "legalNamePlaceholder": "Inserisci il tuo nome legale completo o ragione sociale",
+    "billingEmail": "Email di fatturazione",
+    "billingEmailPlaceholder": "fatturazione@esempio.com",
+    "address": {
+      "line1": "Indirizzo Linea 1",
+      "line1Placeholder": "Indirizzo civico",
+      "line2": "Indirizzo Linea 2",
+      "line2Placeholder": "Appartamento, suite, ecc. (opzionale)",
+      "city": "Città",
+      "cityPlaceholder": "Città",
+      "postalCode": "Codice Postale",
+      "postalCodePlaceholder": "Codice postale",
+      "country": "Paese"
+    },
+    "vat": {
+      "hasVatNumber": "Ho una partita Iva UE",
+      "vatNumber": "Partita Iva",
+      "vatNumberPlaceholder": "Inserisci la tua partita IVA",
+      "formatHint": "Formato: {format}"
+    },
+    "invoicing": {
+      "language": "Lingua fatturazione",
+      "currency": "Valuta di visualizzazione"
+    }
+  },
+  "taxSummary": {
+    "title": "Riepilogo fiscale",
+    "reverseCharge": "Il Reverse Charge potrebbe applicarsi per le transazioni B2B",
+    "localVat": "L'IVA locale potrebbe applicarsi",
+    "vatRate": "Aliquota IVA: {rate}%"
+  },
+  "actions": {
+    "save": "Salva info fatturazione",
+    "previewInvoice": "Anteprima Fattura"
+  },
+  "invoice": {
+    "title": "Anteprima Fattura",
+    "invoiceNumber": "Fattura #{number}",
+    "date": "Data: {date}",
+    "dueDate": "Data Scadenza: {date}",
+    "billTo": "Fatturare A:",
+    "description": "Descrizione",
+    "amount": "Importo",
+    "subtotal": "Subtotale",
+    "vat": "IVA ({rate}%)",
+    "total": "Totale",
+    "paymentTerms": "Termini di Pagamento: Netto 30 giorni",
+    "thankYou": "Grazie per il tuo acquisto!" 
+  },
+  "validation": {
+    "legalNameRequired": "Il nome legale è obbligatorio",
+    "emailRequired": "L'email di fatturazione è obbligatoria",
+    "invalidEmail": "Inserisci un indirizzo email valido",
+    "addressRequired": "L'indirizzo è obbligatorio",
+    "cityRequired": "La città è obbligatoria",
+    "postalCodeRequired": "Il codice postale è obbligatorio",
+    "countryRequired": "Seleziona un paese",
+    "vatNumberRequired": "La partita IVA è obbligatoria se selezionata",
+    "invalidVatNumber": "Inserisci una partita IVA valida"
+  }
+}

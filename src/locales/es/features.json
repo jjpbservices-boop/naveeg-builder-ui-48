@@ -1,6 +1,6 @@
 {
-  "title": "Características Poderosas",
-  "subtitle": "Todo lo que necesitas para crear sitios web increíbles",
+  "title": "Características poderosas",
+  "subtitle": "todo lo que necesitas para crear sitios web increíbles",
   "cards": [
     {
       "icon": "zap",
@@ -33,8 +33,5 @@
       "description": "Gestiona todo tu sitio web desde un panel intuitivo y fácil de usar."
     }
   ],
-  "comparison": {
-    "title": "¿Por qué elegir Naveeg?",
-    "subtitle": "Compara nuestras características con la competencia"
-  }
+  "comparison": { "title": "¿por qué elegir naveeg?", "subtitle": "compara nuestras características con la competencia" }
 }

@@ -1,0 +1,48 @@
+{
+  "title": "Configurações de segurança",
+  "subtitle": "Mantenha seu site seguro com recursos de segurança avançados.",
+  "ssl": {
+    "title": "Certificado SSL",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "description": "Certificados SSL criptografam dados entre seu site e visitantes.",
+    "expires": "Expira em: {date}",
+    "autoRenewal": "Renovação automática habilitada"
+  },
+  "credentials": {
+    "title": "Credenciais do WordPress",
+    "description": "Suas credenciais de login de administrador do WordPress para acesso direto.",
+    "username": "Nome de usuário",
+    "password": "Senha",
+    "showPassword": "Mostrar senha",
+    "hidePassword": "Ocultar senha",
+    "copyUsername": "Copiar nome de usuário",
+    "copyPassword": "Copiar senha"
+  },
+  "features": {
+    "title": "Recursos de segurança",
+    "firewall": {
+      "title": "Firewall de aplicativos web",
+      "description": "Protege contra ataques maliciosos e tráfego suspeito"
+    },
+    "malwareScan": {
+      "title": "Verificação de malware",
+      "description": "Verificações regulares para detectar e remover código malicioso"
+    },
+    "autoUpdates": {
+      "title": "Atualizações automáticas",
+      "description": "Mantenha o WordPress e plugins atualizados automaticamente"
+    }
+  },
+  "status": {
+    "enabled": "Habilitado",
+    "disabled": "Desabilitado",
+    "scanning": "Verificando...",
+    "updating": "Atualizando..."
+  },
+  "lastScan": "Última verificação: {date}",
+  "threats": {
+    "none": "Nenhuma ameaça detectada",
+    "found": "{count, plural, =1 {1 ameaça encontrada} other {{count} ameaças encontradas}}"
+  }
+}

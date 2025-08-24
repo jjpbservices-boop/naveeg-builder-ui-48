@@ -1,0 +1,50 @@
+{
+  "title": "faça seu site carregar mais rápido com cache",
+  "subtitle": "melhore a velocidade do seu site e a experiência do visitante gerenciando o cache. é simples e nenhuma habilidade técnica é necessária.",
+  "refresh": {
+    "title": "limpar cache do site",
+    "button": "atualizar meu site",
+    "description": "limpe o cache do seu site para garantir que todos vejam a versão mais recente do seu site imediatamente. seu site pode ficar um pouco mais lento por um momento enquanto é reconstruído, mas geralmente é muito rápido.",
+    "lastCleared": "última limpeza do cache: {date}",
+    "confirm": {
+      "title": "limpar cache do site?",
+      "description": "isso apagará todos os arquivos temporários que ajudam seu site a carregar rapidamente. seu site pode ficar um pouco mais lento temporariamente enquanto ele cria novos.",
+      "warning": "aviso: seu site pode carregar um pouco mais lentamente logo após limpar o cache.",
+      "button": "limpar cache agora"
+    }
+  },
+  "info": {
+    "title": "o que é cache de site e por que é importante?",
+    "description": "pense em cache como um atalho para os visitantes do seu site. ele salva cópias temporárias dos arquivos do seu site para que os visitantes que retornam possam carregar seu site muito mais rápido. limpar o cache é como apertar um botão de atualização, útil depois de fazer atualizações para que os visitantes vejam as mudanças.",
+    "benefits": [
+      "tempos de carregamento mais rápidos para seus visitantes",
+      "seu site parece mais responsivo e ágil",
+      "visitantes mais felizes que permanecem mais tempo no seu site",
+      "pode até ajudar um pouco em como os mecanismos de pesquisa veem seu site (eles amam sites rápidos!)"
+    ]
+  },
+  "status": {
+    "enabled": "o cache está ativado e funcionando",
+    "disabled": "o cache está desativado",
+    "clearing": "limpando cache...",
+    "building": "construindo cache..."
+  },
+  "issues": {
+    "title": "possíveis problemas ao limpar o cache",
+    "description": "embora limpar o cache seja geralmente seguro, aqui estão alguns problemas potenciais que você pode encontrar:",
+    "list": [
+      "o site pode ficar temporariamente mais lento enquanto os arquivos de cache são reconstruídos.",
+      "pode ser necessário fazer login novamente em alguns sites."
+    ]
+  }
+}
+
+      "issues": {
+        "title": "Possíveis problemas ao limpar o cache",
+        "description": "Embora limpar o cache seja geralmente seguro, aqui estão alguns problemas potenciais que você pode encontrar:",
+        "list": [
+          "O site pode ficar temporariamente mais lento enquanto os arquivos de cache são reconstruídos.",
+          "Pode ser necessário fazer login novamente em alguns sites."
+        ]
+      }
+    }

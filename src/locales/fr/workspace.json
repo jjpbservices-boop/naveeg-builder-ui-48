@@ -1,4 +1,41 @@
 {
   "title": "Espace de travail",
-  "subtitle": "Gérez tous vos sites web et collaborez avec votre équipe."
+  "subtitle": "gérez tous vos sites web et collaborez avec votre équipe.",
+  "header": {
+    "workspaceName": "Mon espace de travail",
+    "addCollaborator": "ajouter un collaborateur"
+  },
+  "websites": {
+    "title": "vos sites web",
+    "empty": "aucun site web pour l'instant",
+    "emptyDescription": "créez votre premier site web pour commencer.",
+    "addWebsite": "ajouter un site web",
+    "manage": "gérer",
+    "created": "créé le {date}",
+    "lastUpdated": "mis à jour le {date}",
+    "status": {
+      "live": "en ligne",
+      "draft": "brouillon",
+      "maintenance": "maintenance"
+    }
+  },
+  "collaborators": {
+    "title": "membres de l'équipe",
+    "invite": "inviter un membre de l'équipe",
+    "email": "adresse e-mail",
+    "role": "rôle",
+    "roles": {
+      "owner": "propriétaire",
+      "admin": "administrateur",
+      "editor": "éditeur",
+      "viewer": "spectateur"
+    },
+    "pending": "invitation en attente",
+    "remove": "supprimer l'accès"
+  },
+  "stats": {
+    "totalWebsites": "{count, plural, =0 {aucun site web} =1 {1 site web} other {{count} sites web}}",
+    "totalVisitors": "{count, plural, =0 {aucun visiteur} =1 {1 visiteur} other {{count} visiteurs}}",
+    "thisMonth": "ce mois-ci"
+  }
 }

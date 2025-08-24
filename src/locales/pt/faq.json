@@ -1,51 +1,52 @@
 {
-  "title": "Perguntas Frequentes",
-  "subtitle": "Encontre respostas para as perguntas mais comuns sobre Naveeg",
-  "items": [
+  "title": "perguntas frequentes",
+  "subtitle": "tudo o que precisa de saber sobre Naveeg",
+  "questions": [
     {
-      "question": "Quão rápido posso criar um site?",
-      "answer": "Você pode ter um site totalmente funcional em menos de 30 segundos. Apenas descreva seu negócio e nossa IA criará um site profissional para você."
+      "question": "quanto tempo demora a gerar um website?",
+      "answer": "A maioria dos websites são gerados em menos de 30 segundos. Mais complexos podem demorar até 2 minutos. A nossa IA trabalha incrivelmente rápido para o colocar online o mais rápido possível."
     },
     {
-      "question": "Preciso de conhecimento técnico?",
-      "answer": "Absolutamente não. Naveeg é projetado para todos, independentemente da experiência técnica. Nossa IA cuida de toda a programação e design."
+      "question": "posso usar o meu próprio nome de domínio?",
+      "answer": "Absolutamente! Pode ligar o seu domínio existente ou registar um novo diretamente através da nossa plataforma. Fornecemos orientação passo a passo para o ajudar a configurar tudo."
     },
     {
-      "question": "Posso usar meu próprio domínio?",
-      "answer": "Sim, você pode conectar seu domínio personalizado a qualquer site criado com Naveeg. Também fornecemos subdomínios gratuitos."
+      "question": "há um teste gratuito?",
+      "answer": "Sim, oferecemos um teste gratuito de 14 dias em todos os planos. Pode explorar todas as funcionalidades sem fornecer um cartão de crédito. Sem compromissos, sem taxas ocultas."
     },
     {
-      "question": "Meus sites serão otimizados para mobile?",
-      "answer": "Absolutamente. Todos os sites criados com Naveeg são completamente otimizados para mobile e ficam perfeitos em qualquer dispositivo."
+      "question": "preciso de algum conhecimento técnico?",
+      "answer": "De todo! O Naveeg foi concebido para todos, independentemente do seu nível técnico. A nossa IA lida com todos os aspetos técnicos complexos, enquanto se concentra no conteúdo do seu negócio."
     },
     {
-      "question": "Posso editar meu site depois de criá-lo?",
-      "answer": "Sim, você pode fazer alterações em seu site a qualquer momento através do nosso painel fácil de usar. Modifique conteúdo, cores, fontes e muito mais."
+      "question": "posso personalizar o meu website depois de gerado?",
+      "answer": "Sim! Pode facilmente personalizar cores, tipos de letra, layouts, imagens e conteúdo. O nosso editor visual simplifica a realização de alterações sem qualquer conhecimento de código."
     },
     {
-      "question": "Há algum custo oculto?",
-      "answer": "Não, nossos preços são transparentes. O que você vê é o que você paga, sem taxas ocultas ou cobranças surpresa."
+      "question": "o meu website é compatível com dispositivos móveis?",
+      "answer": "Todos os websites gerados pelo Naveeg são automaticamente otimizados para dispositivos móveis. Seguimos princípios de design 'mobile-first' para garantir que o seu site tenha uma ótima aparência em todos os tamanhos de ecrã."
     },
     {
-      "question": "Que tipo de suporte vocês oferecem?",
-      "answer": "Oferecemos múltiplos níveis de suporte dependendo do seu plano, desde suporte por email até suporte prioritário e dedicado para planos empresariais."
+      "question": "que tipo de suporte oferecem?",
+      "answer": "Oferecemos suporte por e-mail 24/7 em todos os planos, com suporte prioritário para utilizadores Pro e suporte telefónico para clientes Business. A nossa equipa está sempre pronta para o ajudar a ter sucesso."
     },
     {
-      "question": "Posso cancelar minha assinatura a qualquer momento?",
-      "answer": "Sim, você pode cancelar sua assinatura a qualquer momento. Seu site permanecerá ativo até o final do seu período de faturamento atual."
+      "question": "posso vender produtos no meu website?",
+      "answer": "Sim! Os nossos planos Pro e Business incluem funcionalidades de e-commerce. Pode adicionar produtos, configurar o processamento de pagamentos e começar a vender online imediatamente."
     },
     {
-      "question": "Meus dados estão seguros?",
-      "answer": "Absolutamente. Usamos medidas de segurança de nível empresarial e SSL gratuito para manter seus dados e os de seus visitantes seguros."
+      "question": "quão seguros são os websites?",
+      "answer": "A segurança é a nossa prioridade máxima. Todos os websites incluem certificados SSL, atualizações regulares de segurança e proteção contra ameaças comuns. Mantemos 99,9% de uptime com infraestrutura de nível empresarial."
     },
     {
-      "question": "Posso migrar meu site existente para Naveeg?",
-      "answer": "Sim, nossa equipe pode ajudá-lo a migrar seu site existente para Naveeg. Entre em contato conosco para assistência personalizada com migração."
+      "question": "posso exportar o meu website?",
+      "answer": "Os clientes do plano Business podem exportar o código do seu website e alojá-lo onde quiserem. Isto dá-lhe total liberdade e controlo sobre a sua presença online."
     }
   ],
   "stillHaveQuestions": {
-    "title": "Ainda tem dúvidas?",
-    "description": "Não conseguimos responder sua pergunta? Nossa equipe de suporte está aqui para ajudar.",
-    "contactButton": "Contatar suporte"
+    "title": "ainda tem perguntas?",
+    "subtitle": "não consegue encontrar a resposta que procura? a nossa simpática equipa está aqui para ajudar.",
+    "contactSupport": "contactar suporte",
+    "browseHelp": "navegar no centro de ajuda"
   }
 }

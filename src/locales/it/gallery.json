@@ -1,6 +1,6 @@
 {
   "title": "Galleria",
-  "subtitle": "Scopri siti web incredibili costruiti con Naveeg",
+  "subtitle": "Scopri incredibili siti web costruiti con Naveeg",
   "filter": {
     "all": "Tutti",
     "restaurant": "Ristorante",
@@ -75,8 +75,8 @@
     }
   ],
   "cta": {
-    "title": "Pronto a creare il tuo sito web?",
-    "subtitle": "Unisciti a migliaia di aziende che si fidano di Naveeg",
+    "title": "Pronto a costruire il tuo sito web?",
+    "subtitle": "Unisciti a migliaia di aziende che si fidano di Naveeg per la loro presenza online",
     "button": "Inizia ora"
   }
 }

@@ -1,18 +1,16 @@
 {
-  "title": "Informations légales",
-  "subtitle": "Informations légales importantes et politiques",
   "terms": {
-    "title": "Conditions d'utilisation",
+    "title": "conditions d'utilisation",
     "lastUpdated": "Dernière mise à jour : {date}",
     "content": "Le contenu des conditions d'utilisation sera disponible ici..."
   },
   "privacy": {
-    "title": "Politique de confidentialité",
+    "title": "politique de confidentialité",
     "lastUpdated": "Dernière mise à jour : {date}",
     "content": "Le contenu de la politique de confidentialité sera disponible ici..."
   },
   "cookies": {
-    "title": "Politique des cookies",
+    "title": "politique des cookies",
     "lastUpdated": "Dernière mise à jour : {date}",
     "content": "Le contenu de la politique des cookies sera disponible ici..."
   }

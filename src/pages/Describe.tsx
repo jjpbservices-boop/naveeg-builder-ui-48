@@ -11,7 +11,7 @@ const Describe: React.FC = () => {
   const { t } = useTranslation('onboarding');
   const navigate = useNavigate();
   const { state, dispatch } = useApp();
-  const { updateBasicInfo } = useOnboardingStore();
+  const { updateBasicInfo, updateDesign } = useOnboardingStore();
   const [description, setDescription] = useState(state.brief.businessDescription);
 
   useEffect(() => {
@@ -26,16 +26,21 @@ const Describe: React.FC = () => {
         type: 'UPDATE_BRIEF',
         payload: { businessDescription: description.trim() }
       });
-      
+
       // Extract business name from description (first line or common patterns)
       const businessName = extractBusinessName(description.trim());
-      
+
       // Update onboarding store for Brief page
       updateBasicInfo({
         business_name: businessName,
         business_description: description.trim()
       });
-      
+
+      // (Fix) ensure fonts object uses `primary_font` (body font removed)
+      updateDesign({
+        fonts: { primary_font: 'Inter' }
+      });
+
       navigate({ to: '/brief' });
     }
   };
@@ -44,7 +49,7 @@ const Describe: React.FC = () => {
   const extractBusinessName = (desc: string): string => {
     const lines = desc.split('\n').filter(line => line.trim());
     const firstLine = lines[0] || '';
-    
+
     // Look for company patterns
     const companyPatterns = [
       /^(.+?)\s+(?:is|provides|offers|specializes)/i,
@@ -52,14 +57,14 @@ const Describe: React.FC = () => {
       /^(.+?)(?:\s-\s|\s–\s|\s—\s)/,
       /^([^.!?]+)/
     ];
-    
+
     for (const pattern of companyPatterns) {
       const match = firstLine.match(pattern);
       if (match && match[1]) {
         return match[1].trim();
       }
     }
-    
+
     // Fallback to first 3-5 words
     const words = firstLine.split(' ').slice(0, 4);
     return words.join(' ') || 'My Business';
@@ -103,7 +108,7 @@ const Describe: React.FC = () => {
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 {t('global.back', { ns: 'common' })}
               </Button>
-              
+
               <Button
                 type="submit"
                 className="flex-1 touch-target bg-gradient-primary hover:bg-primary-hover text-white rounded-2xl"

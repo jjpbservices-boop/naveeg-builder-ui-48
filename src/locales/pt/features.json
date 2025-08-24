@@ -1,6 +1,6 @@
 {
-  "title": "Funcionalidades Poderosas",
-  "subtitle": "Tudo o que precisas para criar websites incríveis",
+  "title": "Funcionalidades poderosas",
+  "subtitle": "tudo o que precisas para criar websites incríveis",
   "cards": [
     {
       "icon": "zap",
@@ -15,17 +15,12 @@
     {
       "icon": "search",
       "title": "SEO Otimizado",
-      "description": "Funcionalidades de SEO integradas para ajudar o teu website a posicionar-se melhor nos motores de busca."
+      "description": "funcionalidades de SEO integradas para ajudar o teu website a posicionar-se melhor nos motores de busca."
     },
     {
       "icon": "shield",
       "title": "Segurança Web",
       "description": "Certificados SSL gratuitos e medidas de segurança avançadas incluídas. O teu website estará protegido desde o primeiro dia."
-    },
-    {
-      "icon": "palette",
-      "title": "Personalização Total",
-      "description": "Modifica cores, fontes e layouts para combinarem perfeitamente com a tua marca."
     },
     {
       "icon": "layout",
@@ -34,7 +29,7 @@
     }
   ],
   "comparison": {
-    "title": "Porquê escolher Naveeg?",
+    "title": "porquê escolher Naveeg?",
     "subtitle": "Compara as nossas funcionalidades com a concorrência"
   }
 }

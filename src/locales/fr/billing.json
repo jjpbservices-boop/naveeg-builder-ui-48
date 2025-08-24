@@ -1,4 +1,69 @@
 {
-  "title": "Informations de facturation",
-  "subtitle": "Gérez vos détails de facturation et consultez vos factures."
+  "title": "Vos informations de facturation - simples et sécurisées",
+  "subtitle": "Gérez vos détails de facturation et consultez vos factures en toute simplicité. toutes vos informations sont conservées en toute sécurité et chiffrées.",
+  "form": {
+    "accountType": "Type de compte", 
+    "individual": "Particulier",
+    "company": "Entreprise",
+    "legalName": "Nom légal",
+    "legalNamePlaceholder": "Entrez votre nom légal complet ou le nom de l'entreprise",
+    "billingEmail": "E-mail de facturation",
+    "billingEmailPlaceholder": "facturation@exemple.com",
+    "address": {
+      "line1": "Adresse Ligne 1",
+      "line1Placeholder": "Numéro et nom de rue",
+      "line2": "Adresse Ligne 2",
+      "line2Placeholder": "Appartement, suite, etc. (facultatif)",
+      "city": "Ville",
+      "cityPlaceholder": "Ville",
+      "postalCode": "Code postal",
+      "postalCodePlaceholder": "Code postal",
+      "country": "Pays"
+    },
+    "vat": {
+      "hasVatNumber": "J'ai un numéro de TVA de l'UE",
+      "vatNumber": "Numéro de TVA",
+      "vatNumberPlaceholder": "Entrez votre numéro de TVA",
+      "formatHint": "Format : {format}"
+    },
+    "invoicing": {
+      "language": "Langue de facturation",
+      "currency": "Devise d'affichage"
+    }
+  },
+  "taxSummary": {
+    "title": "Résumé des taxes",
+    "reverseCharge": "L'autoliquidation peut s'appliquer aux transactions interentreprises", 
+    "localVat": "La TVA locale peut s'appliquer",
+    "vatRate": "Taux de TVA : {rate}%"
+  },
+  "actions": {
+    "save": "Enregistrer les informations de facturation",
+    "previewInvoice": "Aperçu de la facture"
+  },
+  "invoice": {
+    "title": "Aperçu de la facture",
+    "invoiceNumber": "Facture n°{number}", 
+    "date": "Date : {date}",
+    "dueDate": "Date d'échéance : {date}",
+    "billTo": "Facturer à :",
+    "description": "Description",
+    "amount": "Montant",
+    "subtotal": "Sous-total",
+    "vat": "TVA ({rate}%)",
+    "total": "Total",
+    "paymentTerms": "Conditions de paiement : Net 30 jours",
+    "thankYou": "Merci pour votre confiance !"
+  },
+  "validation": {
+    "legalNameRequired": "Le nom légal est requis",
+    "emailRequired": "L'e-mail de facturation est requis",
+    "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+    "addressRequired": "L'adresse est requise",
+    "cityRequired": "La ville est requise",
+    "postalCodeRequired": "Le code postal est requis",
+    "countryRequired": "Veuillez sélectionner un pays",
+    "vatNumberRequired": "Le numéro de TVA est requis si sélectionné",
+    "invalidVatNumber": "Veuillez entrer un numéro de TVA valide"
+  }
 }

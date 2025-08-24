@@ -1,6 +1,6 @@
 {
-  "title": "Galería",
-  "subtitle": "Descubre sitios web increíbles construidos con Naveeg",
+ "title": "galería",
+ "subtitle": "descubre sitios web increíbles construidos con naveeg",
   "filter": {
     "all": "Todos",
     "restaurant": "Restaurante",
@@ -75,8 +75,9 @@
     }
   ],
   "cta": {
-    "title": "¿Listo para crear tu sitio web?",
-    "subtitle": "Únete a miles de empresas que confían en Naveeg",
-    "button": "Empezar ahora"
+ "title": "¿listo para crear tu sitio web?",
+ "subtitle": "únete a miles de empresas que confían en naveeg",
+ "button": "empezar ahora",
+ "helper": "no se requiere tarjeta de crédito • prueba gratuita de 14 días"
   }
 }

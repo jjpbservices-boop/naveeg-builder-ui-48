@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Roma não foi construída num dia — mas o seu website será.",
-    "subtitle": "Com Naveeg, gere um website profissional em apenas minutos. Sem código, sem stress.",
+    "title": "Roma não foi construída num dia — mas o seu website será",
+    "subtitle": "Com Naveeg, gere um website profissional em apenas minutos. Sem código, sem stress",
     "inputPlaceholder": "Introduza o nome da sua empresa…",
     "ctaButton": "Gerar o Meu Website",
     "helper": "O seu site estará pronto em minutos depois de clicar em gerar."
@@ -9,11 +9,11 @@
   "trialBanner": {
     "text": "Comece com um teste gratuito de 14 dias num subdomínio Naveeg. Não é necessário cartão de crédito."
   },
-  "socialProof": {
-    "title": "Confiado por milhares de empresas",
+  "socialProof": { 
+    "title": "Confiado por milhares de empresas", 
     "logos": ["Empresa A", "Empresa B", "Empresa C", "Empresa D", "Empresa E"]
   },
-  "howItWorks": {
+  "howItWorks": { 
     "title": "Como funciona",
     "subtitle": "Coloque o seu website online em três passos simples",
     "steps": [
@@ -31,9 +31,9 @@
       }
     ]
   },
-  "features": {
-    "title": "Tudo o que precisa para ter sucesso online",
-    "subtitle": "Construído para empresas modernas que querem estar online rapidamente",
+  "features": { 
+    "title": "Tudo o que precisa para ter sucesso online", 
+    "subtitle": "Construído para empresas modernas que querem estar online rapidamente", 
     "cards": [
       {
         "title": "Design mobile-first",
@@ -67,9 +67,9 @@
       }
     ]
   },
-  "whyNaveeg": {
+  "whyNaveeg": { 
     "title": "Porquê escolher Naveeg?",
-    "blocks": [
+    "blocks": [ 
       {
         "title": "Poupe tempo — lance em minutos, não semanas",
         "description": "Não espere semanas pelo seu website. Fique online em minutos com o nosso processo de geração ultra-rápido."
@@ -84,9 +84,9 @@
       }
     ]
   },
-  "pricing": {
-    "title": "Preços simples e transparentes",
-    "subtitle": "Escolha o plano certo para o seu negócio",
+  "pricing": { 
+    "title": "Preços simples e transparentes", 
+    "subtitle": "Escolha o plano certo para o seu negócio", 
     "viewAll": "Ver todos os planos",
     "plans": [
       {
@@ -116,14 +116,14 @@
       }
     ]
   },
-  "gallery": {
-    "title": "Construído com Naveeg",
+  "gallery": { 
+    "title": "Construído com Naveeg", 
     "subtitle": "Veja o que os nossos clientes criaram",
     "viewAll": "Ver galeria",
     "categories": ["Todos", "Restaurante", "Serviços", "Portfolio", "E-commerce", "Blog"]
   },
-  "faq": {
-    "title": "Perguntas frequentes",
+  "faq": { 
+    "title": "Perguntas frequentes", 
     "subtitle": "Tudo o que precisa de saber sobre Naveeg",
     "viewAll": "Ver todas as FAQ",
     "questions": [
@@ -141,9 +141,9 @@
       }
     ]
   },
-  "ctaBanner": {
-    "title": "Pronto para construir o seu website?",
-    "subtitle": "Junte-se a milhares de empresas que confiam no Naveeg para a sua presença online",
+  "ctaBanner": { 
+    "title": "Pronto para construir o seu website?", 
+    "subtitle": "Junte-se a milhares de empresas que confiam no Naveeg para a sua presença online", 
     "button": "Começar Agora",
     "helper": "Não é necessário cartão de crédito • Teste gratuito de 14 dias"
   }

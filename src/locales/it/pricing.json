@@ -2,26 +2,47 @@
   "title": "Prezzi",
   "subtitle": "Scegli il piano perfetto per la tua attività",
   "monthly": "Mensile",
-  "annually": "Annuale", 
+  "annually": "Annuale",
   "save": "2 mesi gratis",
   "mostPopular": "Più popolare",
   "getStarted": "Inizia",
   "contactSales": "Contatta vendite",
   "freeTrial": "Prova gratuita di 14 giorni",
   "noCredit": "Nessuna carta di credito richiesta",
+  "viewAll": "Vedi tutti i piani",
   "plans": {
     "starter": {
       "name": "Starter",
       "description": "Perfetto per piccole imprese che stanno iniziando",
       "price": { "monthly": 29, "annually": 24 },
-      "features": ["1 sito web", "Hosting incluso", "Supporto via email", "SEO di base", "Certificato SSL", "Dominio personalizzato", "Template professionali", "Ottimizzazione mobile"]
+      "features": [
+        "1 sito web",
+        "Template professionali",
+        "Ottimizzazione mobile",
+        "Certificato SSL",
+        "Strumenti SEO di base",
+        "Supporto via email",
+        "5GB di storage",
+        "Dominio personalizzato"
+      ]
     },
     "pro": {
       "name": "Pro",
       "description": "Ideale per aziende in crescita che hanno bisogno di più",
       "price": { "monthly": 59, "annually": 49 },
       "popular": true,
-      "features": ["3 siti web", "Personalizzazione avanzata", "Analitiche dettagliate", "Supporto prioritario", "Funzionalità e-commerce", "Rimozione del marchio Naveeg", "Codice personalizzato", "Integrazioni avanzate", "Template premium", "SEO avanzato"]
+      "features": [
+        "5 siti web",
+        "Template premium",
+        "Personalizzazione avanzata",
+        "Supporto prioritario",
+        "Strumenti SEO avanzati",
+        "Analitiche del sito web",
+        "50GB di storage",
+        "Funzionalità e-commerce",
+        "Rimuovi marchio Naveeg",
+        "Iniezione codice personalizzato"
+      ]
     },
     "business": {
       "name": "Business", 
@@ -31,3 +52,4 @@
     }
   }
 }
+

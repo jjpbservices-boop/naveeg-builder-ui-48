@@ -1,9 +1,9 @@
 {
   "hero": {
-    "title": "Roma non è stata costruita in un giorno — ma il tuo sito web sì.",
+    "title": "Roma non è stata costruita in un giorno — ma il tuo sito web sì",
     "subtitle": "Con Naveeg, genera un sito web professionale in pochi minuti. Nessun codice, zero stress.",
-    "inputPlaceholder": "Inserisci il nome della tua azienda…",
-    "ctaButton": "Genera il Mio Sito Web",
+    "inputPlaceholder": "Inserisci il nome della tua azienda...",
+    "ctaButton": "genera il mio sito web",
     "helper": "Il tuo sito sarà pronto in pochi minuti dopo aver cliccato su genera."
   },
   "trialBanner": {
@@ -15,67 +15,67 @@
   },
   "howItWorks": {
     "title": "Come funziona",
-    "subtitle": "Metti online il tuo sito web in tre semplici passaggi",
+    "subtitle": "metti online il tuo sito web in tre semplici passaggi.",
     "steps": [
       {
-        "title": "Raccontaci della tua attività",
-        "description": "Descrivi la tua azienda in poche parole"
+        "title": "raccontaci della tua attività",
+        "description": "Descrivi la tua azienda in poche parole."
       },
       {
-        "title": "Scegli il tuo stile e i colori",
-        "description": "Seleziona colori, font e preferenze di design"
+        "title": "scegli il tuo stile e i colori",
+        "description": "Seleziona colori, font e preferenze di design."
       },
       {
-        "title": "Genera il tuo sito web in pochi minuti",
+        "title": "genera il tuo sito web in pochi minuti",
         "description": "Il tuo sito web professionale è pronto per andare online"
       }
     ]
   },
   "features": {
     "title": "Tutto ciò di cui hai bisogno per avere successo online",
-    "subtitle": "Costruito per aziende moderne che vogliono essere online velocemente",
+    "subtitle": "costruito per aziende moderne che vogliono essere online velocemente.",
     "cards": [
       {
-        "title": "Design mobile-first",
+        "title": "design mobile-first.",
         "description": "Ogni sito web è ottimizzato per dispositivi mobili e appare perfetto ovunque",
         "icon": "smartphone"
       },
       {
-        "title": "Ottimizzazione SEO inclusa",
+        "title": "Ottimizzazione seo inclusa.",
         "description": "Funzionalità SEO integrate per aiutare la tua attività a essere trovata sui motori di ricerca",
         "icon": "search"
       },
       {
-        "title": "Colori e font personalizzati",
+        "title": "Colori e font personalizzati.",
         "description": "Cambia colori, font e contenuto senza alcuna conoscenza tecnica",
         "icon": "palette"
       },
       {
-        "title": "Hosting veloce e sicuro",
+        "title": "Hosting veloce e sicuro.",
         "description": "Sicurezza di livello aziendale con garanzia di uptime del 99.9%",
         "icon": "shield"
       },
       {
-        "title": "Dashboard semplice",
+        "title": "Dashboard semplice.",
         "description": "Gestisci tutto il tuo sito web da una dashboard intuitiva e facile da usare",
         "icon": "layout"
       },
       {
-        "title": "Prova gratuita di 14 giorni",
+        "title": "prova gratuita di 14 giorni.",
         "description": "Ottieni il tuo sito web pronto in meno di 30 secondi con il nostro costruttore potenziato dall'IA",
         "icon": "zap"
       }
     ]
   },
   "whyNaveeg": {
-    "title": "Perché scegliere Naveeg?",
+    "title": "perché scegliere Naveeg?",
     "blocks": [
       {
-        "title": "Risparmia tempo — lancia in minuti, non settimane",
+        "title": "risparmia tempo — lancia in minuti, non settimane.",
         "description": "Non aspettare settimane per il tuo sito web. Vai online in minuti con il nostro processo di generazione ultra-veloce."
       },
       {
-        "title": "Nessuna competenza richiesta — costruito per utenti non tecnici",
+        "title": "nessuna competenza richiesta — costruito per utenti non tecnici.",
         "description": "Costruisci siti web professionali senza scrivere una singola riga di codice. La nostra IA gestisce tutta la complessità tecnica."
       },
       {
@@ -86,7 +86,7 @@
   },
   "pricing": {
     "title": "Prezzi semplici e trasparenti",
-    "subtitle": "Scegli il piano giusto per la tua attività",
+    "subtitle": "scegli il piano giusto per la tua attività.",
     "viewAll": "Vedi tutti i piani",
     "plans": [
       {
@@ -118,21 +118,21 @@
   },
   "gallery": {
     "title": "Costruito con Naveeg",
-    "subtitle": "Guarda cosa hanno creato i nostri clienti",
+    "subtitle": "guarda cosa hanno creato i nostri clienti",
     "viewAll": "Vedi galleria",
     "categories": ["Tutti", "Ristorante", "Servizi", "Portfolio", "E-commerce", "Blog"]
   },
   "faq": {
     "title": "Domande frequenti",
-    "subtitle": "Tutto quello che devi sapere su Naveeg",
+    "subtitle": "tutto quello che devi sapere su Naveeg.",
     "viewAll": "Vedi tutte le FAQ",
     "questions": [
       {
-        "question": "Quanto tempo ci vuole per generare un sito web?",
+        "question": "quanto tempo ci vuole per generare un sito web?",
         "answer": "La maggior parte dei siti web vengono generati in meno di 30 secondi. I siti complessi potrebbero richiedere fino a 2 minuti."
       },
       {
-        "question": "Posso usare il mio nome di dominio?",
+        "question": "posso usare il mio nome di dominio?",
         "answer": "Sì! Puoi collegare il tuo dominio esistente o registrarne uno nuovo tramite la nostra piattaforma."
       },
       {
@@ -142,9 +142,9 @@
     ]
   },
   "ctaBanner": {
-    "title": "Pronto a costruire il tuo sito web?",
-    "subtitle": "Unisciti a migliaia di aziende che si fidano di Naveeg per la loro presenza online",
-    "button": "Inizia Ora",
-    "helper": "Nessuna carta di credito richiesta • Prova gratuita di 14 giorni"
+    "title": "pronto a costruire il tuo sito web?",
+    "subtitle": "unisciti a migliaia di aziende che si fidano di Naveeg per la loro presenza online",
+    "button": "inizia ora",
+    "helper": "nessuna carta di credito richiesta • prova gratuita di 14 giorni"
   }
 }

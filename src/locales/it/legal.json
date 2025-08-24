@@ -1,18 +1,18 @@
 {
-  "title": "Informazioni Legali",
-  "subtitle": "Importanti informazioni legali e politiche",
+  "title": "Informazioni legali",
+  "subtitle": "Importanti informazioni legali e politiche.",
   "terms": {
-    "title": "Termini di Servizio",
+    "title": "Termini di servizio",
     "lastUpdated": "Ultimo aggiornamento: {date}",
     "content": "Il contenuto dei termini di servizio sarà disponibile qui..."
   },
   "privacy": {
-    "title": "Informativa sulla Privacy",
+    "title": "Informativa sulla privacy",
     "lastUpdated": "Ultimo aggiornamento: {date}",
     "content": "Il contenuto dell'informativa sulla privacy sarà disponibile qui..."
   },
   "cookies": {
-    "title": "Politica sui Cookie",
+    "title": "Politica sui cookie",
     "lastUpdated": "Ultimo aggiornamento: {date}",
     "content": "Il contenuto della politica sui cookie sarà disponibile qui..."
   }

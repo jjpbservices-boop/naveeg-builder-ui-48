@@ -9,5 +9,7 @@
     "optimizing": "Optimisation pour tous les appareils",
     "speed": "Amélioration de la vitesse et des performances",
     "finalizing": "Finalisation de la mise en page et du contenu"
-  }
+  },
+  "estimatedTime": "Temps estimé : {seconds} secondes restantes",
+  "almostDone": "Presque terminé ! Encore quelques secondes..."
 }

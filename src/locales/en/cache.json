@@ -1,26 +1,26 @@
 {
-  "title": "Website Cache",
-  "subtitle": "Improve your website's loading speed by managing the cache.",
+  "title": "Make Your Website Load Faster with Cache",
+  "subtitle": "Improve your website's speed and visitor experience by managing the cache. It's simple, and no technical skills are needed.",
   "refresh": {
-    "title": "Clear Cache",
+    "title": "Clear Website Cache",
     "button": "Refresh My Website",
-    "description": "Clear your website's cache to ensure visitors see the latest version of your content. This may temporarily slow down your site while the cache rebuilds.",
+    "description": "Clear your website's cache to make sure everyone sees the latest version of your site right away. Your site might be a little slower for a moment while it rebuilds, but it's usually very quick.",
     "lastCleared": "Cache last cleared: {date}",
     "confirm": {
       "title": "Clear Website Cache?",
-      "description": "This will clear all cached content on your website. Visitors may experience slower loading times for a short period while the cache rebuilds.",
-      "warning": "Your website may load slower temporarily after clearing the cache.",
-      "button": "Clear Cache"
+      "description": "This will clear all the temporary files that help your website load quickly. Your website might be slightly slower temporarily as it creates new ones.",
+      "warning": "Heads up: Your website might load a bit slower right after clearing the cache.",
+      "button": "Clear Cache Now"
     }
   },
   "info": {
-    "title": "About Website Cache",
-    "description": "Caching stores copies of your website's files to make them load faster for visitors. When you update your website, you may need to clear the cache so visitors can see your changes immediately.",
+    "title": "What is Website Cache and Why Does it Matter?",
+    "description": "Think of cache like a shortcut for your website visitors. It saves temporary copies of your website's files so that returning visitors can load your site much faster. Clearing the cache is like hitting a refresh button, useful after you make updates so visitors see the changes.",
     "benefits": [
-      "Faster page loading times",
-      "Reduced server load",
-      "Better user experience",
-      "Improved search engine rankings"
+      "Faster loading times for your visitors",
+      "Your website feels snappier and more responsive",
+      "Happier visitors who stay on your site longer",
+      "Can even help a little with how search engines see your site (they like fast sites!)"
     ]
   },
   "status": {
@@ -28,5 +28,14 @@
     "disabled": "Cache is disabled",
     "clearing": "Clearing cache...",
     "building": "Cache is rebuilding..."
+  },
+  "issues": {
+    "title": "Potential Issues After Clearing Cache",
+    "description": "Sometimes, after clearing the cache, you or your visitors might notice a few minor things. Don't worry, these are usually temporary and resolve themselves quickly as the cache rebuilds.",
+    "items": [
+      "Your website might load slightly slower for the first few visitors",
+      "Some elements might appear slightly different until the cache is fully rebuilt",
+      "In rare cases, you might need to log in to certain areas of your website again"
+    ]
   }
 }

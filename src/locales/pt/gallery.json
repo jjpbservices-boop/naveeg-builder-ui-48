@@ -2,7 +2,7 @@
   "title": "Galeria",
   "subtitle": "Descobre websites incríveis criados com Naveeg",
   "filter": {
-    "all": "Todos",
+    "all": "todos",
     "restaurant": "Restaurante",
     "services": "Serviços", 
     "retail": "Comércio",
@@ -11,7 +11,7 @@
     "ecommerce": "E-commerce"
   },
   "viewDemo": "Ver demo",
-  "visitSite": "Visitar site",
+  "visitSite": "visitar site",
   "sites": [
     {
       "name": "Restaurante Bella Vista",

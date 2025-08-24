@@ -14,8 +14,8 @@
     "delete": "Eliminar",
     "edit": "Editar",
     "copy": "Copiar",
-    "copied": "¡Copiado!",
-    "visit": "Visitar",
+    "copied": "copiado!",
+    "visit": "visitar",
     "preview": "Vista previa",
     "generate": "Generar",
     "create": "Crear",
@@ -60,8 +60,8 @@
     "nav": {
       "features": "Características",
       "pricing": "Precios",
-      "gallery": "Galería",
-      "faq": "FAQ",
+      "gallery": "galería",
+      "faq": "faq",
       "contact": "Contacto"
     }
   },
@@ -75,8 +75,8 @@
     "blog": "Blog",
     "careers": "Carreras",
     "resources": "Recursos",
-    "help": "Ayuda",
-    "documentation": "Documentación",
+    "help": "ayuda",
+    "documentation": "documentación",
     "support": "Soporte",
     "legal": "Legal",
     "privacy": "Privacidad",

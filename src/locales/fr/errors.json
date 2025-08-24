@@ -4,5 +4,23 @@
     "network": "Erreur réseau. Veuillez vérifier votre connexion.",
     "timeout": "Délai d'attente dépassé. Veuillez réessayer.",
     "serverError": "Erreur du serveur. Veuillez réessayer plus tard."
+,
+    "notFound": "La ressource demandée n'a pas été trouvée.",
+    "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action.",
+    "forbidden": "L'accès à cette ressource est interdit.",
+    "validationFailed": "Veuillez vérifier votre saisie et réessayer."
+  },
+  "generation": {
+    "failed": "La génération du site web a échoué. Veuillez réessayer.",
+    "timeout": "La génération du site web prend plus de temps que prévu. Veuillez réessayer.",
+    "invalidInput": "Veuillez fournir des informations d'entreprise valides."
+  },
+  "backup": {
+    "createFailed": "Échec de la création de la sauvegarde. Veuillez réessayer.",
+    "restoreFailed": "Échec de la restauration de la sauvegarde. Veuillez contacter le support.",
+    "deleteFailed": "Échec de la suppression de la sauvegarde. Veuillez réessayer."
+  },
+  "domain": {
+    "verificationFailed": "La vérification du domaine a échoué. Veuillez vérifier vos paramètres DNS.",
+    "alreadyExists": "Ce domaine est déjà connecté à un autre site web."
   }
-}

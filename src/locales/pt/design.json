@@ -1,0 +1,39 @@
+{
+  "title": "Escolha o seu design",
+  "subtitle": "Personalize cores, fontes e páginas para combinar com a sua marca. Veja como fica em tempo real!",
+  "colors": {
+    "primary": "Cor primária",
+    "secondary": "Cor secundária",
+    "accent": "Cor de destaque",
+    "darkBackground": "Fundo escuro",
+    "colorPlaceholder": "#000000"
+  },
+  "fonts": {
+    "heading": "Fonte do título",
+    "body": "Fonte do corpo",
+    "syne": "Syne",
+    "playfair": "Playfair Display",
+    "montserrat": "Montserrat",
+    "inter": "Inter",
+    "lato": "Lato",
+    "roboto": "Roboto"
+  },
+  "preview": {
+    "title": "Pré-visualização ao vivo",
+    "subtitle": "Veja como o seu site ficará",
+    "sampleHeading": "Bem-vindo ao seu negócio",
+    "sampleText": "É assim que o seu conteúdo aparecerá no seu site. As cores e fontes que escolher serão aplicadas em todo o site.",
+    "sampleButton": "Começar"
+  },
+  "sitemap": {
+    "title": "Estrutura do seu site",
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "gallery": "Galeria",
+    "contact": "Contacto"
+  },
+  "actions": {
+    "saveAndPreview": "Guardar e pré-visualizar"
+  }
+}
