@@ -1,12 +1,12 @@
 {
   "title": "Espace de travail",
-  "subtitle": "gérez tous vos sites web et collaborez avec votre équipe.",
+  "subtitle": "Gérez tous vos sites web et collaborez avec votre équipe.",
   "header": {
     "workspaceName": "Mon espace de travail",
-    "addCollaborator": "ajouter un collaborateur"
+    "addCollaborator": "Ajouter un collaborateur"
   },
   "websites": {
-    "title": "vos sites web",
+    "title": "Vos sites web",
     "empty": "aucun site web pour l'instant",
     "emptyDescription": "créez votre premier site web pour commencer.",
     "addWebsite": "ajouter un site web",
@@ -20,8 +20,8 @@
     }
   },
   "collaborators": {
-    "title": "membres de l'équipe",
-    "invite": "inviter un membre de l'équipe",
+    "title": "Membres de l'équipe",
+    "invite": "Inviter un membre de l'équipe",
     "email": "adresse e-mail",
     "role": "rôle",
     "roles": {

@@ -1,6 +1,6 @@
 {
   "cache": {
-    "title": "rendi il tuo sito web più veloce con la cache",
+    "title": "Rendi il tuo sito web più veloce con la cache",
     "refresh": {
       "title": "Svuota la cache del sito web",
       "button": "Aggiorna il mio sito web",
@@ -14,7 +14,7 @@
       }
     },
     "info": {
-      "title": "cos'è la cache del sito web e perché è importante?",
+      "title": "Cos'è la cache del sito web e perché è importante?",
       "description": "Pensa alla cache come a una scorciatoia per i visitatori del tuo sito web. Salva copie temporanee dei file del tuo sito web in modo che i visitatori di ritorno possano caricare il tuo sito molto più velocemente. Svuotare la cache è come premere un pulsante di aggiornamento, utile dopo aver apportato aggiornamenti in modo che i visitatori vedano le modifiche.",
       "benefits": [
         "Tempi di caricamento più rapidi per i tuoi visitatori",
@@ -31,7 +31,7 @@
     }
   },
   "issues": {
-    "title": "potenziali problemi dopo aver svuotato la cache",
+    "title": "Potenziali problemi dopo aver svuotato la cache",
     "description": "A volte, dopo aver svuotato la cache, tu o i tuoi visitatori potreste notare alcune piccole cose. Non preoccuparti, di solito sono temporanee e si risolvono rapidamente mentre la cache si ricostruisce.",
     "items": [
       "Il tuo sito web potrebbe caricare leggermente più lentamente per i primi visitatori",

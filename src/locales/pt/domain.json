@@ -1,0 +1,33 @@
+{
+  "title": "Configurações de domínio",
+  "subtitle": "Gerencie o domínio do seu site e o certificado SSL.",
+  "current": {
+    "title": "Domínio atual",
+    "copyUrl": "Copiar URL",
+    "visitSite": "Visitar site"
+  },
+  "custom": {
+    "title": "Domínio personalizado",
+    "subtitle": "Conecte seu próprio domínio ao seu site",
+    "placeholder": "seudominio.com",
+    "addButton": "Adicionar domínio personalizado",
+    "instructions": "Digite seu nome de domínio sem http:// ou https://",
+    "verification": {
+      "title": "Verificação de domínio",
+      "description": "Para verificar a propriedade do seu domínio, adicione este registro DNS:",
+      "type": "Tipo",
+      "name": "Nome",
+      "value": "Valor",
+      "pending": "Verificação pendente...",
+      "verified": "Domínio verificado",
+      "failed": "Falha na verificação"
+    }
+  },
+  "ssl": {
+    "title": "Certificado SSL",
+    "active": "Certificado SSL ativo",
+    "inactive": "Certificado SSL inativo",
+    "description": "Certificados SSL criptografam a conexão entre seu site e seus visitantes, garantindo a segurança de seus dados. Isso é essencial para construir confiança e melhorar seu ranking nos motores de busca.",
+    "autoRenewal": "Renovação automática ativada"
+  }
+}

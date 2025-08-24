@@ -1,0 +1,26 @@
+{
+  "title": "gestione sito web",
+  "subtitle": "gestisci le impostazioni, le prestazioni e la sicurezza del tuo sito web da un unico posto.",
+  "actions": {
+    "regenerateWebsite": "rigenera sito web",
+    "visitSite": "visita sito",
+    "editSite": "modifica sito (editor)",
+    "wpDashboard": "dashboard wp"
+  },
+  "overview": {
+    "title": "panoramica",
+    "url": "url sito web",
+    "created": "creato",
+    "lastModified": "ultima modifica",
+    "storage": "utilizzo spazio di archiviazione",
+    "visitors": "visitatori",
+    "websiteInfo": "informazioni sito web",
+    "siteTitle": "titolo sito",
+    "siteDescription": "descrizione sito",
+    "subdomain": "sottodominio",
+    "status": "stato",
+    "active": "attivo",
+    "inactive": "inattivo",
+    "maintenance": "manutenzione"
+  }
+}

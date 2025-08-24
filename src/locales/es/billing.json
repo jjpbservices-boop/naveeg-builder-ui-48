@@ -33,7 +33,7 @@
   },
   "taxSummary": {
     "title": "Resumen de impuestos",
-    "reverseCharge": "Puede aplicarse inversión del sujeto pasivo para transacciones B2B",
+    "reverseCharge": "Puede aplicarse inversión del sujeto pasivo para transacciones b2b",
     "localVat": "Puede aplicarse IVA local",
     "vatRate": "Tasa de IVA: {rate}%"
   },
@@ -42,16 +42,16 @@
     "previewInvoice": "Previsualizar Factura"
   },
   "invoice": {
-    "title": "Previsualización de Factura",
-    "invoiceNumber": "factura n.º {number}",
-    "date": "fecha: {date}",
-    "dueDate": "fecha de vencimiento: {date}",
-    "billTo": "facturar a:",
-    "description": "descripción",
-    "amount": "importe",
+    "title": "Previsualización de factura",
+    "invoiceNumber": "Factura n.º {number}",
+    "date": "Fecha: {date}",
+    "dueDate": "Fecha de vencimiento: {date}",
+    "billTo": "Facturar a:",
+    "description": "Descripción",
+    "amount": "Importe",
     "subtotal": "Subtotal",
-    "vat": "iva ({rate}%)",
-    "total": "total",
+    "vat": "Iva ({rate}%)",
+    "total": "Total",
     "paymentTerms": "Condiciones de Pago: Neto 30 días",
     "thankYou": "¡Gracias por tu negocio!"
   },

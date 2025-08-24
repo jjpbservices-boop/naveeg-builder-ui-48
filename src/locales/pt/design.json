@@ -19,11 +19,11 @@
     "roboto": "Roboto"
   },
   "preview": {
-    "title": "Pré-visualização ao vivo",
-    "subtitle": "Veja como o seu site ficará",
+    "title": "pré-visualização ao vivo",
+    "subtitle": "veja como o seu site ficará",
     "sampleHeading": "Bem-vindo ao seu negócio",
-    "sampleText": "É assim que o seu conteúdo aparecerá no seu site. As cores e fontes que escolher serão aplicadas em todo o site.",
-    "sampleButton": "Começar"
+    "sampleText": "é assim que o seu conteúdo aparecerá no seu site. as cores e fontes que escolher serão aplicadas em todo o site.",
+    "sampleButton": "começar"
   },
   "sitemap": {
     "title": "Estrutura do seu site",

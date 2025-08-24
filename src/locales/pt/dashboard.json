@@ -1,0 +1,26 @@
+{
+  "title": "Gerenciamento do site",
+  "subtitle": "Gerencie as configurações, desempenho e segurança do seu site em um só lugar.",
+  "actions": {
+    "regenerateWebsite": "Regenerar site",
+    "visitSite": "Visitar site",
+    "editSite": "Editar site (editor)",
+    "wpDashboard": "Painel WP"
+  },
+  "overview": {
+    "title": "Visão geral",
+    "url": "URL do site",
+    "created": "Criado",
+    "lastModified": "Última modificação",
+    "storage": "Uso de armazenamento",
+    "visitors": "Visitantes",
+    "websiteInfo": "Informações do site",
+    "siteTitle": "Título do site",
+    "siteDescription": "Descrição do site",
+    "subdomain": "Subdomínio",
+    "status": "Status",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "maintenance": "Manutenção"
+  }
+}

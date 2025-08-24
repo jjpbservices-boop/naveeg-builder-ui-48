@@ -1,0 +1,26 @@
+{
+  "general": {
+    "unknown": "Si è verificato un errore sconosciuto",
+    "network": "Errore di rete. Controlla la tua connessione.",
+    "timeout": "Tempo scaduto. Riprova.",
+    "serverError": "Errore del server. Riprova più tardi.",
+    "notFound": "La risorsa richiesta non è stata trovata.",
+    "unauthorized": "Non sei autorizzato a eseguire questa azione.",
+    "forbidden": "L'accesso a questa risorsa è proibito.",
+    "validationFailed": "Controlla i tuoi dati e riprova."
+  },
+  "generation": {
+    "failed": "Generazione del sito web fallita. Riprova.",
+    "timeout": "La generazione del sito web sta impiegando più tempo del previsto. Riprova.",
+    "invalidInput": "Fornisci informazioni aziendali valide."
+  },
+  "backup": {
+    "createFailed": "Creazione backup fallita. Riprova.",
+    "restoreFailed": "Ripristino backup fallito. Contatta il supporto.",
+    "deleteFailed": "Eliminazione backup fallita. Riprova."
+  },
+  "domain": {
+    "verificationFailed": "Verifica dominio fallita. Controlla le impostazioni DNS.",
+    "alreadyExists": "Questo dominio è già collegato a un altro sito web."
+  }
+}

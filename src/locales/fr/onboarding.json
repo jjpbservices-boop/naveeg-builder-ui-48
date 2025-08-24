@@ -9,7 +9,7 @@
   "generateWebsiteButton": "Générer votre site web",
   "wizard": { 
     "step1": "Brief du site",
-    "step2": "Design",
+    "step2": "design",
     "completed": "Terminé"
   },
   "brief": {

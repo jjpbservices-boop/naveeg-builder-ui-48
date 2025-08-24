@@ -1,0 +1,26 @@
+{
+  "title": "panel de control",
+  "subtitle": "gestiona la configuración, el rendimiento y la seguridad de tu sitio web desde un solo lugar.",
+  "actions": {
+    "regenerateWebsite": "regenerar sitio web",
+    "visitSite": "visitar sitio",
+    "editSite": "editar sitio (editor)",
+    "wpDashboard": "panel de wordpress"
+  },
+  "overview": {
+    "title": "resumen",
+    "url": "url del sitio web",
+    "created": "creado",
+    "lastModified": "última modificación",
+    "storage": "uso del almacenamiento",
+    "visitors": "visitantes",
+    "websiteInfo": "información del sitio web",
+    "siteTitle": "título del sitio",
+    "siteDescription": "descripción del sitio",
+    "subdomain": "subdominio",
+    "status": "estado",
+    "active": "activo",
+    "inactive": "inactivo",
+    "maintenance": "mantenimiento"
+  }
+}

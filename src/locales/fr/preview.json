@@ -7,7 +7,7 @@
     "openAdmin": "Ouvrir l'admin"
   },
   "navigation": {
-    "home": "Accueil",
+    "home": "accueil",
     "about": "À propos",
     "services": "Services",
     "menu": "Menu",
@@ -23,14 +23,14 @@
     "general": {
       "contactUs": "Nous contacter",
       "getQuote": "Demander un devis"
-    }
+    } 
   },
   "placeholder": {
     "hero": "Bienvenue chez {businessName}",
     "subtitle": "Votre partenaire de confiance pour tous vos besoins en {businessType}",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "features": "Nos services",
+    "features": "nos services",
     "about": "À propos de nous",
     "contact": "Prendre contact"
-  }
+  } 
 }

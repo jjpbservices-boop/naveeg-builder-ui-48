@@ -2,7 +2,7 @@
   "title": "Vos informations de facturation - simples et sécurisées",
   "subtitle": "Gérez vos détails de facturation et consultez vos factures en toute simplicité. toutes vos informations sont conservées en toute sécurité et chiffrées.",
   "form": {
-    "accountType": "Type de compte", 
+    "accountType": "Type de compte",
     "individual": "Particulier",
     "company": "Entreprise",
     "legalName": "Nom légal",
@@ -33,7 +33,7 @@
   },
   "taxSummary": {
     "title": "Résumé des taxes",
-    "reverseCharge": "L'autoliquidation peut s'appliquer aux transactions interentreprises", 
+    "reverseCharge": "L'autoliquidation peut s'appliquer aux transactions interentreprises",
     "localVat": "La TVA locale peut s'appliquer",
     "vatRate": "Taux de TVA : {rate}%"
   },
@@ -43,7 +43,7 @@
   },
   "invoice": {
     "title": "Aperçu de la facture",
-    "invoiceNumber": "Facture n°{number}", 
+    "invoiceNumber": "Facture n°{number}",
     "date": "Date : {date}",
     "dueDate": "Date d'échéance : {date}",
     "billTo": "Facturer à :",

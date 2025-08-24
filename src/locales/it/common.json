@@ -44,9 +44,9 @@
     "services": "Servizi",
     "menu": "Menu",
     "gallery": "Galleria",
-    "events": "Eventi",
+    "events": "eventi",
     "contact": "contatti",
-    "blog": "blog",
+    "blog": "Blog",
     "portfolio": "Portfolio"
   },
   "header": {
@@ -59,8 +59,8 @@
     "darkMode": "Modalità Scura",
     "nav": {
       "features": "funzionalità",
-      "pricing": "prezzi",
-      "gallery": "Galleria",
+      "pricing": "prezzi", 
+      "gallery": "galleria",
       "faq": "FAQ",
       "contact": "Contatti"
     }
@@ -68,11 +68,11 @@
   "footer": {
     "product": "Prodotto",
     "features": "funzionalità",
-    "pricing": "prezzi",
-    "templates": "template",
+    "pricing": "prezzi", 
+    "templates": "template", 
     "company": "Azienda",
     "about": "chi siamo",
-    "blog": "blog",
+    "blog": "blog", 
     "careers": "Carriere",
     "resources": "risorse",
     "help": "Aiuto",

@@ -11,7 +11,7 @@
   "fonts": {
     "heading": "Police des titres", 
     "body": "Police du texte",
-    "syne": "Syne",
+    "syne": "syne",
     "playfair": "Playfair Display",
     "montserrat": "montserrat",
     "inter": "Inter",
@@ -27,7 +27,7 @@
   },
   "sitemap": {
     "title": "Structure de votre site web",
-    "addPage": "ajouter une page",
+    "addPage": "Ajouter une page",
     "maxPages": "max {count} pages",
     "pageOptions": {
       "edit": "modifier la page",

@@ -2,7 +2,7 @@
   "title": "Accélérez le chargement de votre site web avec le cache",
   "subtitle": "Améliorez la vitesse de votre site web et l'expérience visiteur en gérant le cache. C'est simple et ne nécessite aucune compétence technique.",
   "refresh": {
-    "title": "Videz le cache du site web",
+    "title": "videz le cache du site web",
     "button": "Actualiser mon site web",
     "description": "Videz le cache de votre site web pour vous assurer que tout le monde voit la dernière version de votre site immédiatement. Votre site pourrait être un peu plus lent pendant un moment pendant qu'il se reconstruit, mais c'est généralement très rapide.",
     "lastCleared": "Cache vidé pour la dernière fois : {date}",
@@ -14,7 +14,7 @@
     }
   },
   "info": {
-    "title": "Qu'est-ce que le cache du site web et pourquoi est-il important ?",
+    "title": "qu'est-ce que le cache du site web et pourquoi est-il important ?",
     "description": "Considérez le cache comme un raccourci pour les visiteurs de votre site web. Il enregistre des copies temporaires des fichiers de votre site web afin que les visiteurs qui reviennent puissent charger votre site beaucoup plus rapidement. Vider le cache, c'est comme appuyer sur un bouton d'actualisation, utile après avoir effectué des mises à jour afin que les visiteurs voient les changements.",
     "benefits": [
       "Temps de chargement plus rapides pour vos visiteurs",
@@ -24,16 +24,16 @@
     ]
   },
   "status": {
-    "enabled": "Le cache est activé et fonctionne.",
-    "disabled": "Le cache est désactivé.",
-    "clearing": "Vidage du cache...",
-    "building": "Le cache est en cours de reconstruction..."
+    "enabled": "le cache est activé et fonctionne.",
+    "disabled": "le cache est désactivé.",
+    "clearing": "vidage du cache...",
+    "building": "le cache est en cours de reconstruction..."
   },
   "issues": {
-    "title": "Problèmes potentiels après avoir vidé le cache",
+    "title": "problèmes potentiels après avoir vidé le cache",
     "description": "Parfois, après avoir vidé le cache, vous ou vos visiteurs pourriez remarquer quelques petites choses. Ne vous inquiétez pas, elles sont généralement temporaires et se résolvent rapidement à mesure que le cache se reconstruit.",
     "items": [
-      "Votre site web pourrait charger légèrement plus lentement pour les premiers visiteurs",
+      "votre site web pourrait charger légèrement plus lentement pour les premiers visiteurs",
       "Certains éléments pourraient apparaître légèrement différents jusqu'à ce que le cache soit entièrement reconstruit",
       "Dans de rares cas, vous pourriez avoir besoin de vous reconnecter à certaines zones de votre site web"
     ]

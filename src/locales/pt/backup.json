@@ -1,13 +1,13 @@
 {
-  "title": "sua rede de segurança do site: backups fáceis",
+  "title": "Sua rede de segurança do site: backups fáceis",
   "subtitle": "Proteja seu negócio online com backups automáticos. Restaure seu site com poucos cliques, sem precisar de habilidades técnicas.",
   "create": {
-    "title": "criar novo backup agora",
+    "title": "Criar novo backup agora",
     "button": "Criar Backup",
-    "description": "Crie facilmente um instantâneo completo do seu site. Isso inclui todo o seu conteúdo, imagens, configurações e até mesmo toques personalizados."
+    "description": "Crie facilmente um instantâneo completo do seu site. isso inclui todo o seu conteúdo, imagens, configurações e até mesmo toques personalizados."
   },
   "list": {
-    "title": "Seu Histórico de Backups",
+    "title": "Seu histórico de backups",
     "empty": "Nenhum backup criado ainda",
     "emptyDescription": "Crie seu primeiro backup hoje para garantir o futuro do seu site.",
     "columns": {

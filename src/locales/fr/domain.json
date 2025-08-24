@@ -7,7 +7,7 @@
     "visitSite": "Visiter le site"
   },
   "custom": {
-    "title": "domaine personnalisé",
+    "title": "Domaine personnalisé",
     "subtitle": "Connectez votre propre domaine à votre site web",
     "placeholder": "votredomaine.com",
     "addButton": "Ajouter un domaine personnalisé",
@@ -15,7 +15,7 @@
     "verification": {
       "title": "vérification du domaine",
       "description": "Pour vérifier la propriété de votre domaine, ajoutez cet enregistrement DNS :",
-      "type": "Type",
+      "type": "Type", 
       "name": "Nom",
       "value": "Valeur",
       "pending": "Vérification en cours...",
@@ -24,7 +24,7 @@
     }
   },
   "ssl": {
-    "title": "certificat SSL",
+    "title": "Certificat SSL",
     "active": "Certificat SSL actif",
     "inactive": "Certificat SSL inactif",
     "description": "Les certificats SSL chiffrent la connexion entre votre site web et vos visiteurs, garantissant la sécurité de leurs données. C'est essentiel pour instaurer la confiance et améliorer votre classement dans les moteurs de recherche.",

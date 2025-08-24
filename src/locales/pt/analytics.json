@@ -4,15 +4,15 @@
   "kpis": {
     "visitors": "Visitantes do Website",
     "pageViews": "Visualizações de página",
-    "bounceRate": "Taxa de rejeição",
-    "timeOnSite": "Tempo médio no site",
+    "bounceRate": "taxa de rejeição",
+    "timeOnSite": "tempo médio no site",
     "totalVisitors": "{count, plural, =0 {Nenhum visitante ainda} =1 {1 visitante} other {{count} visitantes}}",
     "totalPageViews": "{count, plural, =0 {Nenhuma visualização de página ainda} =1 {1 visualização de página} other {{count} visualizações de página}}"
   },
   "charts": {
     "visitorsOverTime": "Visitantes ao longo do tempo",
     "pageViewsOverTime": "Visualizações de página ao longo do tempo",
-    "topPages": "Páginas Mais Populares",
+    "topPages": "páginas mais populares",
     "trafficSources": "De Onde Vêm os Visitantes",
     "deviceTypes": "Dispositivos Usados pelos Visitantes"
   },

@@ -1,0 +1,34 @@
+{
+  "title": "parámetros de dominio",
+  "subtitle": "traducir: Manage your website domain and SSL certificate.",
+  "current": {
+    "title": "dominio actual",
+    "copyUrl": "traducir: Copy URL",
+    "visitSite": "traducir: Visit site"
+  },
+  "custom": {
+    "title": "dominio personalizado",
+    "subtitle": "traducir: Connect your own domain to your website",
+    "placeholder": "traducir: yourdomain.com",
+    "addButton": "traducir: Add Custom Domain",
+    "instructions": "traducir: Enter your domain name without http:// or https://",
+    "verification": {
+      "title": "verificación del dominio",
+      "description": "traducir: To verify ownership of your domain, add this DNS record:",
+      "type": "traducir: Type",
+      "name": "traducir: Name",
+      "value": "traducir: Value",
+      "pending": "traducir: Verifying...",
+      "verified": "traducir: Domain verified",
+      "failed": "traducir: Verification failed"
+    }
+  },
+  "ssl": {
+    "title": "certificado ssl",
+    "active": "traducir: Active",
+    "inactive": "traducir: Inactive",
+    "description": "traducir: SSL certificates encrypt the connection between your website and visitors, ensuring their data is secure. It's essential for building trust and improving your search engine ranking.",
+    "expires": "traducir: Expires: {date}",
+    "autoRenewal": "traducir: Auto-renewal enabled"
+  }
+}

@@ -17,15 +17,15 @@
     "title": "¿Qué es la caché del sitio web y por qué es importante?",
     "description": "Piensa en la caché como un atajo para los visitantes de tu sitio web. Guarda copias temporales de los archivos de tu sitio web para que los visitantes que regresan puedan cargar tu sitio mucho más rápido. Borrar la caché es como pulsar un botón de actualización, útil después de hacer actualizaciones para que los visitantes vean los cambios.",
     "benefits": [
-      "Tiempos de carga más rápidos para tus visitantes",
-      "Tu sitio web se siente más ágil y responsivo",
-      "Visitantes más felices que permanecen más tiempo en tu sitio",
-      "Incluso puede ayudar un poco con cómo los motores de búsqueda ven tu sitio (¡les gustan los sitios rápidos!)"
+      "tiempos de carga más rápidos para tus visitantes",
+      "tu sitio web se siente más ágil y responsivo",
+      "visitantes más felices que permanecen más tiempo en tu sitio",
+      "incluso puede ayudar un poco con cómo los motores de búsqueda ven tu sitio (¡les gustan los sitios rápidos!)"
     ]
   },
   "status": {
-    "enabled": "La caché está activa y funcionando",
-    "disabled": "La caché está desactivada",
+    "enabled": "la caché está activa y funcionando",
+    "disabled": "la caché está desactivada",
     "clearing": "Borrando caché...",
     "building": "Reconstruyendo caché..."
   }
@@ -34,8 +34,8 @@
         "title": "posibles problemas al borrar la caché",
         "description": "Al borrar la caché, hay algunas cosas que podrías notar temporalmente:",
         "items": [
-          "Tu sitio web podría cargar un poco más lento al principio para los visitantes.",
-          "Es posible que los visitantes que hayan iniciado sesión en tu sitio necesiten volver a iniciar sesión."
+          "tu sitio web podría cargar un poco más lento al principio para los visitantes.",
+          "es posible que los visitantes que hayan iniciado sesión en tu sitio necesiten volver a iniciar sesión."
         ]
 }
 }

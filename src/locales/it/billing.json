@@ -2,7 +2,7 @@
   "title": "Le tue informazioni di fatturazione - semplici e sicure",
   "subtitle": "Gestisci i dettagli di fatturazione e visualizza le tue fatture con facilità. Tutte le tue informazioni sono mantenute al sicuro e crittografate.", 
   "form": {
-    "accountType": "Tipo di account",
+    "accountType": "tipo di account",
     "individual": "Individuale",
     "company": "Azienda",
     "legalName": "Nome legale",
@@ -18,13 +18,13 @@
       "cityPlaceholder": "Città",
       "postalCode": "Codice Postale",
       "postalCodePlaceholder": "Codice postale",
-      "country": "Paese"
+      "country": "paese"
     },
     "vat": {
-      "hasVatNumber": "Ho una partita Iva UE",
-      "vatNumber": "Partita Iva",
+      "hasVatNumber": "ho una partita iva UE",
+      "vatNumber": "partita iva",
       "vatNumberPlaceholder": "Inserisci la tua partita IVA",
-      "formatHint": "Formato: {format}"
+      "formatHint": "formato: {format}"
     },
     "invoicing": {
       "language": "Lingua fatturazione",
@@ -32,33 +32,33 @@
     }
   },
   "taxSummary": {
-    "title": "Riepilogo fiscale",
-    "reverseCharge": "Il Reverse Charge potrebbe applicarsi per le transazioni B2B",
-    "localVat": "L'IVA locale potrebbe applicarsi",
-    "vatRate": "Aliquota IVA: {rate}%"
+    "title": "riepilogo fiscale",
+    "reverseCharge": "il reverse charge potrebbe applicarsi per le transazioni b2b",
+    "localVat": "l'iva locale potrebbe applicarsi",
+    "vatRate": "aliquota iva: {rate}%"
   },
   "actions": {
-    "save": "Salva info fatturazione",
-    "previewInvoice": "Anteprima Fattura"
+    "save": "salva info fatturazione",
+    "previewInvoice": "anteprima fattura"
   },
   "invoice": {
-    "title": "Anteprima Fattura",
-    "invoiceNumber": "Fattura #{number}",
-    "date": "Data: {date}",
-    "dueDate": "Data Scadenza: {date}",
-    "billTo": "Fatturare A:",
+    "title": "anteprima fattura",
+    "invoiceNumber": "fattura #{number}",
+    "date": "data: {date}",
+    "dueDate": "data scadenza: {date}",
+    "billTo": "fatturare a:",
     "description": "Descrizione",
-    "amount": "Importo",
+    "amount": "importo",
     "subtotal": "Subtotale",
-    "vat": "IVA ({rate}%)",
-    "total": "Totale",
-    "paymentTerms": "Termini di Pagamento: Netto 30 giorni",
-    "thankYou": "Grazie per il tuo acquisto!" 
+    "vat": "iva ({rate}%)",
+    "total": "totale",
+    "paymentTerms": "termini di pagamento: netto 30 giorni",
+    "thankYou": "grazie per il tuo acquisto!"
   },
   "validation": {
-    "legalNameRequired": "Il nome legale è obbligatorio",
-    "emailRequired": "L'email di fatturazione è obbligatoria",
-    "invalidEmail": "Inserisci un indirizzo email valido",
+    "legalNameRequired": "il nome legale è obbligatorio",
+    "emailRequired": "l'email di fatturazione è obbligatoria",
+    "invalidEmail": "inserisci un indirizzo email valido",
     "addressRequired": "L'indirizzo è obbligatorio",
     "cityRequired": "La città è obbligatoria",
     "postalCodeRequired": "Il codice postale è obbligatorio",

@@ -2,7 +2,7 @@
   "title": "Paramètres de sécurité",
   "subtitle": "Gardez votre site web sécurisé grâce à des fonctionnalités de sécurité avancées.",
   "ssl": {
-    "title": "Certificat SSL",
+    "title": "certificat ssl",
     "active": "Actif",
     "inactive": "Inactif",
     "description": "Les certificats SSL cryptent les données entre votre site web et les visiteurs.",
@@ -10,7 +10,7 @@
     "autoRenewal": "Renouvellement automatique activé"
   },
   "credentials": {
-    "title": "Identifiants WordPress",
+    "title": "identifiants wordpress",
     "description": "Vos identifiants de connexion administrateur WordPress pour un accès direct.",
     "username": "Nom d'utilisateur",
     "password": "Mot de passe",
@@ -20,17 +20,17 @@
     "copyPassword": "Copier le mot de passe"
   },
   "features": {
-    "title": "Fonctionnalités de sécurité",
+    "title": "fonctionnalités de sécurité",
     "firewall": {
-      "title": "Pare-feu d'application web",
+      "title": "pare-feu d'application web",
       "description": "Protège contre les attaques malveillantes et le trafic suspect"
     },
     "malwareScan": {
-      "title": "Analyse des logiciels malveillants",
+      "title": "analyse des logiciels malveillants",
       "description": "Analyses régulières pour détecter et supprimer les codes malveillants"
     },
     "autoUpdates": {
-      "title": "Mises à jour automatiques",
+      "title": "mises à jour automatiques",
       "description": "Maintien automatique de WordPress et des plugins à jour"
     }
   },

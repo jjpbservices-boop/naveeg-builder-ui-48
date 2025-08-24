@@ -1,16 +1,16 @@
 {
-  "title": "elige tu diseño",
-  "subtitle": "personaliza los colores, fuentes y páginas para que coincidan con tu marca",
+  "title": "Elige tu diseño",
+  "subtitle": "Personaliza los colores, fuentes y páginas para que coincidan con tu marca",
   "colors": {
-    "primary": "color principal",
-    "secondary": "color secundario",
-    "accent": "color de acento",
-    "darkBackground": "fondo oscuro",
+    "primary": "Color principal",
+    "secondary": "Color secundario",
+    "accent": "Color de acento",
+    "darkBackground": "Fondo oscuro",
     "colorPlaceholder": "#000000"
   },
   "fonts": {
-    "heading": "fuente del título",
-    "body": "fuente del cuerpo",
+    "heading": "Fuente del título",
+    "body": "Fuente del cuerpo",
     "syne": "Syne",
     "playfair": "Playfair Display",
     "montserrat": "Montserrat",

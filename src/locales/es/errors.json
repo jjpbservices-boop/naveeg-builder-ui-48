@@ -1,0 +1,52 @@
+{
+  "general": {
+    "unknown": "Ocurrió un error desconocido",
+    "network": "Error de red. Por favor, verifica tu conexión.",
+    "timeout": "Tiempo de espera agotado. Por favor, inténtalo de nuevo.",
+    "serverError": "Error del servidor. Por favor, inténtalo de nuevo más tarde.",
+    "notFound": "El recurso solicitado no fue encontrado.",
+    "unauthorized": "No estás autorizado para realizar esta acción.",
+    "forbidden": "El acceso a este recurso está prohibido.",
+    "validationFailed": "Por favor, verifica tu entrada y vuelve a intentarlo."
+  },
+  "generation": {
+    "failed": "Error al generar el sitio web. Por favor, inténtalo de nuevo.",
+    "timeout": "La generación del sitio web está tardando más de lo esperado. Por favor, inténtalo de nuevo.",
+    "invalidInput": "Por favor, proporciona información de empresa válida."
+  },
+  "backup": {
+    "createFailed": "Error al crear la copia de seguridad. Por favor, inténtalo de nuevo.",
+    "restoreFailed": "Error al restaurar la copia de seguridad. Por favor, contacta con soporte.",
+    "deleteFailed": "Error al eliminar la copia de seguridad. Por favor, inténtalo de nuevo."
+  },
+  "domain": {
+    "verificationFailed": "Error al verificar el dominio. Por favor, comprueba tus ajustes de DNS.",
+    "alreadyExists": "Este dominio ya está conectado a otro sitio web."
+  }
+}
+{
+  "general": {
+    "unknown": "[[TRANSLATION_NEEDED]]",
+    "network": "[[TRANSLATION_NEEDED]]",
+    "timeout": "[[TRANSLATION_NEEDED]]",
+    "serverError": "[[TRANSLATION_NEEDED]]",
+    "notFound": "[[TRANSLATION_NEEDED]]",
+    "unauthorized": "[[TRANSLATION_NEEDED]]",
+    "forbidden": "[[TRANSLATION_NEEDED]]",
+    "validationFailed": "[[TRANSLATION_NEEDED]]"
+  },
+  "generation": {
+    "failed": "[[TRANSLATION_NEEDED]]",
+    "timeout": "[[TRANSLATION_NEEDED]]",
+    "invalidInput": "[[TRANSLATION_NEEDED]]"
+  },
+  "backup": {
+    "createFailed": "[[TRANSLATION_NEEDED]]",
+    "restoreFailed": "[[TRANSLATION_NEEDED]]",
+    "deleteFailed": "[[TRANSLATION_NEEDED]]"
+  },
+  "domain": {
+    "verificationFailed": "[[TRANSLATION_NEEDED]]",
+    "alreadyExists": "[[TRANSLATION_NEEDED]]"
+  }
+}

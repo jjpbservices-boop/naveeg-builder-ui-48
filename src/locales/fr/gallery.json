@@ -1,6 +1,6 @@
 {
   "title": "Galerie",
-  "subtitle": "découvrez d'incroyables sites web créés avec Naveeg",
+  "subtitle": "Découvrez d'incroyables sites web créés avec Naveeg",
   "filter": {
     "all": "Tous",
     "restaurant": "Restaurant",
@@ -16,22 +16,22 @@
     {
       "name": "Restaurant Bella Vista",
       "category": "restaurant",
- "description": "Expérience culinaire italienne authentique au cœur de la ville"
+      "description": "Expérience culinaire italienne authentique au cœur de la ville"
     },
     {
       "name": "Cabinet Smith & Associés",
       "category": "services",
- "description": "Services juridiques professionnels avec plus de 20 ans d'expérience"
+      "description": "Services juridiques professionnels avec plus de 20 ans d'expérience"
     },
     {
       "name": "Studio Minimaliste Moderne",
       "category": "portfolio",
- "description": "Portfolio de design créatif présentant des projets innovants"
+      "description": "Portfolio de design créatif présentant des projets innovants"
     },
     {
       "name": "Boutique TechStyle",
       "category": "retail",
- "description": "Mode sélectionnée pour le professionnel moderne"
+      "description": "Mode sélectionnée pour le professionnel moderne"
     },
     {
       "name": "Paysagisme Green Thumb",
@@ -46,7 +46,7 @@
     {
       "name": "Café Artisan Coffee Co.",
       "category": "restaurant",
- "description": "Café de spécialité torréfié frais quotidiennement"
+      "description": "Café de spécialité torréfié frais quotidiennement"
     },
     {
       "name": "Gym Fitness First",
@@ -55,24 +55,24 @@
     },
     {
       "name": "Galerie Creative Works",
-      "category": "portfolio",
- "description": "Galerie d'art contemporain mettant en vedette des artistes locaux"
+      "category": "portfolio",      
+      "description": "Galerie d'art contemporain mettant en vedette des artistes locaux"
     },
     {
       "name": "Magasin Home Essentials",
       "category": "ecommerce",
- "description": "Tout ce dont vous avez besoin pour une belle maison"
+      "description": "Tout ce dont vous avez besoin pour une belle maison"
     },
     {
       "name": "Blog Wellness Journey",
       "category": "blog", 
       "description": "Histoires inspirantes et conseils pour le bien-être holistique"
     },
-    {
+    { 
       "name": "Food Truck Urban Bites",
       "category": "restaurant",
       "description": "Cuisine de rue gastronomique avec une touche moderne"
-    }
+    } 
   ],
   "cta": {
     "title": "Prêt à créer votre site web ?",

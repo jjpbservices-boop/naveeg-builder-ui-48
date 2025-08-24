@@ -10,11 +10,11 @@
     "totalPageViews": "{count, plural, =0 {Aún no hay páginas vistas} =1 {1 página vista} other {{count} páginas vistas}}"
   },
   "charts": {
-    "visitorsOverTime": "Visitantes a lo largo del tiempo",
-    "pageViewsOverTime": "Páginas Vistas a lo Largo del Tiempo",
-    "topPages": "Páginas Más Populares",
-    "trafficSources": "De Dónde Vienen los Visitantes",
-    "deviceTypes": "Dispositivos Usados por los Visitantes"
+ "visitorsOverTime": "Visitantes a lo largo del tiempo",
+ "pageViewsOverTime": "Páginas vistas a lo largo del tiempo",
+ "topPages": "Páginas más populares",
+ "trafficSources": "De dónde vienen los visitantes",
+ "deviceTypes": "Dispositivos usados por los visitantes"
   },
   "periods": {
     "7days": "Últimos 7 días",

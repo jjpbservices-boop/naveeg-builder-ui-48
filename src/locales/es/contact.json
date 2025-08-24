@@ -5,12 +5,15 @@
     "name": "Nombre completo",
     "namePlaceholder": "Ingresa tu nombre completo",
     "email": "Dirección de email", 
-    "emailPlaceholder": "Ingresa tu dirección de email",
-    "subjectPlaceholder": "¿De qué se trata?",
+    "emailPlaceholder": "ingresa tu dirección de email",
+    "subject": "asunto",
+    "subjectPlaceholder": "¿de qué se trata?",
     "message": "Mensaje",
     "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
-    "send": "Enviar mensaje",
-    "sending": "Enviando...",
+    "send": "enviar mensaje",
+    "sending": "enviando...",
+    "success": "¡gracias! te responderemos pronto.",
+    "successMessage": "hemos recibido tu mensaje y te contactaremos pronto.",
     "success": "¡Gracias! Te responderemos pronto.",
     "successMessage": "Hemos recibido tu mensaje y te contactaremos pronto.",
     "error": "Lo siento, hubo un error al enviar tu mensaje. Por favor, intenta de nuevo."
@@ -18,12 +21,15 @@
   "validation": {
     "nameRequired": "El nombre es requerido",
     "subjectRequired": "El asunto es requerido",
+    "emailRequired": "el email es requerido",
+    "emailInvalid": "por favor ingresa una dirección de email válida",
     "messageRequired": "El mensaje es requerido",
     "messageMinLength": "El mensaje debe tener al menos 10 caracteres"
   },
   "info": {
     "title": "Otras formas de contactarnos",
     "email": "hola@naveeg.com",
+    "phone": "+1 (555) 123-4567",
     "phone": "+1 (555) 123-4567",
     "address": "123 Calle Empresarial, Ciudad, Estado 12345",
     "hours": "Lunes - Viernes: 9 a.m. - 6 p.m. (EST)"

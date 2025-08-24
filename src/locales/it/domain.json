@@ -1,0 +1,33 @@
+{
+  "title": "impostazioni dominio",
+  "subtitle": "gestisci il dominio del tuo sito web e il certificato ssl.",
+  "current": {
+    "title": "dominio attuale",
+    "copyUrl": "copia url",
+    "visitSite": "visita sito"
+  },
+  "custom": {
+    "title": "dominio personalizzato",
+    "subtitle": "connetti il tuo dominio al tuo sito web",
+    "placeholder": "iltuodominio.com",
+    "addButton": "aggiungi dominio personalizzato",
+    "instructions": "inserisci il tuo nome di dominio senza http:// o https://",
+    "verification": {
+      "title": "verifica dominio",
+      "description": "per verificare la proprietà del tuo dominio, aggiungi questo record dns:",
+      "type": "tipo",
+      "name": "nome",
+      "value": "valore",
+      "pending": "verifica in corso...",
+      "verified": "dominio verificato",
+      "failed": "verifica fallita"
+    }
+  },
+  "ssl": {
+    "title": "certificato ssl",
+    "active": "attivo",
+    "inactive": "inattivo",
+    "description": "i certificati ssl crittografano la connessione tra il tuo sito web e i tuoi visitatori, garantendo la sicurezza dei loro dati. è essenziale per costruire fiducia e migliorare il tuo posizionamento nei motori di ricerca.",
+    "autoRenewal": "rinnovo automatico attivato"
+  }
+}

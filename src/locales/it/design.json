@@ -1,10 +1,10 @@
 {
-  "title": "scegli il tuo design",
-  "subtitle": "personalizza colori, font e pagine per adattarli al tuo brand",
+  "title": "Scegli il tuo design",
+  "subtitle": "Personalizza colori, font e pagine per adattarli al tuo brand",
   "colors": {
-    "primary": "colore principale",
-    "secondary": "colore secondario",
-    "accent": "colore accento",
+    "primary": "Colore principale",
+    "secondary": "Colore secondario",
+    "accent": "Colore accento",
     "darkBackground": "sfondo scuro",
     "colorPlaceholder": "#000000"
   },
@@ -19,16 +19,22 @@
     "roboto": "Roboto"
   },
   "preview": {
-    "title": "anteprima dal vivo",
-    "subtitle": "guarda come apparirà il tuo sito web",
+    "title": "Anteprima dal vivo",
+    "subtitle": "Guarda come apparirà il tuo sito web",
     "sampleHeading": "Benvenuto nella tua attività",
-    "sampleText": "Ecco come apparirà il tuo contenuto sul tuo sito web. i colori e i font che scegli verranno applicati su tutto il sito.",
-    "sampleButton": "inizia"
+    "sampleText": "Ecco come apparirà il tuo contenuto sul tuo sito web. I colori e i font che scegli verranno applicati su tutto il sito.",
+    "sampleButton": "Inizia"
   },
   "sitemap": {
-    "title": "struttura del tuo sito web",
+    "title": "Struttura del tuo sito web",
+    "addPage": "Aggiungi pagina",
+    "maxPages": "max {count} pagine",
     "home": "Home",
     "about": "Chi siamo",
+    "pageOptions": {
+      "edit": "modifica pagina",
+      "delete": "elimina pagina"
+    },
     "services": "Servizi",
     "gallery": "Galleria",
     "contact": "Contatti"

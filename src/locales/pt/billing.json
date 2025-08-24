@@ -2,7 +2,7 @@
   "title": "Suas Informações de Faturamento - Simples e Seguras",
   "subtitle": "Gerencie seus detalhes de faturamento e visualize suas faturas com facilidade. Todas as suas informações são mantidas seguras e criptografadas.",
   "form": {
-    "accountType": "Tipo de Conta",
+    "accountType": "Tipo de conta",
     "individual": "Individual",
     "company": "Empresa",
     "legalName": "Nome Legal",
@@ -21,14 +21,14 @@
       "country": "País"
     },
     "vat": {
-      "hasVatNumber": "Tenho um número de IVA da UE",
-      "vatNumber": "Número de IVA",
+      "hasVatNumber": "Tenho um número de iva da UE",
+      "vatNumber": "Número de iva",
       "vatNumberPlaceholder": "Insira o seu número de IVA",
       "formatHint": "Formato: {format}"
     },
     "invoicing": {
-      "language": "Idioma da Faturação",
-      "currency": "Moeda de Exibição"
+      "language": "Idioma da faturação",
+      "currency": "Moeda de exibição"
     }
   },
   "taxSummary": {
@@ -38,11 +38,11 @@
     "vatRate": "Taxa de IVA: {rate}%"
   },
   "actions": {
-    "save": "Guardar Informações de Faturamento",
-    "previewInvoice": "Pré-visualizar Fatura"
+    "save": "Guardar informações de faturamento",
+    "previewInvoice": "Pré-visualizar fatura"
   },
   "invoice": {
-    "title": "Pré-visualização da Fatura",
+    "title": "Pré-visualização da fatura",
     "invoiceNumber": "Fatura n.º {number}",
     "date": "Data: {date}",
     "dueDate": "Data de Vencimento: {date}",
@@ -64,6 +64,6 @@
     "postalCodeRequired": "O código postal é obrigatório",
     "countryRequired": "Por favor, selecione um país",
     "vatNumberRequired": "O número de IVA é obrigatório quando selecionado",
-    "invalidVatNumber": "Por favor, insira um número de IVA válido"
+    "invalidVatNumber": "Por favor, insira um número de iva válido"
   }
 }

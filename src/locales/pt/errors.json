@@ -1,0 +1,26 @@
+{
+  "general": {
+    "unknown": "Ocorreu um erro desconhecido",
+    "network": "Erro de rede. Verifique sua conexão.",
+    "timeout": "Tempo limite excedido. Por favor, tente novamente.",
+    "serverError": "Erro do servidor. Por favor, tente novamente mais tarde.",
+    "notFound": "Recurso solicitado não encontrado.",
+    "unauthorized": "Você não está autorizado a executar esta ação.",
+    "forbidden": "O acesso a este recurso é proibido.",
+    "validationFailed": "Verifique sua entrada e tente novamente."
+  },
+  "generation": {
+    "failed": "Falha ao gerar o website. Por favor, tente novamente.",
+    "timeout": "A geração do website está demorando mais do que o esperado. Por favor, tente novamente.",
+    "invalidInput": "Por favor, forneça informações de negócios válidas."
+  },
+  "backup": {
+    "createFailed": "Falha ao criar o backup. Por favor, tente novamente.",
+    "restoreFailed": "Falha ao restaurar o backup. Por favor, entre em contato com o suporte.",
+    "deleteFailed": "Falha ao excluir o backup. Por favor, tente novamente."
+  },
+  "domain": {
+    "verificationFailed": "Falha na verificação do domínio. Por favor, verifique suas configurações de DNS.",
+    "alreadyExists": "Este domínio já está conectado a outro website."
+  }
+}
