@@ -37,6 +37,13 @@ export type DomainItem = {
   id: number; name: string; site_url: string; default: 0|1; admin_url?: string; scheme?: "http"|"https";
 };
 
+export type PageData = {
+  id: number;
+  title: string;
+  status: string;
+  updated_at: string;
+}
+
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
@@ -58,6 +65,11 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 export class TenWebClient {
   /** Visitors time series */
   getVisitors(websiteId: number, period: Period = "month") {
+    return request<VisitorsResp>(`/v1/hosting/websites/${websiteId}/visitors?period=${period}`);
+  }
+
+  /** Visitors time series (alias) */
+  visitors(websiteId: number, period: Period = "month") {
     return request<VisitorsResp>(`/v1/hosting/websites/${websiteId}/visitors?period=${period}`);
   }
 
@@ -97,7 +109,7 @@ export class TenWebClient {
 
   /** Builder pages (read-only for now) */
   listPages(websiteId: number) {
-    return request<{ data: Array<{ id: number; title: string; status: string; updated_at: string }> }>(
+    return request<{ data: PageData[] }>(
       `/v1/builder/websites/${websiteId}/pages`
     );
   }

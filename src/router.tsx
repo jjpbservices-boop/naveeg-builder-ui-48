@@ -1,7 +1,14 @@
 import { createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
-export const router = createRouter({ routeTree });
+function NotFound() {
+  return <div className="p-6">Page not found</div>;
+}
+
+export const router = createRouter({
+  routeTree,
+  defaultNotFoundComponent: NotFound,
+});
 
 declare module "@tanstack/react-router" {
   interface Register {

@@ -1,6 +1,6 @@
 // src/routes/_site.$siteId/analytics.tsx
-import React, { Suspense } from "react";
-import { Route, createFileRoute } from "@tanstack/react-router";
+import React, { Suspense } from 'react';
+import { Route as TanStackRoute, createFileRoute } from '@tanstack/react-router';
 
 // Code-split the heavy dashboard bundle
 const AnalyticsDashboard = React.lazy(() => import("@/features/analytics/AnalyticsDashboard"));
@@ -25,8 +25,8 @@ export function AnalyticsRoute() {
     </div>
   );
 }
-export const Route = new Route({
-  getParentRoute: () => (Route as any).root,
-  path: "/analytics",
+export const Route = new TanStackRoute({
+  getParentRoute: () => (TanStackRoute as any).root,
+  path: '/analytics',
   component: AnalyticsRoute,
 });

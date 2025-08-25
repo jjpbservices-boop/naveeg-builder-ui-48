@@ -1,28 +1,29 @@
+// src/lib/queries.ts
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
-import { TenWebClient, type DomainItem } from "@/lib/tenweb-client";
-
-export type Period = "day" | "week" | "month" | "year";
-export type SeriesPoint = { date: string; value: number };
+import { TenWebClient, type Period } from "@/lib/tenweb-client";
 
 const tw = new TenWebClient();
 
+export type SeriesPoint = { date: string; value: number };
+export type DomainItem = {
+  id: number; name: string; site_url: string; default: 0 | 1; admin_url?: string;
+};
+export type PageItem = { id: number; title: string; status: string; updated_at: string };
+
 export const qk = {
-  visitors: (siteId: number, period: Period = "month") =>
-    ["tenweb", "visitors", siteId, period] as const,
-  domains: (siteId: number) => ["tenweb", "domains", siteId] as const,
+  visitors: (siteId: number, period: Period) => ["tenweb", "visitors", siteId, period] as const,
+  domains:  (siteId: number) => ["tenweb", "domains", siteId] as const,
+  pages:    (siteId: number) => ["tenweb", "pages", siteId] as const,
 };
 
 export function useVisitors(siteId?: number, period: Period = "month") {
-  return useQuery<SeriesPoint[], Error>({ // Ensure return type is SeriesPoint[]
+  return useQuery<SeriesPoint[], Error>({
     enabled: !!siteId,
     queryKey: qk.visitors(Number(siteId), period),
     queryFn: async () => {
-      const res: any = await tw.getVisitors(Number(siteId), period);
-      const rows = res?.data ?? [];
-      return (rows as Array<{ date: string; count: number }>).map((r) => ({
-        date: r.date,
-        value: r.count,
-      }));
+      const r: any = await tw.getVisitors(Number(siteId), period); // {data:[{date,count}]}
+      const arr: any[] = r?.data ?? [];
+      return arr.map(d => ({ date: String(d.date), value: Number(d.count ?? 0) }));
     },
     placeholderData: keepPreviousData,
   });
@@ -33,8 +34,20 @@ export function useDomains(siteId?: number) {
     enabled: !!siteId,
     queryKey: qk.domains(Number(siteId)),
     queryFn: async () => {
-      const res = await tw.getDomains(Number(siteId));
-      return res.data ?? [];
+      const r: any = await tw.getDomains(Number(siteId)); // {data: DomainItem[]}
+      return r?.data ?? [];
+    },
+    placeholderData: keepPreviousData,
+  });
+}
+
+export function usePages(siteId?: number) {
+  return useQuery<PageItem[], Error>({
+    enabled: !!siteId,
+    queryKey: qk.pages(Number(siteId)),
+    queryFn: async () => {
+      const r: any = await tw.listPages(Number(siteId)); // {data: PageItem[]}
+      return r?.data ?? [];
     },
     placeholderData: keepPreviousData,
   });

@@ -8,91 +8,229 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
+import { createFileRoute } from '@tanstack/react-router'
+
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WorkspaceRouteImport } from './routes/workspace'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as SiteSiteIdIndexRouteImport } from './routes/_site.$siteId/index'
+import { Route as SiteSiteIdPagesRouteImport } from './routes/_site.$siteId/pages'
 import { Route as SiteSiteIdOverviewRouteImport } from './routes/_site.$siteId/overview'
 import { Route as SiteSiteIdDomainsRouteImport } from './routes/_site.$siteId/domains'
 import { Route as SiteSiteIdAnalyticsRouteImport } from './routes/_site.$siteId/analytics'
+import { Route as SiteSiteIdLayoutRouteImport } from './routes/_site.$siteId/_layout'
 
-const SiteSiteIdOverviewRoute = SiteSiteIdOverviewRouteImport.update({
-  id: '/_site/$siteId/overview',
-  path: '/$siteId/overview',
+const SiteSiteIdRouteImport = createFileRoute('/_site/$siteId')()
+
+const WorkspaceRoute = WorkspaceRouteImport.update({
+  id: '/workspace',
+  path: '/workspace',
   getParentRoute: () => rootRouteImport,
+} as any)
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SiteSiteIdRoute = SiteSiteIdRouteImport.update({
+  id: '/_site/$siteId',
+  path: '/$siteId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SiteSiteIdIndexRoute = SiteSiteIdIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SiteSiteIdRoute,
+} as any)
+const SiteSiteIdPagesRoute = SiteSiteIdPagesRouteImport.update({
+  id: '/pages',
+  path: '/pages',
+  getParentRoute: () => SiteSiteIdRoute,
+} as any)
+const SiteSiteIdOverviewRoute = SiteSiteIdOverviewRouteImport.update({
+  id: '/overview',
+  path: '/overview',
+  getParentRoute: () => SiteSiteIdRoute,
 } as any)
 const SiteSiteIdDomainsRoute = SiteSiteIdDomainsRouteImport.update({
-  id: '/_site/$siteId/domains',
-  path: '/$siteId/domains',
-  getParentRoute: () => rootRouteImport,
+  id: '/domains',
+  path: '/domains',
+  getParentRoute: () => SiteSiteIdRoute,
 } as any)
 const SiteSiteIdAnalyticsRoute = SiteSiteIdAnalyticsRouteImport.update({
-  id: '/_site/$siteId/analytics',
-  path: '/$siteId/analytics',
-  getParentRoute: () => rootRouteImport,
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => SiteSiteIdRoute,
+} as any)
+const SiteSiteIdLayoutRoute = SiteSiteIdLayoutRouteImport.update({
+  id: '/_layout',
+  getParentRoute: () => SiteSiteIdRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
+  '/': typeof IndexRoute
+  '/workspace': typeof WorkspaceRoute
+  '/$siteId': typeof SiteSiteIdLayoutRoute
   '/$siteId/analytics': typeof SiteSiteIdAnalyticsRoute
   '/$siteId/domains': typeof SiteSiteIdDomainsRoute
   '/$siteId/overview': typeof SiteSiteIdOverviewRoute
+  '/$siteId/pages': typeof SiteSiteIdPagesRoute
+  '/$siteId/': typeof SiteSiteIdIndexRoute
 }
 export interface FileRoutesByTo {
+  '/': typeof IndexRoute
+  '/workspace': typeof WorkspaceRoute
+  '/$siteId': typeof SiteSiteIdIndexRoute
   '/$siteId/analytics': typeof SiteSiteIdAnalyticsRoute
   '/$siteId/domains': typeof SiteSiteIdDomainsRoute
   '/$siteId/overview': typeof SiteSiteIdOverviewRoute
+  '/$siteId/pages': typeof SiteSiteIdPagesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/workspace': typeof WorkspaceRoute
+  '/_site/$siteId': typeof SiteSiteIdRouteWithChildren
+  '/_site/$siteId/_layout': typeof SiteSiteIdLayoutRoute
   '/_site/$siteId/analytics': typeof SiteSiteIdAnalyticsRoute
   '/_site/$siteId/domains': typeof SiteSiteIdDomainsRoute
   '/_site/$siteId/overview': typeof SiteSiteIdOverviewRoute
+  '/_site/$siteId/pages': typeof SiteSiteIdPagesRoute
+  '/_site/$siteId/': typeof SiteSiteIdIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/$siteId/analytics' | '/$siteId/domains' | '/$siteId/overview'
+  fullPaths:
+    | '/'
+    | '/workspace'
+    | '/$siteId'
+    | '/$siteId/analytics'
+    | '/$siteId/domains'
+    | '/$siteId/overview'
+    | '/$siteId/pages'
+    | '/$siteId/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/$siteId/analytics' | '/$siteId/domains' | '/$siteId/overview'
+  to:
+    | '/'
+    | '/workspace'
+    | '/$siteId'
+    | '/$siteId/analytics'
+    | '/$siteId/domains'
+    | '/$siteId/overview'
+    | '/$siteId/pages'
   id:
     | '__root__'
+    | '/'
+    | '/workspace'
+    | '/_site/$siteId'
+    | '/_site/$siteId/_layout'
     | '/_site/$siteId/analytics'
     | '/_site/$siteId/domains'
     | '/_site/$siteId/overview'
+    | '/_site/$siteId/pages'
+    | '/_site/$siteId/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  SiteSiteIdAnalyticsRoute: typeof SiteSiteIdAnalyticsRoute
-  SiteSiteIdDomainsRoute: typeof SiteSiteIdDomainsRoute
-  SiteSiteIdOverviewRoute: typeof SiteSiteIdOverviewRoute
+  IndexRoute: typeof IndexRoute
+  WorkspaceRoute: typeof WorkspaceRoute
+  SiteSiteIdRoute: typeof SiteSiteIdRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/workspace': {
+      id: '/workspace'
+      path: '/workspace'
+      fullPath: '/workspace'
+      preLoaderRoute: typeof WorkspaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_site/$siteId': {
+      id: '/_site/$siteId'
+      path: '/$siteId'
+      fullPath: '/$siteId'
+      preLoaderRoute: typeof SiteSiteIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_site/$siteId/': {
+      id: '/_site/$siteId/'
+      path: '/'
+      fullPath: '/$siteId/'
+      preLoaderRoute: typeof SiteSiteIdIndexRouteImport
+      parentRoute: typeof SiteSiteIdRoute
+    }
+    '/_site/$siteId/pages': {
+      id: '/_site/$siteId/pages'
+      path: '/pages'
+      fullPath: '/$siteId/pages'
+      preLoaderRoute: typeof SiteSiteIdPagesRouteImport
+      parentRoute: typeof SiteSiteIdRoute
+    }
     '/_site/$siteId/overview': {
       id: '/_site/$siteId/overview'
-      path: '/$siteId/overview'
+      path: '/overview'
       fullPath: '/$siteId/overview'
       preLoaderRoute: typeof SiteSiteIdOverviewRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof SiteSiteIdRoute
     }
     '/_site/$siteId/domains': {
       id: '/_site/$siteId/domains'
-      path: '/$siteId/domains'
+      path: '/domains'
       fullPath: '/$siteId/domains'
       preLoaderRoute: typeof SiteSiteIdDomainsRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof SiteSiteIdRoute
     }
     '/_site/$siteId/analytics': {
       id: '/_site/$siteId/analytics'
-      path: '/$siteId/analytics'
+      path: '/analytics'
       fullPath: '/$siteId/analytics'
       preLoaderRoute: typeof SiteSiteIdAnalyticsRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof SiteSiteIdRoute
+    }
+    '/_site/$siteId/_layout': {
+      id: '/_site/$siteId/_layout'
+      path: '/$siteId'
+      fullPath: '/$siteId'
+      preLoaderRoute: typeof SiteSiteIdLayoutRouteImport
+      parentRoute: typeof SiteSiteIdRoute
     }
   }
 }
 
-const rootRouteChildren: RootRouteChildren = {
+interface SiteSiteIdRouteChildren {
+  SiteSiteIdLayoutRoute: typeof SiteSiteIdLayoutRoute
+  SiteSiteIdAnalyticsRoute: typeof SiteSiteIdAnalyticsRoute
+  SiteSiteIdDomainsRoute: typeof SiteSiteIdDomainsRoute
+  SiteSiteIdOverviewRoute: typeof SiteSiteIdOverviewRoute
+  SiteSiteIdPagesRoute: typeof SiteSiteIdPagesRoute
+  SiteSiteIdIndexRoute: typeof SiteSiteIdIndexRoute
+}
+
+const SiteSiteIdRouteChildren: SiteSiteIdRouteChildren = {
+  SiteSiteIdLayoutRoute: SiteSiteIdLayoutRoute,
   SiteSiteIdAnalyticsRoute: SiteSiteIdAnalyticsRoute,
   SiteSiteIdDomainsRoute: SiteSiteIdDomainsRoute,
   SiteSiteIdOverviewRoute: SiteSiteIdOverviewRoute,
+  SiteSiteIdPagesRoute: SiteSiteIdPagesRoute,
+  SiteSiteIdIndexRoute: SiteSiteIdIndexRoute,
+}
+
+const SiteSiteIdRouteWithChildren = SiteSiteIdRoute._addFileChildren(
+  SiteSiteIdRouteChildren,
+)
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  WorkspaceRoute: WorkspaceRoute,
+  SiteSiteIdRoute: SiteSiteIdRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
