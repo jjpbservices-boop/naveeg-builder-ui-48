@@ -3,8 +3,11 @@ import { useI18n } from '@/hooks/useI18n';
 export function Hero(){
   const { t } = useI18n();
   const track = () => {
+    // Define a type that includes the analytics object
+    type CustomWindow = Window & typeof globalThis & { analytics?: { track: (event: string) => void } };
     if(localStorage.getItem('cookieConsent') === 'accept'){
-      (window as any).analytics?.track('hero_cta_click');
+      // Cast window to the custom type
+      (window as CustomWindow).analytics?.track('hero_cta_click');
     }
   };
   return (

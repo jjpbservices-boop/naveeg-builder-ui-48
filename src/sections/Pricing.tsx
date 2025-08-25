@@ -15,7 +15,6 @@ export function Pricing(){
   const { t } = useI18n();
   const [yearly,setYearly] = useState(false);
   const [vat,setVat] = useState(false);
-  const plans:Plan[]=["starter","business","enterprise"];
   const features:Record<Plan,string[]> = {
     starter: t("pricing.starter.features") as unknown as string[],
     business: t("pricing.business.features") as unknown as string[],
@@ -23,9 +22,9 @@ export function Pricing(){
   };
   const track = (plan:Plan) => {
     if(localStorage.getItem('cookieConsent') === 'accept'){
-      (window as any).analytics?.track('pricing_cta_click',{ plan, yearly, vat });
+      (window as Window & typeof globalThis & { analytics?: { track: (event: string, properties: Record<string, Plan|boolean>) => void } }).analytics?.track('pricing_cta_click',{ plan, yearly, vat });
     }
-  };
+  };;
   return (
     <section id="pricing" className="py-16">
       <div className="mx-auto max-w-6xl px-6">

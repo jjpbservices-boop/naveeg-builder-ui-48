@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
 
+interface WindowWithAnalytics extends Window {
+  analytics?: { track: (eventName: string, props: { value: string }) => void };
+}
+
 export function Cookies(){
   const [show,setShow] = useState(!localStorage.getItem('cookieConsent'));
 
@@ -11,17 +15,17 @@ export function Cookies(){
     };
     localStorage.setItem('cookieConsent', value);
     localStorage.setItem('cookieConsentMeta', JSON.stringify(record));
-    try{ fetch('/api/consent',{method:'POST',body:JSON.stringify(record)}); }catch{}
-    (window as any).analytics?.track('cookie_choice',{ value });
+ fetch('/api/consent',{method:'POST',body:JSON.stringify(record)}).catch((e: Error)=>console.error('Failed to send cookie consent to API',e));
+ (window as WindowWithAnalytics).analytics?.track('cookie_choice',{ value });
     setShow(false);
   };
 
   useEffect(()=>{
     if(!localStorage.getItem('cookieConsent')){
-      localStorage.setItem('cookieConsent','reject');
+ localStorage.setItem('cookieConsent','reject');
     }
-    if(localStorage.getItem('cookieConsent') !== 'accept'){
-      (window as any).analytics = undefined;
+    if(localStorage.getItem('cookieConsent') !== 'accept' && (window as WindowWithAnalytics).analytics){
+      (window as WindowWithAnalytics).analytics = undefined;
     }
   },[]);
 
