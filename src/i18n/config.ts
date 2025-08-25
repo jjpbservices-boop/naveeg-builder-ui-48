@@ -24,6 +24,7 @@ import securityEn from '@/locales/en/security.json';
 import workspaceEn from '@/locales/en/workspace.json';
 import billingEn from '@/locales/en/billing.json';
 import errorsEn from '@/locales/en/errors.json';
+import marketingEn from './en.json';
 
 import commonFr from '@/locales/fr/common.json';
 import homeFr from '@/locales/fr/home.json';
@@ -46,6 +47,7 @@ import securityFr from '@/locales/fr/security.json';
 import workspaceFr from '@/locales/fr/workspace.json';
 import billingFr from '@/locales/fr/billing.json';
 import errorsFr from '@/locales/fr/errors.json';
+import marketingFr from './fr.json';
 
 // Import ES/PT/IT locale files
 import commonEs from '@/locales/es/common.json';
@@ -56,6 +58,7 @@ import legalEs from '@/locales/es/legal.json';
 import galleryEs from '@/locales/es/gallery.json';
 import contactEs from '@/locales/es/contact.json';
 import pricingEs from '@/locales/es/pricing.json';
+import marketingEs from './es.json';
 
 import commonPt from '@/locales/pt/common.json';
 import homePt from '@/locales/pt/home.json';
@@ -65,6 +68,7 @@ import legalPt from '@/locales/pt/legal.json';
 import galleryPt from '@/locales/pt/gallery.json';
 import contactPt from '@/locales/pt/contact.json';
 import pricingPt from '@/locales/pt/pricing.json';
+import marketingPt from './pt.json';
 
 import commonIt from '@/locales/it/common.json';
 import homeIt from '@/locales/it/home.json';
@@ -74,6 +78,7 @@ import legalIt from '@/locales/it/legal.json';
 import galleryIt from '@/locales/it/gallery.json';
 import contactIt from '@/locales/it/contact.json';
 import pricingIt from '@/locales/it/pricing.json';
+import marketingIt from './it.json';
 
 // Supported locales
 export const supportedLocales = [
@@ -105,6 +110,7 @@ const resources = {
     workspace: workspaceEn,
     billing: billingEn,
     errors: errorsEn,
+    marketing: marketingEn,
   },
   fr: {
     common: commonFr,
@@ -128,6 +134,7 @@ const resources = {
     workspace: workspaceFr,
     billing: billingFr,
     errors: errorsFr,
+    marketing: marketingFr,
   },
   es: {
     common: commonEs,
@@ -152,6 +159,7 @@ const resources = {
     progress: progressEn,
     security: securityEn,
     workspace: workspaceEn,
+    marketing: marketingEs,
   },
   pt: {
     common: commonPt,
@@ -176,6 +184,7 @@ const resources = {
     progress: progressEn,
     security: securityEn,
     workspace: workspaceEn,
+    marketing: marketingPt,
   },
   it: {
     common: commonIt,
@@ -200,6 +209,7 @@ const resources = {
     progress: progressEn,
     security: securityEn,
     workspace: workspaceEn,
+    marketing: marketingIt,
   }
 };
 
@@ -227,7 +237,7 @@ i18n
       useSuspense: false,
     },
 
-    ns: ['common', 'home', 'features', 'pricing', 'gallery', 'faq', 'contact', 'legal', 'onboarding', 'design', 'progress', 'preview', 'dashboard', 'analytics', 'domain', 'backup', 'cache', 'security', 'workspace', 'billing', 'errors'],
+    ns: ['common', 'home', 'features', 'pricing', 'gallery', 'faq', 'contact', 'legal', 'onboarding', 'design', 'progress', 'preview', 'dashboard', 'analytics', 'domain', 'backup', 'cache', 'security', 'workspace', 'billing', 'errors', 'marketing'],
     defaultNS: 'common',
   });
 

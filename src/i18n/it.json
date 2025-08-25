@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "Il tuo sito professionale in pochi minuti, non in settimane.",
+    "subtitle": "Descrivi la tua attività, lascia che l'IA costruisca, personalizza con drag‑and‑drop, pubblica con hosting di livello UE. Conforme al GDPR.",
+    "ctaPrimary": "Crea il mio sito",
+    "ctaSecondary": "Vedi i piani"
+  },
+  "steps": {
+    "title": "Come funziona",
+    "s1": "Descrivi la tua attività",
+    "s2": "Personalizza con l'editor",
+    "s3": "Pubblica con un dominio",
+    "s4": "Cresci con blog e e‑commerce"
+  },
+  "features": {
+    "title": "Pensato per le aziende UE",
+    "f1": "Generazione sito con IA",
+    "f2": "Editor drag‑and‑drop",
+    "f3": "Design mobile-first",
+    "f4": "Certificato SSL gratuito",
+    "f5": "Hosting UE, 99,99% uptime",
+    "f6": "Backup automatici",
+    "f7": "Banner cookie e registri di consenso",
+    "f8": "SEO base e caricamento veloce"
+  },
+  "pricing": {
+    "title": "Prezzi",
+    "vatToggle": "Mostra prezzi IVA incl.",
+    "periodToggleMonthly": "Mensile",
+    "periodToggleYearly": "Annuale (risparmia 20%)",
+    "starter": {
+      "name": "Starter",
+      "price": "€59",
+      "tagline": "Tutto per lanciare subito",
+      "features": [
+        "Generazione sito con IA",
+        "Fino a 5 pagine",
+        "Editor drag‑and‑drop",
+        "Hosting incluso",
+        "1 dominio personalizzato (1 anno)",
+        "SSL gratuito",
+        "Backup automatici",
+        "Supporto email"
+      ],
+      "cta": "Scegli Starter"
+    },
+    "business": {
+      "name": "Business",
+      "price": "€119",
+      "tagline": "Cresci con contenuti e shop",
+      "features": [
+        "Tutto in Starter",
+        "Pagine illimitate",
+        "Blog incluso",
+        "WooCommerce",
+        "Copilot IA nell'editor",
+        "Analytics visitatori",
+        "Backup avanzati + ripristino",
+        "Supporto umano prioritario"
+      ],
+      "cta": "Scegli Business"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Parla con le vendite",
+      "tagline": "Funzioni su misura, scala e SLA",
+      "features": [
+        "Integrazioni personalizzate",
+        "Multi‑sito e SSO",
+        "Infrastruttura dedicata",
+        "Sicurezza e monitoraggio avanzati",
+        "Supporto 24/7 con SLA"
+      ],
+      "cta": "Prenota una call"
+    },
+    "disclaimer": "Fatturazione annuale: il dominio è gratuito per il primo anno; rinnovo fatturato a parte."
+  },
+  "socialProof": {
+    "title": "Scelto dalle PMI europee",
+    "t1": "“Online in un giorno. L'editor è semplice.”",
+    "t2": "“Ottimi punteggi di velocità e prezzi chiari.”"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "È conforme al GDPR?",
+    "a1": "Sì. I dati sono trattati nell'UE quando possibile, il consenso ai cookie è registrato e controlli esportazioni/eliminazione dei dati.",
+    "q2": "È incluso un dominio?",
+    "a2": "Un dominio personalizzato è incluso per il primo anno in tutti i piani a pagamento. Il rinnovo è separato.",
+    "q3": "Posso annullare in qualsiasi momento?",
+    "a3": "Sì. Puoi annullare in qualsiasi momento dal tuo dashboard.",
+    "q4": "Supportate l'e‑commerce?",
+    "a4": "Sì, WooCommerce è incluso in Business e oltre.",
+    "q5": "Offrite supporto umano?",
+    "a5": "Supporto email su Starter. Supporto umano prioritario su Business. SLA 24/7 su Enterprise."
+  },
+  "ctaFinal": {
+    "title": "Mettiti online oggi",
+    "subtitle": "Il tuo sito pronto in pochi minuti.",
+    "cta": "Crea il mio sito"
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "cookies": "Cookie"
+  }
+}

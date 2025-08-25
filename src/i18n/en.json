@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "Launch a professional website in minutes, not weeks.",
+    "subtitle": "Describe your business, let AI build, customize with drag‑and‑drop, publish with EU‑grade hosting. GDPR compliant.",
+    "ctaPrimary": "Create my site",
+    "ctaSecondary": "See plans"
+  },
+  "steps": {
+    "title": "How it works",
+    "s1": "Describe your business",
+    "s2": "Customize with the editor",
+    "s3": "Publish with a domain",
+    "s4": "Grow with blog and e‑commerce"
+  },
+  "features": {
+    "title": "Built for EU businesses",
+    "f1": "AI site generation",
+    "f2": "Drag‑and‑drop editor",
+    "f3": "Mobile‑first design",
+    "f4": "Free SSL certificate",
+    "f5": "EU hosting, 99.99% uptime",
+    "f6": "Automatic backups",
+    "f7": "Cookie banner + consent logs",
+    "f8": "SEO basics and fast load"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "vatToggle": "Show prices incl. VAT",
+    "periodToggleMonthly": "Monthly",
+    "periodToggleYearly": "Yearly (save 20%)",
+    "starter": {
+      "name": "Starter",
+      "price": "€59",
+      "tagline": "Everything to launch fast",
+      "features": [
+        "AI website generation",
+        "Up to 5 pages",
+        "Drag‑and‑drop editor",
+        "Hosting included",
+        "1 custom domain (1 year)",
+        "Free SSL",
+        "Automatic backups",
+        "Email support"
+      ],
+      "cta": "Start Starter"
+    },
+    "business": {
+      "name": "Business",
+      "price": "€119",
+      "tagline": "Grow with content and shop",
+      "features": [
+        "Everything in Starter",
+        "Unlimited pages",
+        "Blog included",
+        "WooCommerce",
+        "AI Copilot in editor",
+        "Visitors analytics",
+        "Advanced backups + restore",
+        "Priority human support"
+      ],
+      "cta": "Start Business"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Talk to sales",
+      "tagline": "Custom features, scale, and SLAs",
+      "features": [
+        "Custom integrations",
+        "Multi‑site and SSO",
+        "Dedicated infrastructure",
+        "Advanced security & monitoring",
+        "24/7 support with SLA"
+      ],
+      "cta": "Book a call"
+    },
+    "disclaimer": "Annual billing: domain is free for year one; renewal billed separately."
+  },
+  "socialProof": {
+    "title": "Trusted by EU SMBs",
+    "t1": "“Live in one day. The editor is simple.”",
+    "t2": "“Great speed scores and clear pricing.”"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "Is it GDPR compliant?",
+    "a1": "Yes. Data is processed in the EU where possible, cookie consent is recorded, and you control data exports/deletion.",
+    "q2": "Is a domain included?",
+    "a2": "One custom domain is included for the first year on all paid plans. Renewal is separate.",
+    "q3": "Can I cancel anytime?",
+    "a3": "Yes. Cancel anytime from your dashboard.",
+    "q4": "Do you support e‑commerce?",
+    "a4": "Yes, WooCommerce is included in Business and above.",
+    "q5": "Do you offer human support?",
+    "a5": "Email support on Starter. Priority human support on Business. 24/7 SLA on Enterprise."
+  },
+  "ctaFinal": {
+    "title": "Get online today",
+    "subtitle": "Your website ready in minutes.",
+    "cta": "Create my site"
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies"
+  }
+}
