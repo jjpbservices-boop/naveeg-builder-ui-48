@@ -1,15 +1,20 @@
 // vite.config.ts
 import { defineConfig, splitVendorChunkPlugin } from "vite";
 import react from "@vitejs/plugin-react";
-import { TanStackRouterVite } from "@tanstack/router-vite-plugin";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite"; // ✅ correct import
+import eslint from "vite-plugin-eslint";
 
 export default defineConfig({
-  plugins: [react(), TanStackRouterVite(), splitVendorChunkPlugin()],
-  resolve: { alias: { "@": "/src" } }, // no @rollup/plugin-alias needed
+  plugins: [
+    react(),
+    TanStackRouterVite(), // Corrected spelling, // Make sure this uses the correct imported name
+    eslint({ exclude: ["src/routeTree.gen.ts"] }),
+    splitVendorChunkPlugin(),
+  ],
+  resolve: { alias: { "@": "/src" } },
   build: {
     rollupOptions: {
       output: {
-        // function form avoids the splitVendorChunk warning
         manualChunks(id) {
           if (!id.includes("node_modules")) return;
           if (id.includes("react")) return "react";
@@ -21,4 +26,5 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 900,
   },
+  server: { watch: { ignored: ["**/src/routeTree.gen.ts"] } },
 });
