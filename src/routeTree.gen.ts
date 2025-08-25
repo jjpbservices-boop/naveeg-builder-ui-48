@@ -13,8 +13,6 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WorkspaceRouteImport } from './routes/workspace'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as SiteIdIndexRouteImport } from './routes/$siteId/index'
-import { Route as SiteIdPagesRouteImport } from './routes/$siteId/pages'
 import { Route as SiteIdOverviewRouteImport } from './routes/$siteId/overview'
 import { Route as SiteIdDomainsRouteImport } from './routes/$siteId/domains'
 import { Route as SiteIdAnalyticsRouteImport } from './routes/$siteId/analytics'
@@ -36,16 +34,6 @@ const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
-} as any)
-const SiteIdIndexRoute = SiteIdIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => SiteIdRoute,
-} as any)
-const SiteIdPagesRoute = SiteIdPagesRouteImport.update({
-  id: '/pages',
-  path: '/pages',
-  getParentRoute: () => SiteIdRoute,
 } as any)
 const SiteIdOverviewRoute = SiteIdOverviewRouteImport.update({
   id: '/overview',
@@ -74,17 +62,14 @@ export interface FileRoutesByFullPath {
   '/$siteId/analytics': typeof SiteIdAnalyticsRoute
   '/$siteId/domains': typeof SiteIdDomainsRoute
   '/$siteId/overview': typeof SiteIdOverviewRoute
-  '/$siteId/pages': typeof SiteIdPagesRoute
-  '/$siteId/': typeof SiteIdIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/workspace': typeof WorkspaceRoute
-  '/$siteId': typeof SiteIdIndexRoute
+  '/$siteId': typeof SiteIdLayoutRoute
   '/$siteId/analytics': typeof SiteIdAnalyticsRoute
   '/$siteId/domains': typeof SiteIdDomainsRoute
   '/$siteId/overview': typeof SiteIdOverviewRoute
-  '/$siteId/pages': typeof SiteIdPagesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -95,8 +80,6 @@ export interface FileRoutesById {
   '/$siteId/analytics': typeof SiteIdAnalyticsRoute
   '/$siteId/domains': typeof SiteIdDomainsRoute
   '/$siteId/overview': typeof SiteIdOverviewRoute
-  '/$siteId/pages': typeof SiteIdPagesRoute
-  '/$siteId/': typeof SiteIdIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -107,8 +90,6 @@ export interface FileRouteTypes {
     | '/$siteId/analytics'
     | '/$siteId/domains'
     | '/$siteId/overview'
-    | '/$siteId/pages'
-    | '/$siteId/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -117,7 +98,6 @@ export interface FileRouteTypes {
     | '/$siteId/analytics'
     | '/$siteId/domains'
     | '/$siteId/overview'
-    | '/$siteId/pages'
   id:
     | '__root__'
     | '/'
@@ -127,8 +107,6 @@ export interface FileRouteTypes {
     | '/$siteId/analytics'
     | '/$siteId/domains'
     | '/$siteId/overview'
-    | '/$siteId/pages'
-    | '/$siteId/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -159,20 +137,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
-    }
-    '/$siteId/': {
-      id: '/$siteId/'
-      path: '/'
-      fullPath: '/$siteId/'
-      preLoaderRoute: typeof SiteIdIndexRouteImport
-      parentRoute: typeof SiteIdRoute
-    }
-    '/$siteId/pages': {
-      id: '/$siteId/pages'
-      path: '/pages'
-      fullPath: '/$siteId/pages'
-      preLoaderRoute: typeof SiteIdPagesRouteImport
-      parentRoute: typeof SiteIdRoute
     }
     '/$siteId/overview': {
       id: '/$siteId/overview'
@@ -210,8 +174,6 @@ interface SiteIdRouteChildren {
   SiteIdAnalyticsRoute: typeof SiteIdAnalyticsRoute
   SiteIdDomainsRoute: typeof SiteIdDomainsRoute
   SiteIdOverviewRoute: typeof SiteIdOverviewRoute
-  SiteIdPagesRoute: typeof SiteIdPagesRoute
-  SiteIdIndexRoute: typeof SiteIdIndexRoute
 }
 
 const SiteIdRouteChildren: SiteIdRouteChildren = {
@@ -219,8 +181,6 @@ const SiteIdRouteChildren: SiteIdRouteChildren = {
   SiteIdAnalyticsRoute: SiteIdAnalyticsRoute,
   SiteIdDomainsRoute: SiteIdDomainsRoute,
   SiteIdOverviewRoute: SiteIdOverviewRoute,
-  SiteIdPagesRoute: SiteIdPagesRoute,
-  SiteIdIndexRoute: SiteIdIndexRoute,
 }
 
 const SiteIdRouteWithChildren =

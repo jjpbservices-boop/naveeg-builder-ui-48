@@ -1,32 +1,26 @@
-// src/routes/_site.$siteId/analytics.tsx
-import React, { Suspense } from 'react';
-import { Route as TanStackRoute, createFileRoute } from '@tanstack/react-router';
+import { createFileRoute } from "@tanstack/react-router";
+import { useQuery } from "@tanstack/react-query";
+import { tenweb } from "@/lib/tenweb"; // adjust path if different
 
-// Code-split the heavy dashboard bundle
-const AnalyticsDashboard = React.lazy(() => import("@/features/analytics/AnalyticsDashboard"));
+export const Route = createFileRoute("/$siteId/analytics")({
+  component: Analytics,
+});
 
-export function AnalyticsRoute() {
+function Analytics() {
+  const { siteId } = Route.useParams();
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["visitors-series", siteId],
+    queryFn: () => tenweb.getVisitors(+siteId, { period: "month" }),
+  });
+  if (isLoading) return <div>Loading…</div>;
+  if (error) return <div>Error.</div>;
+
   return (
-    <div className="p-6">
-      <Suspense
-        fallback={
-          <div className="space-y-4">
-            <div className="h-8 w-48 rounded bg-neutral-100 dark:bg-neutral-800 animate-pulse" />
-            <div className="h-72 w-full rounded bg-neutral-100 dark:bg-neutral-800 animate-pulse" />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="h-48 rounded bg-neutral-100 dark:bg-neutral-800 animate-pulse" />
-              <div className="h-48 rounded bg-neutral-100 dark:bg-neutral-800 animate-pulse" />
-            </div>
-          </div>
-        }
-      >
-        <AnalyticsDashboard />
-      </Suspense>
+    <div>
+      <h1 className="text-2xl font-semibold mb-4">Analytics</h1>
+      <pre className="text-xs p-4 rounded-2xl border overflow-auto">
+        {JSON.stringify(data?.data ?? [], null, 2)}
+      </pre>
     </div>
   );
 }
-export const Route = new TanStackRoute({
-  getParentRoute: () => (TanStackRoute as any).root,
-  path: '/analytics',
-  component: AnalyticsRoute,
-});

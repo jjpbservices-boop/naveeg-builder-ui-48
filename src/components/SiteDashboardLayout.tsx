@@ -14,7 +14,7 @@ const tabs = [
 
 export default function SiteDashboardLayout() {
   const { data, isLoading } = useEnsureSite();
-  const { siteId } = useParams({ from: "/_site/$siteId" });
+  const { siteId } = useParams({ from: "/$siteId" });
   const { t } = useTranslation("dashboard");
 
   return (

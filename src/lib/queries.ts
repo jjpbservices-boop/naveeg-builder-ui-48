@@ -3,6 +3,7 @@ import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { TenWebClient, type Period } from "@/lib/tenweb-client";
 
 const tw = new TenWebClient();
+export { tw as tenweb };
 
 export type SeriesPoint = { date: string; value: number };
 export type DomainItem = {

@@ -1,4 +1,4 @@
-// src/routes/_site.$siteId/_layout.tsx
+// src/routes/$siteId/_layout.tsx
 import { createFileRoute, Outlet, Link, useParams } from "@tanstack/react-router";
 
 function SiteLayout() {
