@@ -1,5 +1,6 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
 import { supabase } from "@/lib/supabase";
+import Home from "@/pages/index";
 
 export const Route = createFileRoute("/")({
   async beforeLoad() {
@@ -13,14 +14,5 @@ export const Route = createFileRoute("/")({
     const first = !error && data?.[0]?.website_id;
     if (first) throw redirect({ to: `/${data![0].website_id}/overview` });
   },
-  component: Marketing,
+  component: Home,
 });
-
-function Marketing() {
-  return (
-    <main className="p-8">
-      <h1 className="text-2xl font-semibold">Naveeg</h1>
-      <p className="mt-2 text-sm opacity-70">Digital marketing tools that ship.</p>
-    </main>
-  );
-}

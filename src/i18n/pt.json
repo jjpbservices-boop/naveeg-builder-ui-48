@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": "O seu site profissional em minutos, não em semanas.",
+    "subtitle": "Descreva o seu negócio, deixe a IA construir, personalize com arrastar e soltar, publique com hospedagem nível UE. Em conformidade com RGPD.",
+    "ctaPrimary": "Criar meu site",
+    "ctaSecondary": "Ver planos"
+  },
+  "steps": {
+    "title": "Como funciona",
+    "s1": "Descreva o seu negócio",
+    "s2": "Personalize com o editor",
+    "s3": "Publique com um domínio",
+    "s4": "Cresça com blog e e‑commerce"
+  },
+  "features": {
+    "title": "Feito para empresas da UE",
+    "f1": "Geração de site por IA",
+    "f2": "Editor de arrastar e soltar",
+    "f3": "Design mobile-first",
+    "f4": "Certificado SSL gratuito",
+    "f5": "Hospedagem na UE, 99,99% de uptime",
+    "f6": "Backups automáticos",
+    "f7": "Banner de cookies e registos de consentimento",
+    "f8": "SEO básico e carregamento rápido"
+  },
+  "pricing": {
+    "title": "Preços",
+    "vatToggle": "Mostrar preços com IVA",
+    "periodToggleMonthly": "Mensal",
+    "periodToggleYearly": "Anual (poupe 20%)",
+    "starter": {
+      "name": "Starter",
+      "price": "€59",
+      "tagline": "Tudo para lançar rápido",
+      "features": [
+        "Geração de site por IA",
+        "Até 5 páginas",
+        "Editor de arrastar e soltar",
+        "Hospedagem incluída",
+        "1 domínio personalizado (1 ano)",
+        "SSL gratuito",
+        "Backups automáticos",
+        "Suporte por e‑mail"
+      ],
+      "cta": "Escolher Starter"
+    },
+    "business": {
+      "name": "Business",
+      "price": "€119",
+      "tagline": "Cresça com conteúdo e loja",
+      "features": [
+        "Tudo no Starter",
+        "Páginas ilimitadas",
+        "Blog incluído",
+        "WooCommerce",
+        "Copiloto IA no editor",
+        "Analítica de visitantes",
+        "Backups avançados + restauro",
+        "Suporte humano prioritário"
+      ],
+      "cta": "Escolher Business"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Fale com vendas",
+      "tagline": "Funcionalidades personalizadas, escala e SLA",
+      "features": [
+        "Integrações personalizadas",
+        "Multi‑site e SSO",
+        "Infraestrutura dedicada",
+        "Segurança e monitorização avançadas",
+        "Suporte 24/7 com SLA"
+      ],
+      "cta": "Marcar uma chamada"
+    },
+    "disclaimer": "Cobrança anual: domínio gratuito no primeiro ano; renovação cobrada em separado."
+  },
+  "socialProof": {
+    "title": "Confiado por PMEs da UE",
+    "t1": "“Online em um dia. O editor é simples.”",
+    "t2": "“Ótimas pontuações de velocidade e preços claros.”"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "É compatível com o RGPD?",
+    "a1": "Sim. Os dados são processados na UE quando possível, o consentimento de cookies é registado e você controla exportações/eliminação de dados.",
+    "q2": "Um domínio está incluído?",
+    "a2": "Um domínio personalizado está incluído no primeiro ano em todos os planos pagos. A renovação é separada.",
+    "q3": "Posso cancelar a qualquer momento?",
+    "a3": "Sim. Cancele a qualquer momento no seu painel.",
+    "q4": "Suportam e‑commerce?",
+    "a4": "Sim, o WooCommerce está incluído no Business e acima.",
+    "q5": "Oferecem suporte humano?",
+    "a5": "Suporte por e‑mail no Starter. Suporte humano prioritário no Business. SLA 24/7 no Enterprise."
+  },
+  "ctaFinal": {
+    "title": "Fique online hoje",
+    "subtitle": "O seu site pronto em minutos.",
+    "cta": "Criar meu site"
+  },
+  "legal": {
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "cookies": "Cookies"
+  }
+}

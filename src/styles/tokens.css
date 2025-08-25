@@ -1,0 +1,20 @@
+:root{
+  --brand:#FF4A1C;
+  --brand-contrast:#111111;
+  --bg:#FFFFFF;
+  --fg:#0F1222;
+  --muted:#6B7280;
+  --card:#FFFFFF;
+  --border:#E5E7EB;
+  --ok:#16A34A;
+  --warn:#F59E0B;
+}
+:root.dark{
+  --brand:#FF4A1C;
+  --brand-contrast:#FFFFFF;
+  --bg:#0B0D14;
+  --fg:#E5E7EB;
+  --muted:#9CA3AF;
+  --card:#0F1222;
+  --border:#1F2433;
+}
