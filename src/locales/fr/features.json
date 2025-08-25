@@ -1,5 +1,5 @@
 {
-  "title": "Fonctionnalités puissantes",
+  "title": "Fonctionnalités Puissantes",
   "subtitle": "Tout ce dont vous avez besoin pour créer des sites web incroyables",
   "cards": [
     {
@@ -35,6 +35,10 @@
   ],
   "comparison": {
     "title": "Pourquoi choisir Naveeg ?",
-    "subtitle": "Comparez nos fonctionnalités avec la concurrence"
+    "subtitle": "Comparez nos fonctionnalités avec la concurrence",
+    "feature_list": {
+      "unlimited_generation": "Génération illimitée",
+      "customizable_templates": "Modèles personnalisables"
+    }
   }
 }

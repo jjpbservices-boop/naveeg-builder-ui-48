@@ -1,0 +1,15 @@
+{
+  "title": "Vista Previa",
+  "description": "Aquí puedes previsualizar tu sitio web antes de publicarlo.",
+  "actions": {
+    "edit_design": "Editar Diseño",
+    "publish": "Publicar"
+  },
+  "preview_modes": {
+    "desktop": "Escritorio",
+    "tablet": "Tablet",
+    "mobile": "Móvil"
+  },
+  "loading": "Cargando vista previa...",
+  "error": "Error al cargar la vista previa. Inténtalo de nuevo."
+}

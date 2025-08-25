@@ -1,20 +1,20 @@
 {
  "title": "galería",
  "subtitle": "descubre sitios web increíbles construidos con naveeg",
-  "filter": {
+ "filter": {
     "all": "Todos",
     "restaurant": "Restaurante",
-    "services": "Servicios", 
+ "services": "Servicios",
     "retail": "Comercio",
     "portfolio": "Portfolio",
     "blog": "Blog",
-    "ecommerce": "E-commerce"
+ "ecommerce": "E-commerce"
   },
   "viewDemo": "Ver demo",
   "visitSite": "Visitar sitio",
   "sites": [
     {
-      "name": "Restaurante Bella Vista",
+ "name": "Restaurante Bella Vista",
       "category": "restaurant",
       "description": "Experiencia gastronómica italiana auténtica en el corazón de la ciudad"
     },
@@ -25,7 +25,7 @@
     },
     {
       "name": "Estudio Minimalista Moderno",
-      "category": "portfolio", 
+ "category": "portfolio",
       "description": "Portfolio de diseño creativo mostrando proyectos innovadores"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "name": "Gimnasio Fitness First",
-      "category": "services", 
+ "category": "services",
       "description": "Instalación de fitness de última generación con entrenamiento personal"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "name": "Blog Wellness Journey",
-      "category": "blog", 
+ "category": "blog",
       "description": "Historias inspiradoras y consejos para el bienestar holístico"
     },
     {

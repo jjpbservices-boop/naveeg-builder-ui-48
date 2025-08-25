@@ -13,7 +13,6 @@
     "send": "Invia messaggio",
     "sending": "Invio in corso...",
     "success": "Grazie! Ti risponderemo presto.",
-    "successMessage": "Abbiamo ricevuto il tuo messaggio e ti contatteremo presto.",
     "error": "Spiacenti, si è verificato un errore nell'invio del messaggio. Riprova."
   },
   "validation": {

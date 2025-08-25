@@ -1,6 +1,8 @@
 {
   "title": "Preguntas frecuentes",
   "subtitle": "Todo lo que necesitas saber sobre Naveeg",
+ "contactUs": "Contacta con nosotros",
+ "learnMore": "Aprender más",
   "items": [
     {
       "question": "¿Qué tan rápido puedo crear un sitio web?",
@@ -8,35 +10,35 @@
     },
     {
       "question": "¿Necesito conocimientos técnicos?",
-      "answer": "No en absoluto. Naveeg está diseñado para todos, independientemente de su experiencia técnica. Nuestra IA maneja toda la programación y el diseño."
+ "answer": "No es necesario tener conocimientos técnicos. Naveeg está diseñado para usuarios de todos los niveles, independientemente de su experiencia técnica. Nuestra IA se encarga de toda la codificación y el diseño por ti."
     },
     {
       "question": "¿Puedo usar mi propio dominio?",
-      "answer": "Sí, puedes conectar tu dominio personalizado a cualquier sitio web creado con Naveeg. También proporcionamos subdominios gratuitos."
+ "answer": "Sí, puedes conectar tu dominio personalizado a cualquier sitio web que crees con Naveeg. También ofrecemos subdominios gratuitos."
     },
     {
       "question": "¿Mis sitios web serán optimizados para móviles?",
-      "answer": "Absolutamente. Todos los sitios web creados con Naveeg están completamente optimizados para móviles y se ven perfectos en cualquier dispositivo."
+ "answer": "Sí, absolutamente. Todos los sitios web creados con Naveeg están totalmente optimizados para móviles y se ven perfectos en cualquier dispositivo."
     },
     {
       "question": "¿Puedo editar mi sitio web después de crearlo?",
-      "answer": "Sí, puedes hacer cambios en tu sitio web en cualquier momento a través de nuestro panel fácil de usar. Modifica contenido, colores, fuentes y más."
+ "answer": "Sí, puedes realizar cambios en tu sitio web en cualquier momento a través de nuestro panel fácil de usar. Edita el contenido, los colores, las fuentes y mucho más."
     },
     {
       "question": "¿Hay algún costo oculto?",
-      "answer": "No, nuestros precios son transparentes. Lo que ves es lo que pagas, sin tarifas ocultas o cargos sorpresa."
+ "answer": "No, nuestros precios son transparentes. Lo que ves es lo que pagas, sin tarifas ocultas ni cargos sorpresa."
     },
     {
       "question": "¿Qué tipo de soporte ofrecen?",
-      "answer": "Ofrecemos múltiples niveles de soporte dependiendo de tu plan, desde soporte por email hasta soporte prioritario y dedicado para planes empresariales."
+ "answer": "Ofrecemos varios niveles de soporte dependiendo de tu plan, desde soporte por correo electrónico hasta soporte prioritario y dedicado para planes empresariales."
     },
     {
       "question": "¿Puedo cancelar mi suscripción en cualquier momento?",
-      "answer": "Sí, puedes cancelar tu suscripción en cualquier momento. Tu sitio permanecerá activo hasta el final de tu período de facturación actual."
+ "answer": "Sí, puedes cancelar tu suscripción en cualquier momento. Tu sitio permanecerá activo hasta el final de tu ciclo de facturación actual."
     },
     {
       "question": "¿Mis datos están seguros?",
-      "answer": "Absolutamente. Usamos medidas de seguridad de nivel empresarial y SSL gratuito para mantener tus datos y los de tus visitantes seguros."
+ "answer": "Absolutamente. Utilizamos medidas de seguridad de nivel empresarial y SSL gratuito para mantener tus datos y los de tus visitantes seguros."
     },
     {
       "question": "¿Puedo migrar mi sitio existente a Naveeg?",
@@ -44,9 +46,9 @@
     }
   ],
   "stillHaveQuestions": {
-    "title": "Aún tienes preguntas?",
-    "subtitle": "No pudimos encontrar la respuesta que buscas? Nuestro equipo amigable está aquí para ayudar.",
-    "contactSupport": "Contactar soporte",
-    "browseHelp": "Explorar centro de ayuda"
+    "title": "¿Aún tienes preguntas?",
+    "subtitle": "¿No pudimos encontrar la respuesta que buscas? Nuestro amable equipo está aquí para ayudarte.",
+    "contactSupport": "Ponte en contacto con el soporte",
+    "browseHelp": "Explorar el centro de ayuda"
   }
 }

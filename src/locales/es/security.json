@@ -1,0 +1,23 @@
+{
+  "title": "Seguridad",
+  "description": "Administra la configuración de seguridad de tu cuenta.",
+  "twoFactorAuth": {
+    "title": "Autenticación de dos factores",
+    "description": "Agrega una capa adicional de seguridad a tu cuenta habilitando la autenticación de dos factores.",
+    "enabled": "Habilitado",
+    "disabled": "Deshabilitado",
+    "button": "Configurar autenticación de dos factores"
+  },
+  "recentActivity": {
+    "title": "Actividad reciente",
+    "description": "Revisa la actividad de inicio de sesión reciente en tu cuenta."
+  },
+  "changePassword": {
+    "title": "Cambiar contraseña",
+    "description": "Actualiza tu contraseña para una mayor seguridad.",
+    "currentPassword": "Contraseña actual",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar nueva contraseña",
+    "button": "Cambiar contraseña"
+  }
+}

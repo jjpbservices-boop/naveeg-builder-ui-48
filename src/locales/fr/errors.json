@@ -1,9 +1,9 @@
 {
   "general": {
-    "unknown": "Une erreur inconnue s'est produite",
+    "unknown": "Une erreur inconnue s'est produite.",
     "network": "Erreur réseau. Veuillez vérifier votre connexion.",
-    "timeout": "délai d'attente dépassé. veuillez réessayer.",
-    "serverError": "Erreur du serveur. veuillez réessayer plus tard.",
+    "timeout": "Délai d'attente dépassé. Veuillez réessayer.",
+    "serverError": "Erreur du serveur. Veuillez réessayer plus tard.",
     "notFound": "La ressource demandée n'a pas été trouvée.",
     "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action.",
     "forbidden": "L'accès à cette ressource est interdit.",
@@ -23,3 +23,4 @@
     "verificationFailed": "La vérification du domaine a échoué. Veuillez vérifier vos paramètres DNS.",
     "alreadyExists": "Ce domaine est déjà connecté à un autre site web."
   }
+}

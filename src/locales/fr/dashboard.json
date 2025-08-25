@@ -23,4 +23,13 @@
     "inactive": "Inactif",
     "maintenance": "Maintenance"
   }
+  ,
+  "toasts": {
+    "domain": { "added": "Domaine ajouté.", "defaultSet": "Domaine par défaut défini.", "deleted": "Domaine supprimé." },
+    "cache": { "purged": "Cache vidé." },
+    "password": { "enabled": "Protection par mot de passe activée.", "disabled": "Protection par mot de passe désactivée." },
+    "ssl": { "issued": "Certificat demandé.", "removed": "Certificat supprimé." },
+    "backup": { "started": "Sauvegarde lancée.", "restored": "Restauration lancée." },
+    "pages": { "published": "Pages publiées.", "drafted": "Pages passées en brouillon.", "front": "Page d’accueil définie." }
+  }
 }

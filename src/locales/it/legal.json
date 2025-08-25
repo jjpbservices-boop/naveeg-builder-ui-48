@@ -4,16 +4,16 @@
   "terms": {
     "title": "Termini di servizio",
     "lastUpdated": "Ultimo aggiornamento: {date}",
-    "content": "Il contenuto dei termini di servizio sarà disponibile qui..."
+    "content": "Il contenuto dei termini di servizio è disponibile qui..."
   },
   "privacy": {
     "title": "Informativa sulla privacy",
     "lastUpdated": "Ultimo aggiornamento: {date}",
-    "content": "Il contenuto dell'informativa sulla privacy sarà disponibile qui..."
+    "content": "Il contenuto dell'informativa sulla privacy è disponibile qui..."
   },
   "cookies": {
     "title": "Politica sui cookie",
     "lastUpdated": "Ultimo aggiornamento: {date}",
-    "content": "Il contenuto della politica sui cookie sarà disponibile qui..."
+    "content": "Il contenuto della politica sui cookie è disponibile qui..."
   }
 }

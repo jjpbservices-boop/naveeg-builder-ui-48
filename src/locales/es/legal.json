@@ -1,19 +1,19 @@
 {
-  "title": "informaciones legales",
-  "subtitle": "información legal importante y políticas",
+  "title": "Información Legal",
+  "subtitle": "Información Legal Importante y Políticas",
   "terms": {
-    "title": "términos de servicio",
-    "lastUpdated": "última actualización: {date}",
-    "content": "El contenido de los términos de servicio estará disponible aquí..."
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: {date}",
+    "content": "El contenido completo de los Términos de Servicio estará disponible aquí."
   },
   "privacy": {
-    "title": "política de privacidad",
-    "lastUpdated": "última actualización: {date}",
-    "content": "El contenido de la política de privacidad estará disponible aquí..."
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: {date}",
+    "content": "El contenido completo de la Política de Privacidad estará disponible aquí."
   },
   "cookies": {
-    "title": "política de cookies",
-    "lastUpdated": "última actualización: {date}",
-    "content": "El contenido de la política de cookies estará disponible aquí..."
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: {date}",
+    "content": "El contenido completo de la Política de Cookies estará disponible aquí."
   }
 }

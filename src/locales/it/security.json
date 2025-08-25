@@ -1,0 +1,22 @@
+{
+  "title": "Impostazioni di Sicurezza",
+  "description": "Gestisci le tue impostazioni di sicurezza.",
+  "password_section_title": "Password",
+  "password_section_description": "Aggiorna la tua password.",
+  "current_password_label": "Password Attuale",
+  "new_password_label": "Nuova Password",
+  "confirm_password_label": "Conferma Nuova Password",
+  "update_password_button": "Aggiorna Password",
+  "two_factor_auth_section_title": "Autenticazione a Due Fattori",
+  "two_factor_auth_section_description": "Aggiungi un ulteriore livello di sicurezza al tuo account abilitando l'autenticazione a due fattori.",
+  "enable_two_factor_auth_button": "Abilita Autenticazione a Due Fattori",
+  "disable_two_factor_auth_button": "Disabilita Autenticazione a Due Fattori",
+  "enabled_status": "Abilitata",
+  "disabled_status": "Disabilitata",
+  "sessions_section_title": "Sessioni Attive",
+  "sessions_section_description": "Disconnetti da altri dispositivi in cui hai effettuato l'accesso.",
+  "device_label": "Dispositivo",
+  "location_label": "Posizione",
+  "last_active_label": "Ultima Attività",
+  "logout_all_sessions_button": "Disconnetti Tutte le Sessioni"
+}

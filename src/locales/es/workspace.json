@@ -1,0 +1,28 @@
+{
+  "title": "Espacio de trabajo",
+  "description": "Aquí puedes gestionar tu espacio de trabajo.",
+  "settings_title": "Ajustes del espacio de trabajo",
+  "settings_description": "Actualiza los ajustes de tu espacio de trabajo.",
+  "workspace_name": "Nombre del espacio de trabajo",
+  "update_workspace": "Actualizar espacio de trabajo",
+  "update_success": "Espacio de trabajo actualizado correctamente.",
+  "update_error": "Error al actualizar el espacio de trabajo.",
+  "members_title": "Miembros del espacio de trabajo",
+  "members_description": "Gestiona los miembros de tu espacio de trabajo.",
+  "invite_member": "Invitar miembro",
+  "member_email_placeholder": "Correo electrónico del miembro",
+  "invite": "Invitar",
+  "invitation_success": "Invitación enviada.",
+  "invitation_error": "Error al enviar la invitación.",
+  "role": "Rol",
+  "actions": "Acciones",
+  "remove": "Eliminar",
+  "remove_member_confirm": "¿Estás seguro de que quieres eliminar a este miembro?",
+  "remove_success": "Miembro eliminado.",
+  "remove_error": "Error al eliminar al miembro.",
+  "roles": {
+    "owner": "Propietario",
+    "admin": "Administrador",
+    "member": "Miembro"
+  }
+}

@@ -4,13 +4,13 @@
   "filter": {
     "all": "todos",
     "restaurant": "Restaurante",
-    "services": "Serviços", 
+    "services": "Serviços",
     "retail": "Comércio",
-    "portfolio": "Portfolio",
+    "portfolio": "Portfólio",
     "blog": "Blog",
     "ecommerce": "E-commerce"
   },
-  "viewDemo": "Ver demo",
+  "viewDemo": "Ver demonstração",
   "visitSite": "visitar site",
   "sites": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "name": "Estúdio Minimalista Moderno",
-      "category": "portfolio", 
-      "description": "Portfolio de design criativo apresentando projetos inovadores"
+      "category": "portfolio",
+      "description": "Portfólio de design criativo apresentando projetos inovadores"
     },
     {
       "name": "Boutique TechStyle",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Ginásio Fitness First",
-      "category": "services", 
+      "category": "services",
       "description": "Instalação de fitness de última geração com treino pessoal"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "name": "Blog Wellness Journey",
-      "category": "blog", 
+      "category": "blog",
       "description": "Histórias inspiradoras e dicas para bem-estar holístico"
     },
     {

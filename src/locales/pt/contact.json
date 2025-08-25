@@ -8,7 +8,6 @@
     "emailPlaceholder": "Digite seu endereço de email",
     "subject": "Assunto",
     "subjectPlaceholder": "Sobre o que se trata?",
-    "successMessage": "Recebemos sua mensagem e entraremos em contato em breve.",
     "message": "Mensagem",
     "messagePlaceholder": "Conte-nos como podemos ajudá-lo...",
     "send": "Enviar mensagem",
@@ -34,7 +33,7 @@
   "support": {
     "title": "Precisa de ajuda com seu site?",
     "description": "Confira nosso centro de ajuda para tutoriais e guias",
-    "helpCenter": "Visitar centro de ajuda"
+    "helpCenter": "Visitar centro de ajuda",
     "documentation": "Ver documentação"
   }
 }

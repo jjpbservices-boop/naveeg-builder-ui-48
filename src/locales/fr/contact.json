@@ -31,6 +31,7 @@
     "hours": "Lundi - Vendredi : 9h - 18h (CET)"
   },
   "support": {
+    "title": "Besoin d'aide avec votre site web ?",
     "description": "Consultez notre centre d'aide pour des tutoriels et guides",
     "helpCenter": "Visiter le centre d'aide",
     "documentation": "Voir la documentation"

@@ -23,4 +23,12 @@
     "inactive": "Inactive",
     "maintenance": "Maintenance"
   }
+,"toasts": {
+    "domain": { "added": "Domain added.", "defaultSet": "Default set.", "deleted": "Domain deleted." },
+    "cache": { "purged": "Cache purged." },
+    "password": { "enabled": "Password protection enabled.", "disabled": "Password protection disabled." },
+    "ssl": { "issued": "Certificate requested.", "removed": "Certificate removed." },
+    "backup": { "started": "Backup started.", "restored": "Restore started." },
+    "pages": { "published": "Pages published.", "drafted": "Pages moved to draft.", "front": "Front page set." }
+  }
 }

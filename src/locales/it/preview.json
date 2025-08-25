@@ -1,0 +1,27 @@
+{
+  "title": "Anteprima",
+  "description": "Ecco un'anteprima del tuo sito web. Puoi rivedere il design e i contenuti qui prima di finalizzare.",
+  "actions": {
+    "edit": "Modifica",
+    "publish": "Pubblica",
+    "back": "Indietro"
+  },
+  "sections": {
+    "hero": {
+      "title": "Sezione Eroe",
+      "description": "Questa è la sezione principale della tua pagina di destinazione. Viene visualizzata per prima e dovrebbe catturare l'attenzione dei visitatori."
+    },
+    "features": {
+      "title": "Sezione Funzionalità",
+      "description": "Metti in evidenza le caratteristiche chiave del tuo prodotto o servizio in questa sezione."
+    },
+    "about": {
+      "title": "Sezione Chi siamo",
+      "description": "Fornisci informazioni sulla tua azienda o sul tuo team in questa sezione."
+    },
+    "contact": {
+      "title": "Sezione Contatti",
+      "description": "Consenti ai visitatori di mettersi in contatto con te con un modulo di contatto o informazioni di contatto in questa sezione."
+    }
+  }
+}

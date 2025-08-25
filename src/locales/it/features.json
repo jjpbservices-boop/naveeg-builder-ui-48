@@ -2,31 +2,37 @@
   "title": "Funzionalità potenti",
   "subtitle": "Tutto ciò di cui hai bisogno per creare siti web incredibili",
   "cards": [
+
     {
       "icon": "zap",
       "title": "Generazione Rapida",
       "description": "Genera siti web professionali in minuti, non settimane. Il nostro motore AI accelera l'intero processo di sviluppo."
     },
+
     {
       "icon": "smartphone",
       "title": "Design responsive",
       "description": "Tutti i siti web sono ottimizzati per mobile fin dall'inizio. Appaiono perfetti su qualsiasi dispositivo."
     },
+
     {
       "icon": "search",
       "title": "SEO ottimizzato",
       "description": "Funzionalità SEO integrate per aiutare il tuo sito web a posizionarsi meglio sui motori di ricerca."
     },
+
     {
       "icon": "shield",
       "title": "Sicurezza web",
       "description": "Certificati SSL gratuiti e misure di sicurezza avanzate incluse. Il tuo sito web sarà protetto dal primo giorno."
     },
+
     {
       "icon": "palette",
       "title": "Personalizzazione totale",
       "description": "Modifica colori, font e layout per adattarli perfettamente al tuo brand."
     },
+
     {
       "icon": "layout",
       "title": "Dashboard semplice",

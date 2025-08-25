@@ -1,0 +1,13 @@
+{
+  "title": "Progreso",
+  "description": "Aquí puedes seguir el progreso de tus proyectos.",
+  "no_progress": "Aún no tienes proyectos en progreso.",
+  "generating": "Generando...",
+  "designing": "Diseñando...",
+  "ready": "Listo",
+  "failed": "Fallido",
+  "eta": "ETA",
+  "actions": "Acciones",
+  "view_details": "Ver detalles",
+  "delete": "Eliminar"
+}

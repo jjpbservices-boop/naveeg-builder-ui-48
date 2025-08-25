@@ -17,7 +17,7 @@
     {
       "question": "Ai-je besoin de connaissances techniques ?",
       "answer": "Pas du tout ! Naveeg est conçu pour tout le monde, quel que soit le niveau technique. Notre IA gère tous les aspects techniques complexes pendant que vous vous concentrez sur le contenu de votre entreprise."
-    },
+    },    
     {
       "question": "Puis-je personnaliser mon site web après sa génération ?",
       "answer": "Oui ! Vous pouvez facilement personnaliser les couleurs, les polices, les mises en page, les images et le contenu. Notre éditeur visuel simplifie les modifications sans aucune connaissance en codage."
@@ -46,7 +46,7 @@
   "stillHaveQuestions": {
     "title": "Toujours des questions ?",
     "subtitle": "Vous ne trouvez pas la réponse que vous cherchez ? notre équipe amicale est là pour vous aider.",
-    "contactSupport": "Contacter le support",
-    "browseHelp": "Parcourir le centre d'aide"
+    "contactSupport": "Contactez le support",
+    "browseHelp": "Parcourir le centre d'aide"    
   }
 }

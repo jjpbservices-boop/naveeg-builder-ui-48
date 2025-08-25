@@ -2,7 +2,7 @@
   "title": "Precios",
   "subtitle": "Elige el plan perfecto para tu negocio", 
   "monthly": "Mensual",
-  "annually": "Anual",
+  "annually": "Anualmente",
   "save": "2 meses gratis",
   "mostPopular": "Más popular",
   "getStarted": "Empezar",
@@ -13,7 +13,7 @@
     "starter": {
       "name": "Principiante",
       "description": "Perfecto para pequeñas empresas que están empezando",
-      "price": { "monthly": 29, "annually": 24 },
+      "price": { "monthly": 29, "annually": 24},
       "features": [
         "1 sitio web",
         "Plantillas profesionales",
@@ -28,7 +28,7 @@
     "pro": {
       "name": "Pro", 
       "description": "Ideal para empresas en crecimiento que necesitan más",
-      "price": { "monthly": 59, "annually": 49 },
+      "price": { "monthly": 59, "annually": 49},
       "popular": true,
       "features": [
         "5 Sitios Web",
@@ -46,7 +46,7 @@
     "business": {
       "name": "Empresa",
       "description": "Para agencias y empresas con necesidades avanzadas",
-      "price": { "monthly": 99, "annually": 83 },
+      "price": { "monthly": 99, "annually": 83},
       "features": [
         "Sitios web ilimitados",
         "Solución de marca blanca",
@@ -65,23 +65,23 @@
     "title": "Preguntas frecuentes sobre precios",
     "questions": [
       {
-        "question": "¿puedo cambiar de plan en cualquier momento?",
-        "answer": "sí, puede actualizar o degradar su plan en cualquier momento. los cambios tienen efecto inmediatamente."
+        "question": "¿Puedo cambiar de plan en cualquier momento?",
+        "answer": "Sí, puede actualizar o degradar su plan en cualquier momento. Los cambios tienen efecto inmediatamente."
       },
       {
-        "question": "¿qué métodos de pago aceptan?",
-        "answer": "aceptamos las principales tarjetas de crédito, paypal y transferencias bancarias para los planes anuales."
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos las principales tarjetas de crédito, PayPal y transferencias bancarias para los planes anuales."
       },
       {
-        "question": "¿hay una tarifa de configuración?",
-        "answer": "no, no hay tarifas de configuración ni costos ocultos. solo paga la suscripción mensual o anual."
+        "question": "¿Hay una tarifa de configuración?",
+        "answer": "No, no hay tarifas de configuración ni costos ocultos. Solo paga la suscripción mensual o anual."
       },
       {
-        "question": "¿ofrecen reembolsos?",
-        "answer": "ofrecemos una garantía de devolución de dinero de 30 días en todos los planes. sin hacer preguntas."
+        "question": "¿Ofrecen reembolsos?",
+        "answer": "Ofrecemos una garantía de devolución de dinero de 30 días en todos los planes. Sin hacer preguntas."
       },
       {
-        "question": "¿qué sucede si excedo mis límites?",
+        "question": "¿Qué sucede si excedo mis límites?",
         "answer": "le notificaremos antes de que alcance sus límites y le ayudaremos a actualizar a un plan adecuado."
       }
     ]

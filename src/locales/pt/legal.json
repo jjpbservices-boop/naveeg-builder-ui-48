@@ -1,18 +1,18 @@
 {
-  "title": "informações legais",
-  "subtitle": "informações legais importantes e políticas",
+  "title": "Informações Legais",
+  "subtitle": "Informações legais importantes e políticas",
   "terms": {
-    "title": "termos de serviço",
+    "title": "Termos de Serviço",
     "lastUpdated": "última atualização: {date}",
     "content": "O conteúdo dos termos de serviço estará disponível aqui..."
   },
   "privacy": {
-    "title": "política de privacidade",
+    "title": "Política de Privacidade",
     "lastUpdated": "última atualização: {date}",
     "content": "O conteúdo da política de privacidade estará disponível aqui..."
   },
   "cookies": {
-    "title": "política de cookies",
+    "title": "Política de Cookies",
     "lastUpdated": "última atualização: {date}",
     "content": "O conteúdo da política de cookies estará disponível aqui..."
   }
