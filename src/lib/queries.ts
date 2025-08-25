@@ -8,11 +8,15 @@ import { TenWeb } from "./tenweb";
 export const qk = {
   websites: ["websites"] as const,
   site: (id: number) => ["site", id] as const,
+
+  // Workspace queries
+  mySites: ["mySites"] as const,
 };
 
 export function useWebsites() {
   return useQuery({ queryKey: qk.websites, queryFn: TenWeb.getWebsites });
 }
+
 export function useVisitors(id?: number, period: "day"|"week"|"month"|"year"="month") {
   return useQuery({
     enabled: !!id,

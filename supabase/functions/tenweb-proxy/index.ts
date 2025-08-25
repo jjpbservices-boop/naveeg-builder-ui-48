@@ -1,4 +1,5 @@
 // supabase/functions/tenweb-proxy/index.ts
+// @ts-nocheck
 import "https://deno.land/x/xhr@0.4.0/mod.ts";
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";

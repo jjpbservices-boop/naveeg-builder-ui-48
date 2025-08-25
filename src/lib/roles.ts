@@ -1,4 +1,3 @@
-ts
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -9,12 +8,21 @@ export function useRole() {
   const [role, setRole] = useState<Role>(fallback);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => {
-      const u = data.user as any;
-      const r = (u?.app_metadata?.role || u?.user_metadata?.role) as Role | undefined;
-      setRole(r ?? fallback);
+    (async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      const metaRole =
+        (user?.app_metadata as any)?.role || (user?.user_metadata as any)?.role;
+      if (metaRole) { setRole(metaRole as Role); setLoading(false); return; }
+      if (user?.id) {
+        const { data } = await (supabase as any)
+          .from("profiles")
+          .select("role")
+          .eq("user_id", user.id)
+          .maybeSingle();
+        if (data?.role) setRole(data.role as Role);
+      }
       setLoading(false);
-    });
+    })();
   }, []);
   return { role, loading };
 }
@@ -34,5 +42,5 @@ const policy = {
 } as const;
 
 export function can(action: keyof typeof policy, role: Role) {
-  return policy[action].includes(role);
+  return (policy[action] as readonly ("admin" | "editor")[]).includes(role as any);
 }

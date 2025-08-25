@@ -1,4 +1,3 @@
-tsx
 import { createContext, useContext, useState, useCallback, useMemo, ReactNode } from "react";
 
 type Toast = { id: string; title: string; kind?: "success" | "error" | "info" };

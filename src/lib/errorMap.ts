@@ -1,4 +1,3 @@
-ts
 export function mapError(err: unknown): string {
   const msg = getMsg(err);
   if (/401|unauthorized/i.test(msg)) return "Unauthorized.";
@@ -13,7 +12,6 @@ export function mapError(err: unknown): string {
 function getMsg(e: unknown) {
   if (!e) return "";
   // Supabase Functions errors often carry .message
-  if (typeof e === "string") return e;
   const any = e as any;
   return any?.message ?? JSON.stringify(any);
 }

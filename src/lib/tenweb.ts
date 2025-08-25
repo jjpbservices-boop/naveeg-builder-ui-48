@@ -11,8 +11,8 @@ async function call<T>(payload: InvokePayload): Promise<T> {
 export type AccountWebsite = { id: number; site_url: string; site_title: string; admin_url: string; created_at: string };
 export type VisitorsPoint = { count: number; date: string };
 export type VisitorsResp = { data?: VisitorsPoint[]; sum?: number };
-export type DomainItem = { id: number; name: string; default: 0|1; site_url: string; created_at: string };
-export type Certificate = { id: number; common_name: string; status: string; type: "custom"|"free"; valid_to?: string; id: number };
+export type DomainItem = { id: number; name: string; default: 0 | 1; site_url: string; created_at: string };
+export type Certificate = { id: number; common_name: string; status: string; type: "custom" | "free"; valid_to?: string };
 export type BackupItem = { backup_id: number; backup_time: string; type: string; backup_size: number };
 export type BuilderPage = { ID: number; title: string; url: string; post_status: "publish"|"draft"; page_on_front?: boolean|null };
 

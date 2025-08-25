@@ -1,7 +1,6 @@
-import { createRouter, createRoute, createRootRoute, Outlet } from '@tanstack/react-router'
+import { createRouter, createRoute, createRootRouteWithContext, Outlet } from '@tanstack/react-router'
 import Layout from '@/components/Layout'
 
-// Existing pages
 import Home from '@/pages/Home'
 import Features from '@/pages/Features'
 import Pricing from '@/pages/Pricing'
@@ -22,17 +21,19 @@ import Settings from '@/pages/Settings'
 import Auth from '@/pages/Auth'
 import NotFound from '@/pages/NotFound'
 
-// Import new dashboard sections.
 import AnalyticsDashboard from '@/features/analytics/AnalyticsDashboard'
 import DomainDashboard from '@/features/domains/DomainDashboard'
 import SecurityDashboard from '@/features/security/SecurityDashboard'
 import BillingDashboard from '@/features/billing/BillingDashboard'
 import PagesPanel from '@/features/builder/PagesPanel'
+
 const DashboardIndex = () => <div>Choose a site</div>
 const DashboardOverview = () => <div>Overview</div>
 
-// Root
-const rootRoute = createRootRoute({
+/** Router context (extend later if you need) */
+type RouterContext = {}
+
+const rootRoute = createRootRouteWithContext<RouterContext>()({
   component: () => (
     <Layout>
       <Outlet />
@@ -40,7 +41,7 @@ const rootRoute = createRootRoute({
   ),
 })
 
-// Public routes
+/* Public */
 const indexRoute = createRoute({ getParentRoute: () => rootRoute, path: '/', component: Home })
 const featuresRoute = createRoute({ getParentRoute: () => rootRoute, path: '/features', component: Features })
 const pricingRoute = createRoute({ getParentRoute: () => rootRoute, path: '/pricing', component: Pricing })
@@ -49,89 +50,55 @@ const faqRoute = createRoute({ getParentRoute: () => rootRoute, path: '/faq', co
 const contactRoute = createRoute({ getParentRoute: () => rootRoute, path: '/contact', component: Contact })
 const legalRoute = createRoute({ getParentRoute: () => rootRoute, path: '/legal', component: Legal })
 
-// Onboarding
-const onboardingBriefRoute = createRoute({ getParentRoute: () => rootRoute, path: '/onboarding/brief', component: Brief })
-const onboardingDesignRoute = createRoute({ getParentRoute: () => rootRoute, path: '/onboarding/design', component: Design })
-const generateRoute = createRoute({ getParentRoute: () => rootRoute, path: '/generate', component: Generate })
-const generatingRoute = createRoute({ getParentRoute: () => rootRoute, path: '/generating', component: Generating })
-const readyRoute = createRoute({ getParentRoute: () => rootRoute, path: '/ready', component: Ready })
+/* Onboarding */
+const onboardingBriefRoute   = createRoute({ getParentRoute: () => rootRoute, path: '/onboarding/brief',  component: Brief })
+const onboardingDesignRoute  = createRoute({ getParentRoute: () => rootRoute, path: '/onboarding/design', component: Design })
+const generateRoute          = createRoute({ getParentRoute: () => rootRoute, path: '/generate',          component: Generate })
+const generatingRoute        = createRoute({ getParentRoute: () => rootRoute, path: '/generating',        component: Generating })
+const readyRoute             = createRoute({ getParentRoute: () => rootRoute, path: '/ready',             component: Ready })
 
-// Legacy
+/* Legacy */
 const describeRoute = createRoute({ getParentRoute: () => rootRoute, path: '/describe', component: Describe })
-const briefRoute = createRoute({ getParentRoute: () => rootRoute, path: '/brief', component: Brief })
-const designRoute = createRoute({ getParentRoute: () => rootRoute, path: '/design', component: Design })
-const previewRoute = createRoute({ getParentRoute: () => rootRoute, path: '/preview', component: Preview })
+const briefRoute    = createRoute({ getParentRoute: () => rootRoute, path: '/brief',    component: Brief })
+const designRoute   = createRoute({ getParentRoute: () => rootRoute, path: '/design',   component: Design })
+const previewRoute  = createRoute({ getParentRoute: () => rootRoute, path: '/preview',  component: Preview })
 
-// Auth/settings
+/* Auth/Settings */
 const settingsRoute = createRoute({ getParentRoute: () => rootRoute, path: '/settings', component: Settings })
-const authRoute = createRoute({ getParentRoute: () => rootRoute, path: '/auth', component: Auth })
+const authRoute     = createRoute({ getParentRoute: () => rootRoute, path: '/auth',     component: Auth })
 
-// Dashboard parent (must render <Outlet /> inside Dashboard page)
+/* Dashboard */
 const dashboardRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/dashboard',
   component: Dashboard,
 })
 
-// Dashboard children
-// /dashboard -> simple hub screen
 const dashboardIndexRoute = createRoute({
   getParentRoute: () => dashboardRoute,
   path: '/',
   component: DashboardIndex,
 })
 
-// /dashboard/:siteId/*
+/* /dashboard/$siteId/* */
 const dashboardSiteRoute = createRoute({
   getParentRoute: () => dashboardRoute,
   path: '$siteId',
   component: () => <Outlet />,
 })
 
-// Sections under a site
-const dashboardOverviewRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: 'overview',
-  component: DashboardOverview,
-})
+/* Sections */
+const dashboardOverviewRoute  = createRoute({ getParentRoute: () => dashboardSiteRoute, path: 'overview',  component: DashboardOverview })
+const dashboardAnalyticsRoute = createRoute({ getParentRoute: () => dashboardSiteRoute, path: 'analytics', component: AnalyticsDashboard })
+const dashboardDomainsRoute   = createRoute({ getParentRoute: () => dashboardSiteRoute, path: 'domains',   component: DomainDashboard })
+const dashboardSecurityRoute  = createRoute({ getParentRoute: () => dashboardSiteRoute, path: 'security',  component: SecurityDashboard })
+const dashboardBillingRoute   = createRoute({ getParentRoute: () => dashboardSiteRoute, path: 'billing',   component: BillingDashboard })
+const dashboardPagesRoute     = createRoute({ getParentRoute: () => dashboardSiteRoute, path: 'pages',     component: PagesPanel })
 
-const dashboardAnalyticsRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: 'analytics',
-  component: AnalyticsDashboard,
-})
-
-const dashboardDomainsRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: 'domains',
-  component: DomainDashboard,
-})
-
-const dashboardSecurityRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: 'security',
-  component: SecurityDashboard,
-})
-
-const dashboardBillingRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: 'billing',
-  component: BillingDashboard,
-})
-
-const dashboardPagesRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: 'pages',
-  component: PagesPanel,
-})
-
-// Standalone workspace list (kept as-is)
+/* Workspace & 404 */
 const workspaceRoute = createRoute({ getParentRoute: () => rootRoute, path: '/workspace', component: Workspace })
+const notFoundRoute  = createRoute({ getParentRoute: () => rootRoute, path: '/$', component: NotFound })
 
-// Catch-all
-const notFoundRoute = createRoute({ getParentRoute: () => rootRoute, path: '/$', component: NotFound })
-
-// Route tree
 const routeTree = rootRoute.addChildren([
   indexRoute,
   featuresRoute,
@@ -166,4 +133,13 @@ const routeTree = rootRoute.addChildren([
   notFoundRoute,
 ])
 
-export const router = createRouter({ routeTree } as any)
+export const router = createRouter({
+  routeTree,
+  context: {} as RouterContext,
+})
+
+declare module '@tanstack/react-router' {
+  interface Register {
+    router: typeof router
+  }
+}
