@@ -1,8 +1,11 @@
 import { useParams } from "@tanstack/react-router";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { tenweb, type DomainItem } from "@/lib/tenweb";
-import { toast } from "sonner";
+import { tenweb, type DomainItem, type ApiResponse } from "@/lib/tenweb";
+import { toast } from "@/components/ui/use-toast";
 import { useState } from "react";
+import { createFileRoute } from "@tanstack/react-router";
+
+
 
 export default function DomainsRoute() {
   const { siteId } = useParams({ from: "/_site/$siteId/domains" as never });
@@ -11,30 +14,30 @@ export default function DomainsRoute() {
   const [selected, setSelected] = useState<number[]>([]);
 
   const domainsQ = useQuery({
-    queryKey: ["domains", websiteId],
-    queryFn: () => tenweb.getDomains(websiteId),
+    queryKey: ["tenweb", "domains", websiteId],
+    queryFn: () => tenweb.getDomains(websiteId).then(res => res.data),
   });
 
   const setDefault = useMutation({
     mutationFn: (domainId: number) => tenweb.setDefaultDomain(websiteId, domainId),
     onMutate: async (domainId) => {
       await qc.cancelQueries({ queryKey: ["domains", websiteId] });
-      const prev = qc.getQueryData<{ data: DomainItem[] }>(["domains", websiteId]);
+      const prev = qc.getQueryData<DomainItem[]>(["tenweb", "domains", websiteId]);
       if (prev) {
-        const next = {
-          data: prev.data.map(d => ({ ...d, default: d.id === domainId ? 1 : 0 })),
-        };
-        qc.setQueryData(["domains", websiteId], next);
+        qc.setQueryData(
+          ["tenweb", "domains", websiteId],
+          prev.map(d => ({ ...d, default: d.id === domainId ? 1 : 0 })),
+        );
       }
-      toast.loading("Setting default domain…", { id: "set-default" });
-      return { prev };
+      const tid = toast.loading("Setting default domain…", { duration: Infinity });
+      return { prev, tid };
     },
     onError: (_e, _id, ctx) => {
       if (ctx?.prev) qc.setQueryData(["domains", websiteId], ctx.prev);
       toast.error("Failed to set default domain", { id: "set-default" });
     },
     onSuccess: () => {
-      toast.success("Default domain set", { id: "set-default" });
+      toast("Default domain set", { id: "set-default" });
     },
     onSettled: () => {
       qc.invalidateQueries({ queryKey: ["domains", websiteId] });
@@ -43,24 +46,21 @@ export default function DomainsRoute() {
 
   const genSSL = useMutation({
     mutationFn: () => tenweb.generateFreeCertificate(websiteId, selected),
-    onMutate: () => toast.loading("Issuing SSL…", { id: "ssl" }),
-    onError: () => toast.error("SSL issuance failed", { id: "ssl" }),
-    onSuccess: () => toast.success("SSL issued", { id: "ssl" }),
+    onMutate: () => ({ tid: toast.loading("Issuing SSL…", { duration: Infinity }) }),
+    onError: (_e, _v, ctx) => { if (ctx?.tid) toast.dismiss(ctx.tid); toast.error("SSL issuance failed"); },
+    onSuccess: (_r, _v, ctx) => { if (ctx?.tid) toast.dismiss(ctx.tid); toast.success("SSL issued"); },
   });
 
   const purge = useMutation({
     mutationFn: () => tenweb.purgeCache(websiteId, 0),
-    onMutate: () => toast.loading("Purging cache…", { id: "purge" }),
-    onError: () => toast.error("Cache purge failed", { id: "purge" }),
-    onSuccess: () => toast.success("Cache purged", { id: "purge" }),
+    onMutate: () => ({ tid: toast.loading("Purging cache…", { duration: Infinity }) }),
+    onError: (_e, _v, ctx) => { if (ctx?.tid) toast.dismiss(ctx.tid); toast.error("Cache purge failed"); },
+    onSuccess: (_r, _v, ctx) => { if (ctx?.tid) toast.dismiss(ctx.tid); toast.success("Cache purged"); },
   });
 
+
   if (domainsQ.isLoading) return <div className="h-32 rounded-xl animate-pulse bg-neutral-100 dark:bg-neutral-800" />;
-  if (domainsQ.isError || !domainsQ.data) return <div className="text-sm">Failed to load domains.</div>;
-
-  const rows = domainsQ.data.data;
-
-  return (
+  if (domainsQ.isError) return <div className="text-sm">Failed to load domains.</div>;
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2">
         <button
@@ -91,7 +91,7 @@ export default function DomainsRoute() {
           </tr>
         </thead>
         <tbody>
-          {rows.map((d) => (
+          {domainsQ.data.map((d) => (
             <tr key={d.id} className="border-b last:border-0">
               <td className="py-2">{d.id}</td>
               <td className="py-2">{d.name}</td>
@@ -133,5 +133,8 @@ export default function DomainsRoute() {
         Tip: select custom domains for SSL. Use “Set default” to switch primary domain.
       </p>
     </div>
-  );
 }
+
+export const Route = createFileRoute("/_site/$siteId/domains")({
+  component: DomainsRoute,
+});

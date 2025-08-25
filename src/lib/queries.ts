@@ -13,7 +13,7 @@ export const qk = {
 };
 
 export function useVisitors(siteId?: number, period: Period = "month") {
-  return useQuery<SeriesPoint[], Error>({
+  return useQuery<SeriesPoint[], Error>({ // Ensure return type is SeriesPoint[]
     enabled: !!siteId,
     queryKey: qk.visitors(Number(siteId), period),
     queryFn: async () => {
