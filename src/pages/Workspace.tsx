@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+// src/pages/Workspace.tsx
+import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useMySites } from "@/lib/mySites";
@@ -7,6 +8,7 @@ import { useToast } from "@/lib/toast";
 
 export default function Workspace() {
   const { push } = useToast();
+  const navigate = useNavigate();
   const q = useMySites();
 
   const [siteId, setSiteId] = useState("");
@@ -42,6 +44,8 @@ export default function Workspace() {
       setTitle("");
       push({ title: "Site attached.", kind: "success" });
       q.refetch();
+      // go to overview of the newly attached site
+      navigate({ to: "/dashboard/$siteId/overview", params: { siteId: String(idNum) } });
     }
   }
 
@@ -88,11 +92,11 @@ export default function Workspace() {
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {sites.map((s) => (
             <Link
-            key={s.website_id}
-            to="/dashboard/$siteId/analytics" // The route path uses $siteId
-            params={{ siteId: String(s.website_id) }} // The param key should be siteId (without $)
-            className="rounded-xl border p-4 hover:bg-neutral-50 dark:hover:bg-neutral-900"
-          >
+              key={s.website_id}
+              to="/dashboard/$siteId/overview"
+              params={{ siteId: String(s.website_id) }}
+              className="rounded-xl border p-4 hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            >
               <div className="font-medium">{s.title || `Site ${s.website_id}`}</div>
               <div className="text-xs opacity-70">{s.site_url || "—"}</div>
             </Link>

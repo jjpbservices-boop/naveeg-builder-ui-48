@@ -31,4 +31,16 @@
     "backup": { "started": "Backup started.", "restored": "Restore started." },
     "pages": { "published": "Pages published.", "drafted": "Pages moved to draft.", "front": "Front page set." }
   }
+,"workspace": {
+    "title": "Choose a site",
+    "empty": "You have no sites yet.",
+    "attachPlaceholder": "Attach by Site ID (e.g., 1334132)",
+    "optionalTitle": "Optional title",
+    "attach": "Attach",
+    "attaching": "Attaching…",
+    "invalidId": "Enter a valid numeric site ID.",
+    "loginFirst": "Please log in first.",
+    "attachOk": "Site attached.",
+    "attachErr": "Could not attach site."
+  }
 }

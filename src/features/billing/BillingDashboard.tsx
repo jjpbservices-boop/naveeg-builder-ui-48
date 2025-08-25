@@ -4,10 +4,12 @@
 // Replace with your Stripe/DB data as needed.
 // ============================
 import { useWebsites } from "@/lib/queries";
+import Skeleton from '@/components/Skeleton'
 
 export default function BillingDashboard() {
   const { data, isLoading, error } = useWebsites();
-  if (isLoading) return <div>Loading billing…</div>;
+  // if (isLoading) return <div>Loading billing…</div>;
+  if (isLoading) return <Skeleton className="h-48" />
   if (error) return <div>Failed to load sites.</div>;
   const sites = data?.data ?? [];
   return (

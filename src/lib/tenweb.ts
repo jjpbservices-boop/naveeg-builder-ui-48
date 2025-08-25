@@ -58,3 +58,21 @@ export const TenWeb = {
   setFrontPage: (id: number, pageId: number) =>
     call<{ status: string }>({ path: `/v1/builder/websites/${id}/pages/front/set`, method: "POST", body: { page_id: pageId } }),
 };
+
+// --- Analytics (placeholder using your Edge Function; adjust if your contract differs)
+
+export async function getVisitors(
+  websiteId: number,
+  period: 'day' | 'week' | 'month' | 'year' = 'week'
+): Promise<VisitorsPoint[]> {
+  // If your edge function expects a different payload, change body accordingly.
+  const { data, error } = await supabase.functions.invoke('tenweb-proxy', {
+    body: {
+      target: 'analytics.visitors',
+      websiteId,
+      period,
+    },
+  });
+  if (error) throw error;
+  return (data?.points ?? []) as VisitorsPoint[];
+}

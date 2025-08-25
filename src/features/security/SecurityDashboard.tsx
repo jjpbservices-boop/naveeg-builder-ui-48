@@ -15,6 +15,7 @@ import { mapError } from "@/lib/errorMap";
 import { useRole, can } from "@/lib/roles";
 import { useTranslation } from "react-i18next";
 import Skeleton from "@/components/Skeleton";
+import { RequireRole } from "@/lib/guards";
 
 export default function SecurityDashboard() {
   const { siteId } = useParams({ from: "/dashboard/$siteId/security" });

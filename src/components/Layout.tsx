@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Globe, Sun, Moon, Menu, Sparkles } from 'lucide-react';
-import { useTheme } from 'next-themes';
-import { Button } from '@/components/ui/button';
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Globe, Sun, Moon, Menu, Sparkles } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from "@/components/ui/dropdown-menu";
 import {
   Sheet,
   SheetContent,
@@ -16,26 +16,27 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet';
-import { useNavigate } from '@tanstack/react-router';
-import Footer from '@/components/Footer';
+} from "@/components/ui/sheet";
+import { useNavigate } from "@tanstack/react-router";
+import Footer from "@/components/Footer";
+import AuthMenu from "@/components/AuthMenu";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { t, i18n } = useTranslation('common');
+  const { t, i18n } = useTranslation("common");
   const navigate = useNavigate();
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'fr', name: 'Français' },
-    { code: 'es', name: 'Español' },
-    { code: 'pt', name: 'Português' },
-    { code: 'it', name: 'Italiano' },
+    { code: "en", name: "English" },
+    { code: "fr", name: "Français" },
+    { code: "es", name: "Español" },
+    { code: "pt", name: "Português" },
+    { code: "it", name: "Italiano" },
   ];
 
   const changeLanguage = (langCode: string) => {
@@ -43,7 +44,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   const handleGenerateClick = () => {
-    navigate({ to: '/describe' });
+    navigate({ to: "/describe" });
   };
 
   return (
@@ -53,15 +54,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <div 
+            <div
               className="flex items-center space-x-3 cursor-pointer"
-              onClick={() => navigate({ to: '/' })}
+              onClick={() => navigate({ to: "/" })}
             >
-              <img 
-                src="/lovable-uploads/b874b017-8b73-4029-9431-6caffeaef48c.png" 
-                alt={t('header.logoAlt')}
+              <img
+                src="/lovable-uploads/b874b017-8b73-4029-9431-6caffeaef48c.png"
+                alt={t("header.logoAlt")}
                 className="h-8 w-auto object-contain shrink-0"
-                onError={(e) => e.currentTarget.style.display = 'none'}
+                onError={(e) => (e.currentTarget.style.display = "none")}
               />
               <span className="font-syne font-semibold text-xl text-foreground">
                 Naveeg
@@ -71,20 +72,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Button variant="ghost" onClick={() => navigate({ to: '/features' })}>
-              {t('header.nav.features')}
+            <Button variant="ghost" onClick={() => navigate({ to: "/features" })}>
+              {t("header.nav.features")}
             </Button>
-            <Button variant="ghost" onClick={() => navigate({ to: '/pricing' })}>
-              {t('header.nav.pricing')}
+            <Button variant="ghost" onClick={() => navigate({ to: "/pricing" })}>
+              {t("header.nav.pricing")}
             </Button>
-            <Button variant="ghost" onClick={() => navigate({ to: '/gallery' })}>
-              {t('header.nav.gallery')}
+            <Button variant="ghost" onClick={() => navigate({ to: "/gallery" })}>
+              {t("header.nav.gallery")}
             </Button>
-            <Button variant="ghost" onClick={() => navigate({ to: '/faq' })}>
-              {t('header.nav.faq')}
+            <Button variant="ghost" onClick={() => navigate({ to: "/faq" })}>
+              {t("header.nav.faq")}
             </Button>
-            <Button variant="ghost" onClick={() => navigate({ to: '/contact' })}>
-              {t('header.nav.contact')}
+            <Button variant="ghost" onClick={() => navigate({ to: "/contact" })}>
+              {t("header.nav.contact")}
             </Button>
           </nav>
 
@@ -94,7 +95,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="touch-target hidden lg:inline-flex"
               aria-label="Toggle theme"
             >
@@ -105,11 +106,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             {/* Desktop Language Selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button 
-                  variant="outline" 
-                  size="sm" 
+                <Button
+                  variant="outline"
+                  size="sm"
                   className="touch-target hidden lg:inline-flex"
-                  aria-label={t('header.changeLanguage')}
+                  aria-label={t("header.changeLanguage")}
                 >
                   <Globe className="h-4 w-4" />
                 </Button>
@@ -119,7 +120,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <DropdownMenuItem
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
-                    className={i18n.language === lang.code ? 'bg-accent' : ''}
+                    className={i18n.language === lang.code ? "bg-accent" : ""}
                   >
                     {lang.name}
                   </DropdownMenuItem>
@@ -127,20 +128,25 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </DropdownMenuContent>
             </DropdownMenu>
 
+            {/* Desktop Auth menu */}
+            <div className="hidden lg:block">
+              <AuthMenu />
+            </div>
+
             {/* Desktop CTA Button */}
-            <Button 
+            <Button
               onClick={handleGenerateClick}
               className="touch-target bg-gradient-primary hover:bg-primary-hover hidden lg:inline-flex"
             >
-              {t('header.generateWebsite')}
+              {t("header.generateWebsite")}
             </Button>
 
             {/* Mobile CTA Button - Icon Only */}
-            <Button 
+            <Button
               onClick={handleGenerateClick}
               size="icon"
               className="touch-target bg-gradient-primary hover:bg-primary-hover lg:hidden"
-              aria-label={t('header.generateWebsite')}
+              aria-label={t("header.generateWebsite")}
             >
               <Sparkles className="h-4 w-4" />
             </Button>
@@ -159,35 +165,60 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </SheetTrigger>
               <SheetContent side="right" className="w-80">
                 <SheetHeader>
-                  <SheetTitle>{t('header.menu')}</SheetTitle>
+                  <SheetTitle>{t("header.menu")}</SheetTitle>
                 </SheetHeader>
-                
+
                 <div className="flex flex-col space-y-6 mt-6">
+                  {/* Auth menu for mobile */}
+                  <div className="lg:hidden">
+                    <AuthMenu />
+                  </div>
+
                   {/* Navigation Links */}
                   <nav className="flex flex-col space-y-4">
                     <SheetClose asChild>
-                      <Button variant="ghost" onClick={() => navigate({ to: '/features' })} className="justify-start">
-                        {t('header.nav.features')}
+                      <Button
+                        variant="ghost"
+                        onClick={() => navigate({ to: "/features" })}
+                        className="justify-start"
+                      >
+                        {t("header.nav.features")}
                       </Button>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Button variant="ghost" onClick={() => navigate({ to: '/pricing' })} className="justify-start">
-                        {t('header.nav.pricing')}
+                      <Button
+                        variant="ghost"
+                        onClick={() => navigate({ to: "/pricing" })}
+                        className="justify-start"
+                      >
+                        {t("header.nav.pricing")}
                       </Button>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Button variant="ghost" onClick={() => navigate({ to: '/gallery' })} className="justify-start">
-                        {t('header.nav.gallery')}
+                      <Button
+                        variant="ghost"
+                        onClick={() => navigate({ to: "/gallery" })}
+                        className="justify-start"
+                      >
+                        {t("header.nav.gallery")}
                       </Button>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Button variant="ghost" onClick={() => navigate({ to: '/faq' })} className="justify-start">
-                        {t('header.nav.faq')}
+                      <Button
+                        variant="ghost"
+                        onClick={() => navigate({ to: "/faq" })}
+                        className="justify-start"
+                      >
+                        {t("header.nav.faq")}
                       </Button>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Button variant="ghost" onClick={() => navigate({ to: '/contact' })} className="justify-start">
-                        {t('header.nav.contact')}
+                      <Button
+                        variant="ghost"
+                        onClick={() => navigate({ to: "/contact" })}
+                        className="justify-start"
+                      >
+                        {t("header.nav.contact")}
                       </Button>
                     </SheetClose>
                   </nav>
@@ -197,27 +228,33 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
                   {/* Preferences */}
                   <div className="space-y-4">
-                    <h4 className="text-sm font-medium text-muted-foreground">{t('header.preferences')}</h4>
-                    
+                    <h4 className="text-sm font-medium text-muted-foreground">
+                      {t("header.preferences")}
+                    </h4>
+
                     {/* Theme Toggle */}
                     <Button
                       variant="ghost"
-                      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                       className="justify-start w-full"
                     >
                       <Sun className="h-4 w-4 mr-2 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                       <Moon className="absolute h-4 w-4 ml-2 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                      <span className="ml-6">{theme === 'dark' ? t('header.lightMode') : t('header.darkMode')}</span>
+                      <span className="ml-6">
+                        {theme === "dark" ? t("header.lightMode") : t("header.darkMode")}
+                      </span>
                     </Button>
 
                     {/* Language Selection */}
                     <div className="space-y-2">
-                      <h5 className="text-sm font-medium text-muted-foreground">{t('header.changeLanguage')}</h5>
+                      <h5 className="text-sm font-medium text-muted-foreground">
+                        {t("header.changeLanguage")}
+                      </h5>
                       <div className="grid grid-cols-1 gap-2">
                         {languages.map((lang) => (
                           <SheetClose asChild key={lang.code}>
                             <Button
-                              variant={i18n.language === lang.code ? 'secondary' : 'ghost'}
+                              variant={i18n.language === lang.code ? "secondary" : "ghost"}
                               onClick={() => changeLanguage(lang.code)}
                               className="justify-start"
                             >
@@ -236,9 +273,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1">
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
 
       {/* Footer */}
       <Footer />

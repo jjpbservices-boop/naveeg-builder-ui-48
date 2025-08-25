@@ -8,6 +8,7 @@ import { mapError } from "@/lib/errorMap";
 import { useRole, can } from "@/lib/roles";
 import { useTranslation } from "react-i18next";
 import Skeleton from "@/components/Skeleton";
+import { RequireRole } from "@/lib/guards";
 
 export default function DomainDashboard() {
   const { siteId } = useParams({ from: "/dashboard/$siteId/domains" });
@@ -89,23 +90,25 @@ export default function DomainDashboard() {
                   {setDefault.isPending ? "Setting…" : "Set default"}
                 </button>
               )}
-              <button
-                className="text-xs px-2 py-1 rounded border"
-                onClick={() => {
-                  if (!canDelete) return;
-                  if (!window.confirm(`Delete ${d.name}?`)) return;
-                  delDomain.mutate(d.id, {
-                    onSuccess: () => {
-                      push({ title: t("dashboard:toasts.domain.deleted"), kind: "success" });
-                      refetch();
-                    },
-                    onError: (err) => push({ title: mapError(err), kind: "error" }),
-                  });
-                }}
-                disabled={delDomain.isPending || !canDelete}
-              >
-                {delDomain.isPending ? "Deleting…" : "Delete"}
-              </button>
+              <RequireRole allow={['admin']}>
+                <button
+                  className="text-xs px-2 py-1 rounded border"
+                  onClick={() => {
+                    if (!canDelete) return;
+                    if (!window.confirm(`Delete ${d.name}?`)) return;
+                    delDomain.mutate(d.id, {
+                      onSuccess: () => {
+                        push({ title: t("dashboard:toasts.domain.deleted"), kind: "success" });
+                        refetch();
+                      },
+                      onError: (err) => push({ title: mapError(err), kind: "error" }),
+                    });
+                  }}
+                  disabled={delDomain.isPending || !canDelete}
+                >
+                  {delDomain.isPending ? "Deleting…" : "Delete"}
+                </button>
+              </RequireRole>
             </div>
           </div>
         ))}

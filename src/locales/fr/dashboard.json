@@ -32,4 +32,17 @@
     "backup": { "started": "Sauvegarde lancée.", "restored": "Restauration lancée." },
     "pages": { "published": "Pages publiées.", "drafted": "Pages passées en brouillon.", "front": "Page d’accueil définie." }
   }
+,"workspace": {
+    "title": "Choisissez un site",
+    "empty": "Vous n'avez pas encore de sites.",
+    "start": "Démarrer un nouveau site",
+    "attachPlaceholder": "Attacher par ID de site (ex. 1334132)",
+    "optionalTitle": "Titre optionnel",
+    "attach": "Attacher",
+    "attaching": "Attachement…"
+,"invalidId": "Saisissez un identifiant de site numérique valide.",
+    "loginFirst": "Veuillez d'abord vous connecter.",
+    "attachOk": "Site ajouté.",
+    "attachErr": "Impossible d'ajouter le site."
+  }
 }
