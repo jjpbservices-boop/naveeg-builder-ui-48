@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       .order("updated_at", { ascending: false })
       .limit(1);
     const first = !error && data?.[0]?.website_id;
-    if (first) throw redirect({ to: `/_site/${data![0].website_id}/overview` });
+    if (first) throw redirect({ to: `/${data![0].website_id}/overview` });
   },
   component: Marketing,
 });

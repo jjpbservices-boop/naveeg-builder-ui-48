@@ -34,6 +34,7 @@ function Workspace() {
         <button
           className="border rounded px-3 py-2"
           onClick={() => manualId && nav({ to: `/_site/${manualId}/overview` })}
+          onClick={() => manualId && nav({ to: `/${manualId}/overview` })}
         >
           Open
         </button>
@@ -49,7 +50,7 @@ function Workspace() {
                 <div className="font-medium">{s.title || `Site ${s.website_id}`}</div>
                 <div className="text-xs opacity-60">ID {s.website_id}</div>
               </div>
-              <Link to={`/_site/${s.website_id}/overview`} className="underline">
+              <Link to={`/${s.website_id}/overview`} className="underline">
                 Open
               </Link>
             </li>

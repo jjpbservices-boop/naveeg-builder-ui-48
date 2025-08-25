@@ -11,7 +11,7 @@ function Kpi({ label, value }: { label: string; value: string | number }) {
   );
 }
 function OverviewPage() {
-  const { siteId } = useParams({ from: "/_site/$siteId/overview" as never });
+  const { siteId } = useParams({ from: "/$siteId/overview" as never });
   const id = Number(siteId);
   const { data: month = [] } = useVisitors(id, "month");
   const monthTotal = month.reduce((s, p) => s + p.value, 0);
@@ -48,7 +48,7 @@ function OverviewPage() {
   );
 }
 
-export const Route = createFileRoute("/_site/$siteId/overview")({
+export const Route = createFileRoute("/$siteId/overview")({
   component: OverviewPage,
 });
 

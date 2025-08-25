@@ -7,7 +7,7 @@ const ChartChunk = React.lazy(() => import("./ChartChunk"));
 type Range = "week" | "month" | "year";
 
 export default function AnalyticsDashboard() {
-  const { siteId } = useParams({ from: "/_site/$siteId/analytics" as never });
+  const { siteId } = useParams({ from: "/$siteId/analytics" as never });
   const [range, setRange] = useState<Range>("month");
 
   const { data = [], isLoading, isError } = useVisitors(Number(siteId), range);

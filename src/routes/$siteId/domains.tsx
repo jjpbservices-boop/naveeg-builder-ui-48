@@ -8,7 +8,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 
 export default function DomainsRoute() {
-  const { siteId } = useParams({ from: "/_site/$siteId/domains" as never });
+  const { siteId } = useParams({ from: "/$siteId/domains" as never });
   const websiteId = Number(siteId);
   const qc = useQueryClient();
   const [selected, setSelected] = useState<number[]>([]);
@@ -135,6 +135,6 @@ export default function DomainsRoute() {
     </div>
 }
 
-export const Route = createFileRoute("/_site/$siteId/domains")({
+export const Route = createFileRoute("/$siteId/domains")({
   component: DomainsRoute,
 });

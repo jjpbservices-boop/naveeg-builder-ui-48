@@ -4,12 +4,12 @@ import { useEnsureSite } from "@/routes/_site.$siteId/_layout";
 import { useTranslation } from "react-i18next";
 
 const tabs = [
-  { to: "/_site/$siteId/overview", labelKey: "overview" },
-  { to: "/_site/$siteId/analytics", labelKey: "analytics" },
-  { to: "/_site/$siteId/domains", labelKey: "domains" },
-  { to: "/_site/$siteId/security", labelKey: "security" },
-  { to: "/_site/$siteId/billing", labelKey: "billing" },
-  { to: "/_site/$siteId/pages", labelKey: "pages" },
+  { to: "/$siteId/overview", labelKey: "overview" },
+  { to: "/$siteId/analytics", labelKey: "analytics" },
+  { to: "/$siteId/domains", labelKey: "domains" },
+  { to: "/$siteId/security", labelKey: "security" },
+  { to: "/$siteId/billing", labelKey: "billing" },
+  { to: "/$siteId/pages", labelKey: "pages" },
 ];
 
 export default function SiteDashboardLayout() {
