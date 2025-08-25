@@ -1,37 +1,37 @@
-import { useParams, Link } from "@tanstack/react-router";
+import { Link, useParams } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import Skeleton from "@/components/Skeleton";
 import StatCard from "@/components/StatCard";
-import { getVisitors } from "@/lib/tenweb"; // Assuming getVisitors accepts { id: number, period: string }
+import { getVisitors } from "@/lib/tenweb";
 
-function useVisitorsCount(siteId: string, period: "day" | "week" | "month") {
+function useVisitorsSum(siteId: string, period: "day" | "week" | "month") {
   return useQuery({
-    queryKey: ["visitors", siteId, period],
+    queryKey: ["visitors-sum", siteId, period],
     queryFn: async () => {
-      const data = await getVisitors({ id: Number(siteId), period });
-      const n =
-        typeof data === "number"
-          ? data
-          : (data?.total ?? data?.visitors ?? data?.count ?? 0);
- return Number(n) || 0;
+      const points = (await getVisitors(Number(siteId), period)) as any[];
+      const sum = (points ?? []).reduce(
+        (acc, p) => acc + Number(p?.value ?? p?.count ?? p?.total ?? 0),
+        0
+      );
+      return sum;
     },
-    staleTime: 30_000, // Cache data for 30 seconds
+    staleTime: 30_000,
   });
 }
 
 export default function DashboardOverview() {
-  const { siteId } = useParams({ from: "/dashboard/$siteId/overview" as any }) as { siteId: string };
+  const { siteId } = useParams({ from: "/dashboard/$siteId" }) as { siteId: string };
 
-  const today = useVisitorsCount(siteId, "day");
-  const week = useVisitorsCount(siteId, "week");
-  const month = useVisitorsCount(siteId, "month");
- 
-  const anyLoading = today.isLoading || week.isLoading || month.isLoading;
+  const today = useVisitorsSum(siteId, "day");
+  const week = useVisitorsSum(siteId, "week");
+  const month = useVisitorsSum(siteId, "month");
+
+  const loading = today.isLoading || week.isLoading || month.isLoading;
 
   return (
     <div className="space-y-6">
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {anyLoading ? (
+        {loading ? (
           <>
             <Skeleton className="h-24" />
             <Skeleton className="h-24" />
@@ -46,7 +46,6 @@ export default function DashboardOverview() {
         )}
       </div>
 
-      {/* Quick links */}
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {[
           ["analytics", "View analytics", "Traffic, trends & referrers"],
@@ -56,8 +55,7 @@ export default function DashboardOverview() {
         ].map(([slug, title, desc]) => (
           <Link
             key={slug}
-            to={`/dashboard/$siteId/${slug}`}
-            params={{ siteId }}
+            to={`/dashboard/${siteId}/${slug}`}
             className="rounded-xl border p-4 hover:bg-muted/40 transition"
           >
             <div className="font-medium">{title}</div>

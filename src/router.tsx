@@ -1,16 +1,6 @@
-import React, { useEffect } from "react";
-import {
-  createRouter,
-  createRoute,
-  createRootRoute,
-  Outlet,
-  useNavigate,
-  useParams,
-} from "@tanstack/react-router";
-
+import { createRouter, createRoute, createRootRoute, Outlet } from "@tanstack/react-router";
 import Layout from "@/components/Layout";
 
-// Public pages
 import Home from "@/pages/Home";
 import Features from "@/pages/Features";
 import Pricing from "@/pages/Pricing";
@@ -18,8 +8,6 @@ import Gallery from "@/pages/Gallery";
 import FAQ from "@/pages/FAQ";
 import Contact from "@/pages/Contact";
 import Legal from "@/pages/Legal";
-
-// Onboarding/legacy
 import Describe from "@/pages/Describe";
 import Brief from "@/pages/Brief";
 import Design from "@/pages/Design";
@@ -27,41 +15,25 @@ import Generate from "@/pages/Generate";
 import Generating from "@/pages/Generating";
 import Ready from "@/pages/Ready";
 import Preview from "@/pages/Preview";
-
-// App pages
 import Dashboard from "@/pages/Dashboard";
 import Workspace from "@/pages/Workspace";
 import Settings from "@/pages/Settings";
 import Auth from "@/pages/Auth";
 import NotFound from "@/pages/NotFound";
 
-// Dashboard sections
-import SiteDashboardLayout from "@/features/dashboard/SiteDashboardLayout";
-import DashboardOverview from "@/features/overview/DashboardOverview";
+import AnalyticsDashboard from "@/features/analytics/AnalyticsDashboard";
 import DomainDashboard from "@/features/domains/DomainDashboard";
 import SecurityDashboard from "@/features/security/SecurityDashboard";
 import BillingDashboard from "@/features/billing/BillingDashboard";
 import PagesPanel from "@/features/builder/PagesPanel";
-import AnalyticsDashboard from "@/features/analytics/AnalyticsDashboard";
 
-// Simple stubs
+// NEW
+import SiteDashboardLayout from "@/features/dashboard/SiteDashboardLayout";
+import DashboardOverview from "@/features/overview/DashboardOverview";
+
 const DashboardIndex = () => <div>Choose a site</div>;
 
-// Redirect component used at /dashboard/$siteId/
-const DashboardSiteLanding = () => {
-  const { siteId } = useParams({ from: "/dashboard/$siteId" });
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate({ to: "/dashboard/$siteId/overview", params: { siteId } });
-  }, [navigate, siteId]);
-  return null;
-};
-
-// Type definitions for route parameters
-interface DashboardParams {
-  siteId: string;
-}
-// Root route with layout
+// Root
 const rootRoute = createRootRoute({
   component: () => (
     <Layout>
@@ -79,13 +51,14 @@ const faqRoute = createRoute({ getParentRoute: () => rootRoute, path: "/faq", co
 const contactRoute = createRoute({ getParentRoute: () => rootRoute, path: "/contact", component: Contact });
 const legalRoute = createRoute({ getParentRoute: () => rootRoute, path: "/legal", component: Legal });
 
-// Onboarding/legacy
+// Onboarding
 const onboardingBriefRoute = createRoute({ getParentRoute: () => rootRoute, path: "/onboarding/brief", component: Brief });
 const onboardingDesignRoute = createRoute({ getParentRoute: () => rootRoute, path: "/onboarding/design", component: Design });
 const generateRoute = createRoute({ getParentRoute: () => rootRoute, path: "/generate", component: Generate });
 const generatingRoute = createRoute({ getParentRoute: () => rootRoute, path: "/generating", component: Generating });
 const readyRoute = createRoute({ getParentRoute: () => rootRoute, path: "/ready", component: Ready });
 
+// Legacy
 const describeRoute = createRoute({ getParentRoute: () => rootRoute, path: "/describe", component: Describe });
 const briefRoute = createRoute({ getParentRoute: () => rootRoute, path: "/brief", component: Brief });
 const designRoute = createRoute({ getParentRoute: () => rootRoute, path: "/design", component: Design });
@@ -102,29 +75,21 @@ const dashboardRoute = createRoute({
   component: Dashboard,
 });
 
-// /dashboard (index)
+// /dashboard
 const dashboardIndexRoute = createRoute({
   getParentRoute: () => dashboardRoute,
   path: "/",
   component: DashboardIndex,
 });
 
-// /dashboard/$siteId/*
+// /dashboard/$siteId (layout + tabs + Outlet)
 const dashboardSiteRoute = createRoute({
   getParentRoute: () => dashboardRoute,
   path: "$siteId",
-  validateSearch: (search: Record<string, unknown>): DashboardParams => search as DashboardParams,
   component: SiteDashboardLayout,
 });
 
-// /dashboard/$siteId/ (index -> redirect to overview)
-const dashboardSiteIndexRoute = createRoute({
-  getParentRoute: () => dashboardSiteRoute,
-  path: "/",
-  component: DashboardSiteLanding,
-});
-
-// Section routes
+// Children
 const dashboardOverviewRoute = createRoute({
   getParentRoute: () => dashboardSiteRoute,
   path: "overview",
@@ -157,18 +122,10 @@ const dashboardPagesRoute = createRoute({
 });
 
 // Standalone workspace
-const workspaceRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/workspace",
-  component: Workspace,
-});
+const workspaceRoute = createRoute({ getParentRoute: () => rootRoute, path: "/workspace", component: Workspace });
 
-// Not found
-const notFoundRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/$",
-  component: NotFound,
-});
+// 404
+const notFoundRoute = createRoute({ getParentRoute: () => rootRoute, path: "/$", component: NotFound });
 
 // Route tree
 const routeTree = rootRoute.addChildren([
@@ -193,7 +150,6 @@ const routeTree = rootRoute.addChildren([
   dashboardRoute.addChildren([
     dashboardIndexRoute,
     dashboardSiteRoute.addChildren([
-      dashboardSiteIndexRoute,
       dashboardOverviewRoute,
       dashboardAnalyticsRoute,
       dashboardDomainsRoute,
@@ -207,10 +163,3 @@ const routeTree = rootRoute.addChildren([
 ]);
 
 export const router = createRouter({ routeTree } as any);
-
-// Module augmentation for router type
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router;
-  }
-}
