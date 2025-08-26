@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { RouterProvider } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // optional: import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { routeTree } from "./routeTree.gen";
+import { router } from "./router";
 import "./index.css";
 import "./styles/tokens.css";
 import "./i18n/config";
 
-const router = createRouter({ routeTree });
 const queryClient = new QueryClient();
 
-declare module "@tanstack/react-router" {
-  interface Register { router: typeof router }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.getRegistrations().then((rs) =>
+    rs.forEach((r) => r.unregister())
+  );
 }
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

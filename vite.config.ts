@@ -5,6 +5,7 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite"; // ✅ correc
 import eslint from "vite-plugin-eslint";
 
 export default defineConfig({
+  base: "/",
   plugins: [
     react(),
     TanStackRouterVite(), // Corrected spelling, // Make sure this uses the correct imported name
@@ -13,6 +14,8 @@ export default defineConfig({
   ],
   resolve: { alias: { "@": "/src" } },
   build: {
+    outDir: "dist",
+    sourcemap: true,
     rollupOptions: {
       output: {
         manualChunks(id) {
