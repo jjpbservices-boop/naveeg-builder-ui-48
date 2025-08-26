@@ -1,18 +1,28 @@
-import { createRouter, createRoute } from '@tanstack/react-router';
-import { createBrowserHistory } from 'history';
-import { routeTree } from './routeTree.gen';
+// src/router.tsx
+import { createRouter } from '@tanstack/react-router'
+import { createBrowserHistory } from '@tanstack/history'
+import { routeTree } from './routeTree.gen'
 
-const basename = import.meta.env.VITE_BASE_PATH ?? '/';
-const history = createBrowserHistory({ window, basename });
+const basepath = import.meta.env.VITE_BASE_PATH ?? '/'
 
-const notFound = createRoute({
-  getParentRoute: () => routeTree,
-  path: '*',
-  component: () => <div className="p-8">Page not found</div>,
-});
+// TanStack history (has .subscribe)
+const history = createBrowserHistory({ window, basepath })
 
-const routeTreeWithNotFound = routeTree.addChildren([notFound]);
+// Ensure non-null location.state on first load
+if (history.location.state == null) {
+  history.replace(history.location, {})
+}
 
-export const router = createRouter({ routeTree: routeTreeWithNotFound, history });
+export const router = createRouter({
+  routeTree,
+  history,
+  defaultNotFoundComponent: () => (
+    <div className="p-8">Page not found</div>
+  ),
+})
 
-
+declare module '@tanstack/react-router' {
+  interface Register {
+    router: typeof router
+  }
+}
