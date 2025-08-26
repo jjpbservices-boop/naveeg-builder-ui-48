@@ -9,7 +9,9 @@ import { LegalFooter } from '@/components/LegalFooter';
 import { Cookies } from '@/components/Cookies';
 import { useHomeSEO } from '@/lib/seo';
 
-function LegacyHome(){
+const enabled = import.meta.env.VITE_MARKETING_V2 === 'true';
+
+function LegacyHome() {
   return (
     <main className="p-8">
       <h1 className="text-2xl font-semibold">Naveeg</h1>
@@ -18,20 +20,23 @@ function LegacyHome(){
   );
 }
 
-export default function Home(){
-  if(!import.meta.env.MARKETING_V2) return <LegacyHome/>;
+function NewHome() {
   useHomeSEO();
   return (
     <>
-      <Hero/>
-      <Steps/>
-      <Features/>
-      <Pricing/>
-      <Testimonials/>
-      <FAQ/>
-      <FinalCTA/>
-      <LegalFooter/>
-      <Cookies/>
+      <Hero />
+      <Steps />
+      <Features />
+      <Pricing />
+      <Testimonials />
+      <FAQ />
+      <FinalCTA />
+      <LegalFooter />
+      <Cookies />
     </>
   );
+}
+
+export default function Home() {
+  return enabled ? <NewHome /> : <LegacyHome />;
 }
